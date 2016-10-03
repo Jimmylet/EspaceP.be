@@ -277,9 +277,9 @@ a {
   visibility: hidden;
   opacity: 0;
   color: #fff;
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 .menu__wrap {
   height: 100%;
@@ -362,24 +362,51 @@ a {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+.with--menu .menu__link:hover {
+  background-color: rgba(26,26,26,0.93);
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
 }
 .with--menu .menu__item0 {
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
 }
 .with--menu .menu__item1 {
-  -webkit-transition: all 800ms ease;
-  transition: all 800ms ease;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
 }
 .with--menu .menu__item2 {
-  -webkit-transition: all 1100ms ease;
-  transition: all 1100ms ease;
+  -webkit-transition: all 1100ms ease-in-out;
+  transition: all 1100ms ease-in-out;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
 }
 .with--menu .menu__item3 {
-  -webkit-transition: all 1400ms ease;
-  transition: all 1400ms ease;
+  -webkit-transition: all 1400ms ease-in-out;
+  transition: all 1400ms ease-in-out;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
 }
 .with--menu .menu__item4 {
-  -webkit-transition: all 1700ms ease;
-  transition: all 1700ms ease;
+  -webkit-transition: all 1700ms ease-in-out;
+  transition: all 1700ms ease-in-out;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
 }

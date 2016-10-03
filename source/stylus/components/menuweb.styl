@@ -28,7 +28,7 @@
     visibility hidden
     opacity 0
     color color-white
-    transform scale(0.9)
+    transform scale(0.8)
   &__wrap
     height 100%
     width 100%
@@ -80,26 +80,27 @@
       visibility visible
       opacity 1
       transform scale(1)
+      transition background .5s ease
+      &:hover
+        background-color rgba(0,0,0,0.93) + 10%
+        transition background .5s ease
     &__item0
-      transition all 500ms ease
+      transition all 500ms ease-in-out
+      transition-property: opacity, transform
     &__item1
-      transition: all 800ms ease;
+      transition: all 800ms ease-in-out;
+      transition-property: opacity, transform
     &__item2
-      transition: all 1100ms ease;
+      transition: all 1100ms ease-in-out;
+      transition-property: opacity, transform
     &__item3
-      transition: all 1400ms ease;
+      transition: all 1400ms ease-in-out;
+      transition-property: opacity, transform
     &__item4
-      transition: all 1700ms ease;
+      transition: all 1700ms ease-in-out;
+      transition-property: opacity, transform
 
-
-
-
-
-
-
-
-
-
+    
 /************************************\
   Style non responsive
 \************************************/
