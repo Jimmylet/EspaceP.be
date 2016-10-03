@@ -1,8 +1,7 @@
 // components - menu.styl
 
 .menu
-  color color-white
-  background-color rgba(0,0,0,0.6)
+  -webkit-backdrop-filter blur(10px)
   position: fixed;
   overflow: hidden;
   top 0
@@ -12,9 +11,100 @@
   transform: translate3d(0,0,0)
   height: 100%
   width: 100%
+  &__item
+    display block
+    text-align: center
+  &__list
+    position absolute
+    left 0%
+    width 100%
+    top 50%
+    transform translateY(-50%)
+  &__link
+    display block
+    font-size: 3em;
+    font-weight: 100
+    padding 20px
+    visibility hidden
+    opacity 0
+    color color-white
+    transform scale(0.9)
+  &__wrap
+    height 100%
+    width 100%
+    margin 3em 3em
   &__title
     {visuallyhidden}
+  &__icon
+    display none
+  &__icon__wrap
+    position relative
+  &__icon__label
+    display: inline-block
+    z-index: 2
+    height: 30px
+    width: 30px
+    cursor: pointer
+    & span,
+    & span:before,
+    & span:after
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 5px;
+    & span
+      top 10px
+      transition: background-color 500ms;
+    & span:before,
+    & span:after
+      content: '';
+      backface-visibility: hidden;
+      transition: transform 500ms;
+    & span:before
+      transform: translateY(-9px);
+    & span:after
+      transform: translateY(9px);
 
 
-.submenu
-  {visuallyhidden}
+.with--menu
+  .menu__icon__label span
+    background-color transparent
+    &:before
+      transform: rotate(-45deg);
+    &:after
+      transform rotate(45deg);
+  .menu
+    background rgba(0,0,0,0.93)
+    &__link
+      visibility visible
+      opacity 1
+      transform scale(1)
+    &__item0
+      transition all 500ms ease
+    &__item1
+      transition: all 800ms ease;
+    &__item2
+      transition: all 1100ms ease;
+    &__item3
+      transition: all 1400ms ease;
+    &__item4
+      transition: all 1700ms ease;
+
+
+
+
+
+
+
+
+
+
+/************************************\
+  Style non responsive
+\************************************/
+
+/*
+@media screen and ( min-width: 833px )
+  .menu
+    display none*/
