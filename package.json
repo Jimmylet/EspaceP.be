@@ -26,6 +26,7 @@
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.8",
     "gulp-dest-clean": "^0.5.0",
     "gulp-htmlclean": "^2.7.6",
     "gulp-imacss": "^1.0.0",

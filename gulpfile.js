@@ -17,6 +17,7 @@ var
     minify = require('gulp-minify'),
     concat = require('gulp-concat'), // Minificateur JS et COMB
     sourcemaps = require('gulp-sourcemaps'),
+    csscomb = require('gulp-csscomb'),
     del = require('del');
 
 // Définition de quelques variables générales pour notre gulpfile
@@ -109,6 +110,7 @@ gulp.task('stylus', function () {
             use: [autoprefixer('last 7 versions', 'ie 8'), koutoSwiss()],
         }))
         .on('error',swallowError)
+        .pipe(csscomb())
         .pipe(gulp.dest(cssStylus.out))
         .pipe(browserSync.reload({stream: true}));
 });

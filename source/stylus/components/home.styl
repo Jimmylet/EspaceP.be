@@ -244,7 +244,7 @@
     max-width 75.1em // 751px
     padding 1.7em 6em 4.8em 3.8em
     overflow hidden
-    margin-bottom 10em
+    margin-bottom 15em
     &__title
       font-size: 1.6em
       font-weight: bold;
@@ -292,3 +292,85 @@
       color #3B5998
       display inline-block
 
+/************************************\
+  CITATION HOME
+\************************************/
+
+.quote-home
+  min-height 38em
+  background color-pink url("../images/home_quote.jpg") no-repeat center center
+  background-size cover
+  padding 10em 3em 9em 3em
+  margin-bottom: 15em
+  &__quote
+    font-weight: 100
+    color #F5E9EA
+    font-size: 3.6em
+    letter-spacing .91px
+    line-height 1.583em
+    max-width 18.056em
+    text-align center
+    margin: 0 auto
+    &:before
+      margin 0 auto 0.667em auto // 24px
+      content ""
+      display block
+      width 6.944em // 250px
+      height 2px
+      background-color color-white
+
+/************************************\
+  SECTION HOME BAS
+\************************************/
+
+.wrap-bottom
+  max-width 114em
+  margin 0 auto 15em auto
+  display flex
+  justify-content space-between
+.home-mag
+  padding 3.5em 5em 3.5em 5em
+  background-color color-white
+  max-width 75.1em
+  &__title
+    font-family: montserratfont
+    font-weight bold
+    letter-spacing 2px
+    font-size: 3.6em
+    margin-bottom 25px
+    line-height 1.4em
+  &__text
+    font-size: 1.6em;
+    color color-grey-text
+    line-height 1.70em
+    margin-bottom 32px
+  &__button
+    font-size 2em
+    {button-style}
+    &:hover
+    &:focus
+      {button-style-hover}
+
+.home-manifeste
+  padding 3.5em 5em 3.5em 5em
+  background-color color-white
+  max-width 36.1em
+  text-align center
+  &__title
+    font-family: montserratfont
+    font-weight bold
+    letter-spacing 2px
+    font-size: 3.6em
+    margin-bottom 25px
+    line-height 1.3em
+  &__text
+    font-size: 1.6em;
+    color color-grey-text
+    line-height 1.70em
+    margin-bottom 17px
+  &__button
+    font-size 2em
+    {button-style}
+    &:hover
+    &:focus
+      {button-style-hover}
