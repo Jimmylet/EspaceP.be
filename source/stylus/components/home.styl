@@ -122,7 +122,7 @@
 
 .article
   display flex
-  margin-bottom 20em
+  margin-bottom 10em
   min-height 32em
   overflow hidden
   &__wrap-text
@@ -166,7 +166,7 @@
     background-position center center
     background-size cover
     display inline-block
-    width 616px
+    width 61.6em
     transform scale(1);
     transition transform .3s ease
 
@@ -178,4 +178,117 @@
   .article__img
     transform scale(1.06);
     transition transform .3s ease
+
+/************************************\
+  FACEBOOK
+\************************************/
+
+.last-facebook
+  &__title-container
+    position relative
+  &__title
+    font-family: montserratfont
+    font-weight: bold;
+    font-size: 3.6em
+    margin-bottom 77px
+  &__follow
+    position: relative
+    background color-white
+    padding 4.5em 3.5em 3.5em 3.5em
+    max-width 35.9em
+    text-align: center
+    &__title
+      font-family montserratfont
+      font-weight: bold
+      font-size: 2.6em
+      letter-spacing 1.44px
+      margin-bottom 0.538em // 14px
+      &:before
+        content ""
+        height 65px
+        width 63px
+        display inline-block
+        {facebook-blue}
+        position absolute
+        top -35px
+        margin-left auto
+        margin-right auto
+        left 0
+        right 0
+  &__text
+    font-size: 1.6em
+    color color-grey-text
+    line-height 1.56em
+    margin-bottom 1.438em // 23px
+  &__button
+    font-weight 100
+    font-size: 2em
+    color color-white
+    display inline-block
+    padding 0.400em 2.150em // 8px 43px
+    border-radius 400px
+    background-color color-pink
+    transition background .3s ease
+    &:hover
+    &:focus
+      background-color color-pink + 10%
+      transition background .3s ease
+
+  /************************************\
+    DERNIERS COMMENTAIRES
+  \************************************/
+  .last-facebook__comment
+    height 25.08em
+    position: relative
+    background-color color-white
+    max-width 75.1em // 751px
+    padding 1.7em 6em 4.8em 3.8em
+    overflow hidden
+    margin-bottom 10em
+    &__title
+      font-size: 1.6em
+      font-weight: bold;
+      letter-spacing 1.01px
+      text-transform: uppercase
+      color color-pink
+      margin-bottom: .4em;
+    &__date
+      font-size: 1.6em
+      font-weight: 100
+      color color-grey-text
+      display block
+    &__text-container
+      overflow hidden
+      margin-top 1.5em
+    &__img
+      float left
+      margin-right 2.7em
+    &__text
+      font-size: 1.6em;
+      color color-grey-text
+      line-height 1.70em
+      margin-bottom 28px
+    &__link
+      font-weight: bold
+      font-size: 1.6em
+      letter-spacing: 0.13px
+      position: absolute
+      right 60px
+      &:after
+        content ""
+        display inline-block
+        width 17px // 17px
+        height 12px // 12px
+        position relative
+        top 2px // 2px
+        left 7px
+        {left-arrow}
+        transition left .3s ease
+      &:hover:after
+      &:focus:after
+        left 12px
+        transition left .3s ease
+    &__facebook
+      color #3B5998
+      display inline-block
 

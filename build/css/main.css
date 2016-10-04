@@ -220,6 +220,20 @@ form input {
   position: relative;
   height: 70em;
 }
+.last-facebook__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .header {
   background-image: url("../images/header_home.jpg");
   background-color: #d85e72;
@@ -371,7 +385,7 @@ form input {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20em;
+  margin-bottom: 10em;
   min-height: 32em;
   overflow: hidden;
 }
@@ -422,7 +436,7 @@ form input {
   background-position: center center;
   background-size: cover;
   display: inline-block;
-  width: 616px;
+  width: 61.6em;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -446,6 +460,131 @@ form input {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.last-facebook__title-container {
+  position: relative;
+}
+.last-facebook__title {
+  font-family: montserrat, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+  margin-bottom: 77px;
+}
+.last-facebook__follow {
+  position: relative;
+  background: #fff;
+  padding: 4.5em 3.5em 3.5em 3.5em;
+  max-width: 35.9em;
+  text-align: center;
+}
+.last-facebook__follow__title {
+  font-family: montserrat, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2.6em;
+  letter-spacing: 1.44px;
+  margin-bottom: 0.538em;
+}
+.last-facebook__follow__title:before {
+  content: "";
+  height: 65px;
+  width: 63px;
+  display: inline-block;
+  background-image: url("data:image/svg+xml;utf-8,<svg width='64' height='65' viewBox='0 0 64 65' xmlns='http://www.w3.org/2000/svg'><g transform='translate(0 .914)' fill='none'><circle fill='%233B5998' cx='31.678' cy='31.678' r='31.678'/><path d='M39.642 32.918h-5.653v20.708h-8.564V32.918h-4.073V25.64h4.073v-4.71c0-3.368 1.6-8.642 8.64-8.642l6.344.027v7.064h-4.603c-.755 0-1.817.377-1.817 1.984v4.283h6.4l-.748 7.271z' fill='#fff'/></g></svg>");
+  position: absolute;
+  top: -35px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.last-facebook__text {
+  font-size: 1.6em;
+  color: #6c6c6c;
+  line-height: 1.56em;
+  margin-bottom: 1.438em;
+}
+.last-facebook__button {
+  font-weight: 100;
+  font-size: 2em;
+  color: #fff;
+  display: inline-block;
+  padding: 0.4em 2.15em;
+  border-radius: 400px;
+  background-color: #d85e72;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.last-facebook__button:hover,
+.last-facebook__button:focus {
+  background-color: #dc6e80;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.last-facebook .last-facebook__comment {
+  height: 25.08em;
+  position: relative;
+  background-color: #fff;
+  max-width: 75.1em;
+  padding: 1.7em 6em 4.8em 3.8em;
+  overflow: hidden;
+  margin-bottom: 10em;
+}
+.last-facebook .last-facebook__comment__title {
+  font-size: 1.6em;
+  font-weight: bold;
+  letter-spacing: 1.01px;
+  text-transform: uppercase;
+  color: #d85e72;
+  margin-bottom: 0.4em;
+}
+.last-facebook .last-facebook__comment__date {
+  font-size: 1.6em;
+  font-weight: 100;
+  color: #6c6c6c;
+  display: block;
+}
+.last-facebook .last-facebook__comment__text-container {
+  overflow: hidden;
+  margin-top: 1.5em;
+}
+.last-facebook .last-facebook__comment__img {
+  float: left;
+  margin-right: 2.7em;
+}
+.last-facebook .last-facebook__comment__text {
+  font-size: 1.6em;
+  color: #6c6c6c;
+  line-height: 1.7em;
+  margin-bottom: 28px;
+}
+.last-facebook .last-facebook__comment__link {
+  font-weight: bold;
+  font-size: 1.6em;
+  letter-spacing: 0.13px;
+  position: absolute;
+  right: 60px;
+}
+.last-facebook .last-facebook__comment__link:after {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 12px;
+  position: relative;
+  top: 2px;
+  left: 7px;
+  background-image: url("data:image/svg+xml;utf-8,<svg width='17' height='12' viewBox='0 0 17 12' xmlns='http://www.w3.org/2000/svg'><title>left-arrow</title><path d='M11.287 11.6a.591.591 0 0 1-.844 0 .596.596 0 0 1 0-.836l4.28-4.28H.6a.595.595 0 1 1 0-1.19h14.124l-4.28-4.273a.606.606 0 0 1 0-.844.591.591 0 0 1 .844 0l5.294 5.294a.596.596 0 0 1 0 .835L11.287 11.6z' fill='%23D85E72' fill-rule='evenodd'/></svg>");
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+.last-facebook .last-facebook__comment__link:hover:after,
+.last-facebook .last-facebook__comment__link:focus:after {
+  left: 12px;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+.last-facebook .last-facebook__comment__facebook {
+  color: #3b5998;
+  display: inline-block;
 }
 .menu {
   -webkit-backdrop-filter: blur(10px);
