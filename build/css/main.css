@@ -290,44 +290,43 @@ form input {
           transform: scale(0.8);
 }
 .menu__search {
-  padding: 5px;
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  z-index: 5;
 }
 .menu__search__input {
-  width: 250px;
+  font-size: 16px;
+  padding: 7px 10px;
   vertical-align: top;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: none;
-  font-size: 3em;
-  background-color: transparent;
-  border-bottom: 1px solid #fff;
+  background-color: rgba(255,255,255,0.35);
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
+  position: relative;
+  left: 3.2px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  width: auto;
+  font-weight: normal;
   font-family: opensans, Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 .menu__search__input::-webkit-input-placeholder {
-  color: #b3b3b3;
+  color: #fff;
   font-family: opensans, Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 .menu__search__input::-moz-placeholder {
-  color: #b3b3b3;
+  color: #fff;
   font-family: opensans, Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 .menu__search__input:-ms-input-placeholder {
-  color: #b3b3b3;
+  color: #fff;
   font-family: opensans, Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 .menu__search__input::placeholder {
-  color: #b3b3b3;
+  color: #fff;
   font-family: opensans, Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
@@ -335,11 +334,7 @@ form input {
   position: relative;
   left: -37px;
   top: 3px;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
+  position: static;
 }
 .menu__wrap {
   height: 100%;
@@ -471,23 +466,12 @@ form input {
   transition-property: opacity, transform;
   transition-property: opacity, transform, -webkit-transform;
 }
-.with--menu .menu__search__input {
-  opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  visibility: visible;
-  -webkit-transition: all 2000ms ease-in-out;
-  transition: all 2000ms ease-in-out;
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: opacity, transform;
-  transition-property: opacity, transform, -webkit-transform;
+.no-js {
+  color: #f00;
 }
 @media screen and (min-width: 1048px) {
   .menu {
     overflow: hidden;
-    -webkit-backdrop-filter: blur(10px);
     position: static;
     display: block;
     text-align: left;
@@ -556,47 +540,7 @@ form input {
     top: -14px;
   }
   .menu__search {
-    float: right;
-    position: relative;
-    top: -8px;
-  }
-  .menu__search__input {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-    font-size: 16px;
-    padding: 7px 10px;
-    vertical-align: top;
-    background-color: rgba(255,255,255,0.35);
-    color: #fff;
-    position: relative;
-    left: 3.2px;
-    border-radius: 5px 0 0 5px;
-    border: none;
-    width: auto;
-    font-weight: normal;
-  }
-  .menu__search__input::-webkit-input-placeholder {
-    color: #fff;
-  }
-  .menu__search__input::-moz-placeholder {
-    color: #fff;
-  }
-  .menu__search__input:-ms-input-placeholder {
-    color: #fff;
-  }
-  .menu__search__input::placeholder {
-    color: #fff;
-  }
-  .menu__search__submit {
-    visibility: visible;
-    opacity: 1;
-    position: static;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
+    top: 22px;
   }
   .menu-home .menu__link {
     color: #fff;
