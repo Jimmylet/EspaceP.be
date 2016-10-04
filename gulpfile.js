@@ -36,7 +36,7 @@ var
     },
     imageUriOpts = {
         in: source + 'images/inline/*.*',
-        out: source + 'scss/images/',
+        out: source + 'stylus/images/',
         filename: '_datauri.styl',
         namespace: 'img'
     },
