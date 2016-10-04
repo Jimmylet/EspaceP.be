@@ -30,15 +30,51 @@
   display flex
   position: relative
   max-width 114em
+  position absolute
+  bottom -73px
+  margin-left: auto
+  margin-right: auto
+  left: 0
+  right: 0
+  box-shadow: 0px 1px 2px 0px rgba(146,146,146,0.5);
+
   &__title
     {visuallyhidden}
   &__link
+    position relative
     display inline-block
     background-color color-white
     padding 3.1em 1em 3.1em 2.8em
-    border-right 1px solid #F0ECED
-    &:last-child
-      border-right none
+    transition all .1s ease
+    transition-property height, background
+    &:before
+      content ""
+      position absolute
+      display inline-block
+      height 2px
+      width 100%
+      background-color #939CAC
+      top 0
+      left 0
+      z-index 2
+    &:after
+      content ""
+      position absolute
+      display inline-block
+      height 148px
+      width 1px
+      background-color #F0ECED
+      top 0
+      right 100%
+      z-index 1
+    &:hover
+    &:focus
+      background-color #F8F8F8
+      transition background .3s ease
+    &:hover:before
+      height 3px
+      transition height .1s ease
+      background-color color-pink
   &__text
     display inline-block
     font-size: 1.9em;
@@ -59,11 +95,23 @@
     &:focus
       text-decoration underline
 
-
 .submenu__link--sexworker
-  padding 3.1em 1em 3.1em 1em
+  padding 3.1em 1em 3.1em 1.3em
+  &:after
+    display none
 .submenu__text--sexworker
   font-size: 1.7em;
   max-width 166px
   position relative
   top: -10px
+
+/************************************\
+  ARTICLE
+\************************************/
+
+.wrap-top
+  max-width 114em
+  margin 0 auto
+
+.last-article
+  margin-top 17em
