@@ -70,9 +70,21 @@ html(lang='fr')
                             a.last-facebook__comment__link(href="#" title="Aller sur Facebook" rel="external")
                                 | Lire la suite sur&nbsp;
                                 span.last-facebook__comment__facebook Facebook
+            div.quote-home
+                blockquote.quote-home__quote Nous soutenons, accompagnons et défendons les milliers d’hommes, de femmes et de transgenres.
+            div.wrap-bottom
+                section.home-mag
+                    h2.home-mag__title Nous publions un magazine
+                    p.home-mag__text
+                        | Quatre fois par an, nous éditons un magazine sur le milieu de la prostitution afin d’informer les lecteurs et de soutenir financièrement l’organisation.
+                        br
+                        | Soutenez-nous en vous abonnant.
+                    a.home-mag__button(href="#" title="Aller vers la page du magazine") S’abonner
+                section.home-manifeste
+                    h2.home-manifeste__title Signez notre manifeste
+                    p.home-manifeste__text Montrer votre attachement à notre cause le signant !
+                    a.home-manifeste__button(href="#" title="Aller vers la page du manifeste") Lire et signer
 
-
-
-
+        include template/_footer.pug
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
         include template/_scripts.pug
