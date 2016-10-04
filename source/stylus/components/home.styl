@@ -27,4 +27,43 @@
     padding 0 3em
 
 .submenu
-  {visuallyhidden}
+  display flex
+  position: relative
+  max-width 114em
+  &__title
+    {visuallyhidden}
+  &__link
+    display inline-block
+    background-color color-white
+    padding 3.1em 1em 3.1em 2.8em
+    border-right 1px solid #F0ECED
+    &:last-child
+      border-right none
+  &__text
+    display inline-block
+    font-size: 1.9em;
+    font-family montserratfont
+    letter-spacing .6px
+    line-height 1.4em
+    max-width 145px
+    vertical-align top
+    margin .8em 0em 0em 1em
+  &__sublink
+    position absolute
+    left 110px
+    top 85px
+    font-size: 1.2em
+    max-width 175px
+    line-height: 1.5
+    &:hover
+    &:focus
+      text-decoration underline
+
+
+.submenu__link--sexworker
+  padding 3.1em 1em 3.1em 1em
+.submenu__text--sexworker
+  font-size: 1.7em;
+  max-width 166px
+  position relative
+  top: -10px

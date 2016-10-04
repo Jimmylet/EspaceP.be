@@ -74,6 +74,11 @@ var
       notify: true
     };
 
+    function swallowError(error){
+        console.log(error.toString());
+        this.emit('end');
+    }
+
 
 // Définition des tâches
 gulp.task('clean', function () {
@@ -103,6 +108,7 @@ gulp.task('stylus', function () {
         .pipe(stylus({
             use: [autoprefixer('last 7 versions', 'ie 8'), koutoSwiss()],
         }))
+        .on('error',swallowError)
         .pipe(gulp.dest(cssStylus.out))
         .pipe(browserSync.reload({stream: true}));
 });

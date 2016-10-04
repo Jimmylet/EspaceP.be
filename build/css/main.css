@@ -198,7 +198,12 @@ html {
   -moz-osx-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #383838;
-  background-color: #f5f5f5;
+/*background-color color-background
+    background-image url("../images/grid.png")
+    background-repeat repeat-y
+    background-position center center
+    background-size 1140px
+    opacity 0.90*/
 }
 a {
   text-decoration: none;
@@ -244,11 +249,59 @@ form input {
   padding: 0 3em;
 }
 .submenu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  max-width: 114em;
+}
+.submenu__title {
   border: 0;
   height: 1px;
   margin: -1px;
   overflow: hidden;
   position: absolute;
+}
+.submenu__link {
+  display: inline-block;
+  background-color: #fff;
+  padding: 3.1em 1em 3.1em 2.8em;
+  border-right: 1px solid #f0eced;
+}
+.submenu__link:last-child {
+  border-right: none;
+}
+.submenu__text {
+  display: inline-block;
+  font-size: 1.9em;
+  font-family: montserrat, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.6px;
+  line-height: 1.4em;
+  max-width: 145px;
+  vertical-align: top;
+  margin: 0.8em 0em 0em 1em;
+}
+.submenu__sublink {
+  position: absolute;
+  left: 110px;
+  top: 85px;
+  font-size: 1.2em;
+  max-width: 175px;
+  line-height: 1.5;
+}
+.submenu__sublink:hover,
+.submenu__sublink:focus {
+  text-decoration: underline;
+}
+.submenu__link--sexworker {
+  padding: 3.1em 1em 3.1em 1em;
+}
+.submenu__text--sexworker {
+  font-size: 1.7em;
+  max-width: 166px;
+  position: relative;
+  top: -10px;
 }
 .menu {
   -webkit-backdrop-filter: blur(10px);
@@ -410,7 +463,7 @@ form input {
           transform: rotate(45deg);
 }
 .with--menu .menu {
-  background: rgba(0,0,0,0.93);
+  background: rgba(0,0,0,0.89);
 }
 .with--menu .menu__link {
   visibility: visible;
@@ -465,9 +518,6 @@ form input {
   transition-property: opacity, -webkit-transform;
   transition-property: opacity, transform;
   transition-property: opacity, transform, -webkit-transform;
-}
-.no-js {
-  color: #f00;
 }
 @media screen and (min-width: 1048px) {
   .menu {
