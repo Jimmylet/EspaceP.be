@@ -61,7 +61,7 @@
       content ""
       position absolute
       display inline-block
-      height 148px
+      height 146px
       width 1px
       background-color #F0ECED
       top 0
@@ -115,3 +115,67 @@
 
 .last-article
   margin-top 17em
+  &__title
+    {visuallyhidden}
+  &__link
+    display block
+
+.article
+  display flex
+  margin-bottom 20em
+  min-height 32em
+  overflow hidden
+  &__wrap-text
+    max-width 55.7em
+    padding 5.5em 4.5em
+    background-color color-white
+    z-index 10
+  &__category
+    display block
+    margin-bottom 1.250em // 20px
+    color color-pink
+    font-weight: bold
+    letter-spacing 1px
+    font-size: 1.6em
+    text-transform: uppercase
+  &__title
+    font-size: 3.6em
+    font-family montserratfont
+    font-weight: bold
+    letter-spacing .8px
+    line-height 1.61em
+    max-width 12.776em //460px
+    margin-bottom 0.694em // 25px
+  &__link
+    font-size: 1.6em
+    color #4B4B4B
+    letter-spacing 0.13px
+    &:after
+      content ""
+      display inline-block
+      width 1.063em // 17px
+      height 0.750em // 12px
+      position relative
+      top 0.125em // 2px
+      {left-arrow}
+      margin-left 0.438em // 7px
+      transition margin-left .3s ease
+  &__img
+    background-image url("../images/imgarticle.jpg")
+    background-repeat no-repeat
+    background-position center center
+    background-size cover
+    display inline-block
+    width 616px
+    transform scale(1);
+    transition transform .3s ease
+
+.last-article__link:hover
+.last-article__link:focus
+  .article__link:after
+    margin-left 15px
+    transition margin-left .3s ease
+  .article__img
+    transform scale(1.06);
+    transition transform .3s ease
+

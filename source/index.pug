@@ -47,10 +47,12 @@ html(lang='fr')
             div.wrap-top
                 section.last-article
                     h2.last-article__title Notre dernier article
-                    article.article
-                        span.article__category Divers
-                        h3.article__title Expo de débat à Arlon : un regard éclairé sur la prostitution en milieu rural…
-                        a.article__link Lire l'article
-                        div.article__img
+                    a.last-article__link(href="#" title="Vers l’article")
+                        article.article
+                            div.article__wrap-text
+                                span.article__category Divers
+                                h3.article__title Expo de débat à Arlon&nbsp;: un regard éclairé sur la prostitution en milieu rural…
+                                span.article__link Lire l'article
+                            div.article__img
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
         include template/_scripts.pug
