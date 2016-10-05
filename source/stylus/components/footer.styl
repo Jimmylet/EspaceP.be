@@ -1,1 +1,125 @@
 /* components - footer.styl */
+.footer
+  &__wrap
+    max-width 114em
+    margin 0 auto
+    display flex
+    justify-content space-between
+
+.footer__espacep__title
+.footer__informations__title
+.footer__contacts__title
+.footer__navigation__title
+  display block
+  font-family: montserratfont
+  font-size: 2em
+  color #4F4F4F
+  letter-spacing 1.01px
+  text-transform: uppercase
+  margin-bottom 1em
+.footer__espacep__description
+.footer__informations__link
+.footer__contacts__link
+.footer__navigation__link
+  font-size: 1.6em
+  color color-grey-v2
+  line-height 1.625em // 26px
+  transition color .3s ease
+
+.footer__informations__link
+.footer__contacts__link
+.footer__navigation__link
+  &:hover
+  &:focus
+    color color-pink
+    transition color .3s ease
+
+.footer
+  &__section1
+    background-color color-white
+    padding 5em 3em
+  &__espacep
+    max-width 305px
+    position relative
+    &__title
+      margin-left 3em
+    &__logo
+      position: absolute
+      top -22px
+      content ""
+      width 42px
+      height 41px
+      display inline-block
+      background url("../images/logo_footer.jpg") no-repeat
+      margin-right .8em
+      color transparent
+  &__informations
+    max-width 230px
+    &__link
+      display block
+      margin-bottom 5px
+  &__contacts
+    max-width 186px
+    &__wrap
+      columns 2
+      column-gap 30px
+    &__link
+      display block
+  &__navigation
+    max-width 209px
+    &__link
+      display block
+      margin-bottom 5px
+
+.subfooter
+  background: #F8F8F8;
+  box-shadow: 0px -1px 0px 0px #EBEBEB;
+  padding 1.1em 3em 1.4em
+  &__wrap
+    max-width 114em
+    margin 0 auto
+    display flex
+    justify-content space-between
+  &__copyright
+  &__webdesigner
+  &__espaceplegal
+    font-size: 1.1em;
+    color #666666
+    line-height 1.4em
+    display inline-block
+  &__webdesigner__heart
+    transition color .3s ease
+  &__webdesigner
+    &:hover .subfooter__webdesigner__heart
+    &:focus .subfooter__webdesigner__heart
+      color color-pink
+      transition color .3s ease
+  &__espaceplegal
+    &__facebook
+      background-image url('../images/facebook_footer.svg');
+      display inline-block
+      height 26px
+      width 26px
+      float right
+      &__text
+        color transparent
+    &__rapport
+      display inline-block
+      margin-right 25px
+    &__statut
+      display inline-block
+      margin-right 25px
+
+.subfooter__copyright
+.subfooter__webdesigner
+.subfooter__espaceplegal__rapport
+.subfooter__espaceplegal__statut
+  margin-top .5em
+
+.subfooter__espaceplegal__rapport
+.subfooter__espaceplegal__statut
+  transition color .3s ease
+  &:hover
+  &:focus
+    color color-pink
+    transition color .3s ease

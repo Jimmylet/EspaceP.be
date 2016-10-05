@@ -75,6 +75,15 @@
     src: url('../fonts/montserrat/montserrat-bold.eot');
     src: url('../fonts/montserrat/montserrat-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/montserrat/montserrat-bold.woff2') format('woff2'), url('../fonts/montserrat/montserrat-bold.woff') format('woff'), url('../fonts/montserrat/montserrat-bold.ttf') format('truetype'), url('../fonts/montserrat/montserrat-bold.svg#montserratbold') format('svg');
 }
+@font-face
+{
+    font-family: 'fonticon';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/fonticon/fonticon.eot?vb0hhe');
+    src: url('../fonts/fonticon/fonticon.eot?vb0hhe#iefix') format('embedded-opentype'), url('../fonts/fonticon/fonticon.ttf?vb0hhe') format('truetype'), url('../fonts/fonticon/fonticon.woff?vb0hhe') format('woff'), url('../fonts/fonticon/fonticon.svg?vb0hhe#fonticon') format('svg');
+}
 html,
 body,
 div,
@@ -273,6 +282,16 @@ form input
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
             align-items: flex-start;
+}
+.footer
+{
+    position: relative;
+
+    min-height: 27.2em;
+}
+.subfooter
+{
+    min-height: 4em;
 }
 .header
 {
@@ -1317,4 +1336,225 @@ form input
     {
         background-color: #fff;
     }
+}
+.footer__wrap
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    max-width: 114em;
+    margin: 0 auto;
+
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.footer__espacep__title,
+.footer__informations__title,
+.footer__contacts__title,
+.footer__navigation__title
+{
+    font-family: montserrat, Helvetica, Arial, sans-serif;
+    font-size: 2em;
+
+    display: block;
+
+    margin-bottom: 1em;
+
+    letter-spacing: 1.01px;
+    text-transform: uppercase;
+
+    color: #4f4f4f;
+}
+.footer__espacep__description,
+.footer__informations__link,
+.footer__contacts__link,
+.footer__navigation__link
+{
+    font-size: 1.6em;
+    line-height: 1.625em;
+
+    -webkit-transition: color .3s ease;
+            transition: color .3s ease;
+
+    color: #4f4f4f;
+}
+.footer__informations__link:hover,
+.footer__contacts__link:hover,
+.footer__navigation__link:hover,
+.footer__informations__link:focus,
+.footer__contacts__link:focus,
+.footer__navigation__link:focus
+{
+    -webkit-transition: color .3s ease;
+            transition: color .3s ease;
+
+    color: #d85e72;
+}
+.footer__section1
+{
+    padding: 5em 3em;
+
+    background-color: #fff;
+}
+.footer__espacep
+{
+    position: relative;
+
+    max-width: 305px;
+}
+.footer__espacep__title
+{
+    margin-left: 3em;
+}
+.footer__espacep__logo
+{
+    position: absolute;
+    top: -22px;
+
+    display: inline-block;
+
+    width: 42px;
+    height: 41px;
+    margin-right: .8em;
+
+    content: '';
+
+    color: transparent;
+    background: url('../images/logo_footer.jpg') no-repeat;
+}
+.footer__informations
+{
+    max-width: 230px;
+}
+.footer__informations__link
+{
+    display: block;
+
+    margin-bottom: 5px;
+}
+.footer__contacts
+{
+    max-width: 186px;
+}
+.footer__contacts__wrap
+{
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+}
+.footer__contacts__link
+{
+    display: block;
+}
+.footer__navigation
+{
+    max-width: 209px;
+}
+.footer__navigation__link
+{
+    display: block;
+
+    margin-bottom: 5px;
+}
+.subfooter
+{
+    padding: 1.1em 3em 1.4em;
+
+    background: #f8f8f8;
+    box-shadow: 0 -1px 0 0 #ebebeb;
+}
+.subfooter__wrap
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    max-width: 114em;
+    margin: 0 auto;
+
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.subfooter__copyright,
+.subfooter__webdesigner,
+.subfooter__espaceplegal
+{
+    font-size: 1.1em;
+    line-height: 1.4em;
+
+    display: inline-block;
+
+    color: #666;
+}
+.subfooter__webdesigner__heart
+{
+    -webkit-transition: color .3s ease;
+            transition: color .3s ease;
+}
+.subfooter__webdesigner:hover .subfooter__webdesigner__heart,
+.subfooter__webdesigner:focus .subfooter__webdesigner__heart
+{
+    -webkit-transition: color .3s ease;
+            transition: color .3s ease;
+
+    color: #d85e72;
+}
+.subfooter__espaceplegal__facebook
+{
+    display: inline-block;
+    float: right;
+
+    width: 26px;
+    height: 26px;
+
+    background-image: url('../images/facebook_footer.svg');
+}
+.subfooter__espaceplegal__facebook__text
+{
+    color: transparent;
+}
+.subfooter__espaceplegal__rapport
+{
+    display: inline-block;
+
+    margin-right: 25px;
+}
+.subfooter__espaceplegal__statut
+{
+    display: inline-block;
+
+    margin-right: 25px;
+}
+.subfooter__copyright,
+.subfooter__webdesigner,
+.subfooter__espaceplegal__rapport,
+.subfooter__espaceplegal__statut
+{
+    margin-top: .5em;
+}
+.subfooter__espaceplegal__rapport,
+.subfooter__espaceplegal__statut
+{
+    -webkit-transition: color .3s ease;
+            transition: color .3s ease;
+}
+.subfooter__espaceplegal__rapport:hover,
+.subfooter__espaceplegal__statut:hover,
+.subfooter__espaceplegal__rapport:focus,
+.subfooter__espaceplegal__statut:focus
+{
+    -webkit-transition: color .3s ease;
+            transition: color .3s ease;
+
+    color: #d85e72;
 }
