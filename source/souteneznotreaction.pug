@@ -1,0 +1,104 @@
+doctype html
+html(lang='fr')
+    head
+        title Soutenez notre action
+        include template/_meta.pug
+    body.no-js.no-main
+        header.header
+            div.header__wrap-title
+                h1.header__title(aria-level="1") Espace P… - Soutenez notre action
+            include template/_header
+        div.site-content
+            main
+                div.mag-wrap-top
+                    ol.breadcrumb(itemscop itemtype="http://data-vocabulary.org/Breadcrumb")
+                        li.breadcrumb__link(itemprop="title")
+                            a.breadcrumb__link__text.breadcrumb__link__text--home(itemprop="link" href="index.html" title="Aller vers l’accueil")
+                                span.breadcrumb__link__text--hidden Accueil
+                        li.breadcrumb__link(itemprop="title")
+                            a.breadcrumb__link__text(itemprop="link" href="#") Soutenez notre action
+                    section.mag-content
+                        h2.mag-content__title Abonnez vous à notre magazine
+                        blockquote.mag-content__blockquote
+                            p.mag-content__blockquote__text Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                            cite.mag-content__author
+                                | Lorem ipsum
+                                span.mag-content__profession L’équipe Espace P…
+                        p.mag-content__receivemoney L’argent récolté sert entièrement notre cause
+                    section.choose-plan
+                        h2.choose-plan__title-main Choisissez votre plan
+                        div.choose-plan__wrap
+                            section.choose-plan__normal
+                                h3.choose-plan__title
+                                    | Plan&nbsp;
+                                    strong normal
+                                div.choose-plan__price
+                                    span.choose-plan__price__euro €
+                                    span.choose-plan__price__number 20
+                                ul.choose-plan__list
+                                    li.choose-plan__item 1 an d’abonnement
+                                    li.choose-plan__item 4 numéros
+                                span.choose-plan__buy.choose-plan__buy--normal Commander
+                            section.choose-plan__soutien
+                                h3.choose-plan__title
+                                    | Plan&nbsp;
+                                    strong soutien
+                                div.choose-plan__price
+                                    span.choose-plan__price__euro €
+                                    span.choose-plan__price__number 50
+                                ul.choose-plan__list
+                                    li.choose-plan__item 1 an d’abonnement
+                                    li.choose-plan__item 4 numéros
+                                    li.choose-plan__item Reconnaissance éternelle
+                                span.choose-plan__buy.choose-plan__buy--soutien Commander
+                        div.infos-email
+                            p.infos-email__text Pour toute informations, envoyez un email à
+                                span.infos-email__email  espacepliege@gmail.com
+                    section.payement
+                        h2.payement__title-main Pour payer, veuillez suivre les étapes suivantes
+                        div.clickplan.clickplannormal
+                            span.clickplan__desire Vous désirez&nbsp;:
+                            span.clickplan__title
+                                | Plan
+                                strong  normal
+                            span.clickplan__amount
+                                | Envoyez la somme de
+                                strong  20€
+                                |  au numéro de compte suivant&nbsp;:
+                            span.clickplan__account-number BE07 340 09190 6528
+                            span.clickplan__communication Indiquez vos coordonnées en communication.
+                            span.clickplan__confirm
+                                | Confirmez nous votre payement par email à
+                                strong  espaceliege@gmail.com
+                            span.clickplan__exit
+                                <svg width="30" height="29" viewBox="0 0 30 29" xmlns="http://www.w3.org/2000/svg" class="clickplan__exit__svg">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path d="M24.86 4.2c-5.56-5.6-14.62-5.6-20.2 0-5.55 5.55-5.55 14.6 0 20.18 5.58 5.56 14.64 5.56 20.2 0 5.57-5.57 5.57-14.63 0-20.2z" fill="#D85E72"/>
+                                        <path class="clickplan__exit__svg__cross" d="M20.4 19.9c-.43.44-1.13.44-1.55 0l-4.08-4.07-4.27 4.28c-.43.45-1.13.45-1.55 0-.43-.4-.43-1.1 0-1.53l4.27-4.27-4.08-4.08c-.43-.42-.43-1.12 0-1.55.43-.43 1.12-.43 1.55 0l4.05 4.08 3.88-3.88c.43-.43 1.13-.43 1.55 0 .42.43.42 1.12 0 1.55l-3.9 3.88 4.1 4.08c.42.43.42 1.12 0 1.55z" fill="#FFF"/>
+                                    </g>
+                                </svg>
+                        div.clickplan.clickplansoutien
+                            span.clickplan__desire Vous désirez&nbsp;:
+                            span.clickplan__title
+                                | Plan
+                                strong  soutien
+                            span.clickplan__amount
+                                | Envoyez la somme de
+                                strong  50€
+                                |  au numéro de compte suivant&nbsp;:
+                            span.clickplan__account-number BE07 340 09190 6528
+                            span.clickplan__communication Indiquez vos coordonnées en communication.
+                            span.clickplan__confirm
+                                | Confirmez nous votre payement par email à
+                                strong  espaceliege@gmail.com
+                            span.clickplan__exit
+                                <svg width="30" height="29" viewBox="0 0 30 29" xmlns="http://www.w3.org/2000/svg" class="clickplan__exit__svg">
+                                <g fill="none" fill-rule="evenodd">
+                                <path d="M24.86 4.2c-5.56-5.6-14.62-5.6-20.2 0-5.55 5.55-5.55 14.6 0 20.18 5.58 5.56 14.64 5.56 20.2 0 5.57-5.57 5.57-14.63 0-20.2z" fill="#D85E72"/>
+                                <path class="clickplan__exit__svg__cross" d="M20.4 19.9c-.43.44-1.13.44-1.55 0l-4.08-4.07-4.27 4.28c-.43.45-1.13.45-1.55 0-.43-.4-.43-1.1 0-1.53l4.27-4.27-4.08-4.08c-.43-.42-.43-1.12 0-1.55.43-.43 1.12-.43 1.55 0l4.05 4.08 3.88-3.88c.43-.43 1.13-.43 1.55 0 .42.43.42 1.12 0 1.55l-3.9 3.88 4.1 4.08c.42.43.42 1.12 0 1.55z" fill="#FFF"/>
+                                </g>
+                                </svg>
+
+            include template/_footer.pug
+
+            include template/_scripts

@@ -138,6 +138,7 @@
     max-width 154px
     transition all .3s ease
     transition-property background, color
+    cursor pointer
     &:hover
     &:focus
       background-color color-pink
@@ -175,3 +176,111 @@
 .payement
   &__title-main
     {visuallyhidden}
+
+.clickplan
+  display none
+
+.payementnormal--clicked
+.payementsoutien--clicked
+  .clickplan
+    display block
+    background color-white
+    padding 3em 3em
+    text-align: center
+    max-width 55.5em
+    position: relative
+    &__desire
+      font-weight: 100
+      font-size: 1.6em
+      display block
+      margin-bottom 2em
+    &__title
+      display: block
+      font-size: 3em
+      text-transform: uppercase
+      letter-spacing 1.5px
+      margin-bottom 3rem
+      & strong
+        font-weight: bold
+    &__amount
+      display: block
+      font-size: 1.6em
+      margin-bottom 1.875em // 30px
+      & strong
+        font-weight: bold
+        color color-pink
+    &__account-number
+      display: inline-block
+      font-weight: bold
+      padding .7rem 2rem
+      font-size: 2em
+      letter-spacing 1px
+      border 1px solid color-pink
+      margin-bottom 3rem
+    &__communication
+      display: block
+      font-size: 1.6em
+      margin-bottom: 2.275em // 30px
+    &__confirm
+      position: relative
+      right -50px
+      display block
+      font-size: 1.6em
+      font-weight: 100
+      max-width: 33.5rem
+      line-height 1.5em
+      margin: 0 auto
+      text-align left
+      & strong
+        font-weight: normal
+    &__confirm:before
+      content ""
+      display: inline-block
+      width 41px
+      height 38px
+      {warning}
+      background-repeat no-repeat
+      position: absolute
+      left -55px
+      top 7px
+    &__exit
+      display inline-block
+      cursor: pointer
+      position absolute
+      top -15px
+      right -15px
+.clickplan__exit__svg
+  transition transform .3s ease
+.clickplan__exit:hover .clickplan__exit__svg
+  transform: rotate(90deg);
+  transition transform .3s ease
+
+
+.payementnormal--clicked
+.payementsoutien--clicked
+  .payement
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    .clickplan.clickplannormal
+    .clickplan.clickplansoutien
+      position: absolute
+      top: 60%
+      margin-left: auto
+      margin-right: auto
+      left: 0
+      right: 0
+      transform: translateY(-50%)
+
+.payementnormal--clicked
+  .payement
+    .clickplan.clickplansoutien
+      display none
+
+.payementsoutien--clicked
+  .payement
+    .clickplan.clickplannormal
+      display none
