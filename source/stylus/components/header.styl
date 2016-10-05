@@ -1,0 +1,61 @@
+.no-main
+  .header
+    background none
+    &__title
+      {visuallyhidden}
+  .menu__icon__label span
+  .menu__icon__label span:before
+  .menu__icon__label span:after
+    background-color black
+
+  .fakemenu
+    height 8em
+    width 100%
+    position absolute
+    top 0
+    background-color #FFF
+    z-index -1
+  .menu
+    &__search
+      &__input
+        background-color #6B6B6B
+    &__link:after
+      background-color color-pink
+
+.with--menu
+  .fakemenu
+    display none
+  .menu
+    &__icon
+      &__label span
+        background-color transparent
+      &__label span:before
+      &__label span:after
+        background-color white
+
+@media screen and ( min-width: 1048px )
+  .no-main
+    .header
+      background none
+      &__title
+        {visuallyhidden}
+    .menu
+      height 8em
+      background-color color-white
+      border-bottom 1px solid rgba(121,121,121,.5)
+      &__link
+        color color-black
+        &:hover .menu__link::after
+          background-color color-pink
+      &__item0
+        color transparent
+      &__search
+        &__input
+          background-color color-white
+          border 1px solid rgba(121,121,121,.5)
+          padding 6px 10px
+          color color-black
+          &::placeholder
+            color color-grey-text
+    .fakemenu
+      display none

@@ -1152,6 +1152,11 @@ form input
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
 }
+.with--menu .menu-home
+{
+    width: 100%;
+    height: 100%;
+}
 .with--menu .menu
 {
     position: fixed;
@@ -1336,6 +1341,16 @@ form input
     {
         background-color: #fff;
     }
+}
+.site-content
+{
+    position: absolute;
+    top: 8em;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #f5f5f5;
 }
 .footer__wrap
 {
@@ -1557,4 +1572,189 @@ form input
             transition: color .3s ease;
 
     color: #d85e72;
+}
+.no-main .header
+{
+    background: none;
+}
+.no-main .header__title
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    height: 1px;
+    margin: -1px;
+
+    border: 0;
+}
+.no-main .menu__icon__label span,
+.no-main .menu__icon__label span:before,
+.no-main .menu__icon__label span:after
+{
+    background-color: #000;
+}
+.no-main .fakemenu
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+
+    width: 100%;
+    height: 8em;
+
+    background-color: #fff;
+}
+.no-main .menu__search__input
+{
+    background-color: #6b6b6b;
+}
+.no-main .menu__link:after
+{
+    background-color: #d85e72;
+}
+.with--menu .fakemenu
+{
+    display: none;
+}
+.with--menu .menu__icon__label span
+{
+    background-color: transparent;
+}
+.with--menu .menu__icon__label span:before,
+.with--menu .menu__icon__label span:after
+{
+    background-color: #fff;
+}
+@media screen and (min-width: 1048px)
+{
+    .no-main .header
+    {
+        background: none;
+    }
+    .no-main .header__title
+    {
+        position: absolute;
+
+        overflow: hidden;
+
+        height: 1px;
+        margin: -1px;
+
+        border: 0;
+    }
+    .no-main .menu
+    {
+        height: 8em;
+
+        border-bottom: 1px solid rgba(121,121,121,.5);
+        background-color: #fff;
+    }
+    .no-main .menu__link
+    {
+        color: #383838;
+    }
+    .no-main .menu__link:hover .menu__link::after
+    {
+        background-color: #d85e72;
+    }
+    .no-main .menu__item0
+    {
+        color: transparent;
+    }
+    .no-main .menu__search__input
+    {
+        padding: 6px 10px;
+
+        color: #383838;
+        border: 1px solid rgba(121,121,121,.5);
+        background-color: #fff;
+    }
+    .no-main .menu__search__input::-webkit-input-placeholder
+    {
+        color: #6c6c6c;
+    }
+    .no-main .menu__search__input::-moz-placeholder
+    {
+        color: #6c6c6c;
+    }
+    .no-main .menu__search__input:-ms-input-placeholder
+    {
+        color: #6c6c6c;
+    }
+    .no-main .menu__search__input::placeholder
+    {
+        color: #6c6c6c;
+    }
+    .no-main .fakemenu
+    {
+        display: none;
+    }
+}
+.breadcrumb
+{
+    margin-top: 5em;
+}
+.breadcrumb__link
+{
+    font-size: 1.6em;
+
+    display: inline-block;
+
+    letter-spacing: .1px;
+}
+.breadcrumb__link:last-child:after
+{
+    display: none;
+}
+.breadcrumb__link:after
+{
+    position: relative;
+    top: .25em;
+
+    display: inline-block;
+
+    width: 18px;
+    height: 15px;
+    margin-right: .5em;
+
+    content: '';
+
+    background-image: url('data:image/svg+xml;utf-8,<svg width=\'17\' height=\'12\' viewBox=\'0 0 17 12\' xmlns=\'http://www.w3.org/2000/svg\'><title>left-arrow</title><path d=\'M11.287 11.6a.591.591 0 0 1-.844 0 .596.596 0 0 1 0-.836l4.28-4.28H.6a.595.595 0 1 1 0-1.19h14.124l-4.28-4.273a.606.606 0 0 1 0-.844.591.591 0 0 1 .844 0l5.294 5.294a.596.596 0 0 1 0 .835L11.287 11.6z\' fill=\'%383838\' fill-rule=\'evenodd\'/></svg>');
+    background-repeat: no-repeat;
+}
+.breadcrumb__link:first-child .breadcrumb__link__text
+{
+    position: relative;
+
+    margin: 0 .617em 0 0;
+}
+.breadcrumb__link:first-child .breadcrumb__link__text:before
+{
+    font-family: fonticon;
+    font-size: 1.6em;
+
+    position: relative;
+
+    content: '\e900';
+}
+.breadcrumb__link:last-child:after
+{
+    display: none;
+}
+.breadcrumb__link__text--hidden
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    height: 1px;
+    margin: -1px;
+
+    border: 0;
+}
+.mag-wrap-top
+{
+    max-width: 114em;
+    margin: 0 auto;
 }

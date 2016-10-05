@@ -1,0 +1,35 @@
+/* components - breadcrumb.styl */
+
+.breadcrumb
+  margin-top 5em
+  &__link
+    display inline-block
+    font-size: 1.6em;
+    letter-spacing .1px
+
+.breadcrumb__link:last-child:after
+  display none
+
+.breadcrumb__link:after
+  display inline-block
+  content ""
+  {left-arrow-breadcrumb}
+  background-repeat no-repeat
+  width 18px
+  height 15px
+  position: relative
+  margin-right .5em
+  top .25em
+.breadcrumb__link:first-child  .breadcrumb__link__text
+  margin: 0 0.617em 0 0;
+  position relative
+.breadcrumb__link:first-child  .breadcrumb__link__text:before
+  font-family: fonticon
+  content "\e900"
+  font-size: 1.6em
+  position: relative
+.breadcrumb__link:last-child:after
+  display none
+
+.breadcrumb__link__text--hidden
+  {visuallyhidden}
