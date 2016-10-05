@@ -1,15 +1,19 @@
-<header>
-
-  <nav>
-    <input id="menu" type="checkbox" />
-    <label for="menu" class="icon-menu">MENU</label>
-
-    <ul>
-      <li><a href="http://gulpjs.com/" class="icon-home">Gulp.JS</a></li>
-      <li><a href="https://github.com/gulpjs/gulp/blob/master/docs/README.md" class="icon-docs">Gulp documentation</a></li>
-      <li><a href="http://gulpjs.com/plugins/" class="icon-plugin">Gulp plugins</a></li>
-      <li><a href="https://twitter.com/craigbuckler" class="icon-twitter">@craigbuckler</a></li>
-    </ul>
-  </nav>
-
-</header>
+nav.menu
+  div.fakemenu
+  h2.menu__title Menu de navigation
+  div.menu__wrap
+    div.menu__icon__wrap
+      input.menu__icon#menu__icon(type="checkbox")
+      label.menu__icon__label#menu__icon__label(for="menu__icon")
+        span
+    ul.menu__list
+      li.menu__item
+        a.menu__link.menu__logo.menu__item0(href="index.html") Accueil
+        a.menu__link.menu__item1(href="souteneznotreaction.html") Soutenez notre action
+        a.menu__link.menu__item2(href="#") Nos partenaires
+        a.menu__link.menu__item3(href="#") Notre manifeste
+        a.menu__link.menu__item4(href="#") Contactez-nous
+form.menu__search(action="index.php" method="get")
+  label.menu__search__label(for="search")
+  input.menu__search__input(type="search" id="search" required placeholder="Rechercher")
+  input.menu__search__submit(type="image" name="image" src="./images/search.svg" width="37" height="37")

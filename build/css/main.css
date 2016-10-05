@@ -358,7 +358,7 @@ form input
 
     overflow: hidden;
 
-    height: 1px;
+    height: 0;
     margin: -1px;
 
     border: 0;
@@ -489,7 +489,7 @@ form input
 
     overflow: hidden;
 
-    height: 1px;
+    height: 0;
     margin: -1px;
 
     border: 0;
@@ -1068,7 +1068,7 @@ form input
 
     overflow: hidden;
 
-    height: 1px;
+    height: 0;
     margin: -1px;
 
     border: 0;
@@ -1583,7 +1583,7 @@ form input
 
     overflow: hidden;
 
-    height: 1px;
+    height: 0;
     margin: -1px;
 
     border: 0;
@@ -1638,7 +1638,7 @@ form input
 
         overflow: hidden;
 
-        height: 1px;
+        height: 0;
         margin: -1px;
 
         border: 0;
@@ -1748,7 +1748,7 @@ form input
 
     overflow: hidden;
 
-    height: 1px;
+    height: 0;
     margin: -1px;
 
     border: 0;
@@ -1757,4 +1757,281 @@ form input
 {
     max-width: 114em;
     margin: 0 auto;
+}
+.mag-content__title
+{
+    font-family: montserrat, Helvetica, Arial, sans-serif;
+    font-size: 3.6em;
+
+    margin-top: 2.778em;
+    margin-bottom: 2.778em;
+    padding: .611em .833em .556em .833em;
+
+    text-align: center;
+    letter-spacing: 4.32px;
+    text-transform: uppercase;
+
+    background: #fff;
+}
+.mag-content__blockquote
+{
+    font-size: 2em;
+    line-height: 1.8em;
+
+    position: relative;
+
+    max-width: 35em;
+    min-height: 280px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    text-align: center;
+
+    color: #6c6c6c;
+    background-image: url('data:image/svg+xml;utf-8,<svg width=\'417\' height=\'275\' viewBox=\'0 0 417 275\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M403.488 26.954c-62.566 0-116.603 37.202-141.438 90.696a83.76 83.76 0 0 1 43.926-12.385c46.597 0 84.561 38.039 84.561 84.808 0 46.77-37.964 84.811-84.561 84.811-46.597 0-84.498-38.041-84.498-84.811 0-1.663.061-3.313.155-4.955-.06-.513-.155-1.016-.155-1.544C221.478 82.835 303.119.901 403.488.901a12.954 12.954 0 0 1 13.014 12.983c0 7.28-5.778 13.07-13.014 13.07zm-220.989 0c-62.586 0-116.67 37.226-141.512 90.747a83.742 83.742 0 0 1 43.999-12.436c46.597 0 84.498 38.039 84.498 84.808 0 46.77-37.901 84.811-84.498 84.811-46.589 0-84.488-38.041-84.488-84.811 0-1.66.061-3.306.155-4.945-.062-.515-.155-1.022-.155-1.554C.498 82.835 82.131.901 182.499.901c7.174 0 13.022 5.791 13.022 12.983 0 7.28-5.848 13.07-13.022 13.07z\' fill=\'%23D9D9D9\' opacity=\'.4\'/></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.mag-content__blockquote__text
+{
+    position: absolute;
+    top: 50%;
+
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.mag-content__author
+{
+    font-size: 16px;
+
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+
+    text-align: right;
+}
+.mag-content__profession
+{
+    font-weight: bold;
+
+    position: relative;
+    top: -10px;
+
+    display: block;
+
+    text-align: right;
+}
+.mag-content__receivemoney
+{
+    font-family: montserrat, Helvetica, Arial, sans-serif;
+    font-size: 3.6em;
+    font-weight: bold;
+    line-height: 1.5em;
+
+    margin-top: 4.167em;
+
+    text-align: center;
+}
+.mag-content__receivemoney:before,
+.mag-content__receivemoney:after
+{
+    display: block;
+
+    width: 30%;
+    height: 5px;
+    margin: .694em auto .694em auto;
+    padding: 0 .833em;
+
+    content: '';
+
+    background-color: #fff;
+}
+.choose-plan__title-main
+{
+    font-size: 3em;
+    font-weight: 100;
+
+    margin-top: 120px;
+    margin-bottom: 45px;
+
+    text-align: center;
+    letter-spacing: .25px;
+}
+.choose-plan__title-main:after
+{
+    display: block;
+
+    width: 40px;
+    height: 1px;
+    margin: 10px auto 0 auto;
+
+    content: '';
+
+    background-color: #383838;
+}
+.choose-plan__wrap
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    max-width: 61.5em;
+    margin: 0 auto;
+    padding: 0 3em;
+
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+            align-items: flex-end;
+}
+.choose-plan__title
+{
+    font-size: 2em;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.choose-plan__title strong
+{
+    font-weight: bold;
+}
+.choose-plan__soutien,
+.choose-plan__normal
+{
+    position: relative;
+
+    min-width: 26.2em;
+    margin-bottom: 12em;
+    padding: 37px 15px 49px 15px;
+
+    text-align: center;
+
+    background: #fff;
+}
+.choose-plan__price
+{
+    margin-top: 3em;
+    margin-bottom: 40px;
+}
+.choose-plan__price__euro
+{
+    font-size: 2em;
+
+    position: relative;
+    top: 8px;
+    right: 5px;
+
+    vertical-align: top;
+
+    color: #d85e72;
+}
+.choose-plan__price__number
+{
+    font-size: 6em;
+    font-weight: 100;
+
+    letter-spacing: 3px;
+
+    color: #d85e72;
+}
+.choose-plan__item
+{
+    font-size: 1.6em;
+    font-weight: 100;
+
+    margin-bottom: 15px;
+
+    color: #4f4f4f;
+}
+.choose-plan__buy
+{
+    font-family: montserrat, Helvetica, Arial, sans-serif;
+    font-size: 1.6em;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    bottom: -16px;
+    left: 0;
+
+    max-width: 154px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 8px 26px;
+
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+    -webkit-transition-property: background, color;
+            transition-property: background, color;
+    letter-spacing: .2px;
+
+    border: 1px solid #d85e72;
+    border-radius: 100px;
+    background-color: #fff;
+}
+.choose-plan__buy:hover,
+.choose-plan__buy:focus
+{
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+    -webkit-transition-property: background, color;
+            transition-property: background, color;
+
+    color: #fff;
+    background-color: #d85e72;
+}
+.choose-plan .infos-email
+{
+    position: relative;
+
+    max-width: 41.9em;
+    margin: 0 auto;
+    margin-bottom: 15em;
+    padding: 1.5em 3em;
+
+    background: #fff;
+}
+.choose-plan .infos-email:before
+{
+    position: absolute;
+    top: -25px;
+
+    display: inline-block;
+
+    width: 45px;
+    height: 45px;
+
+    content: '';
+
+    background-image: url('data:image/svg+xml;utf-8,<svg width=\'44\' height=\'45\' viewBox=\'0 0 44 45\' xmlns=\'http://www.w3.org/2000/svg\'><g fill=\'none\'><path d=\'M22.202.534C10.169.534.414 10.289.414 22.322S10.169 44.11 22.202 44.11 43.99 34.355 43.99 22.322 34.235.534 22.202.534z\' fill=\'%23D85E72\'/><path d=\'M24.748 16.262c1.672-.106 1.964 1.84 1.443 3.813-1.017 4.533-2.6 8.925-3.459 13.495.415 1.804 2.69-.265 3.663-.926.828-.658.971.167 1.253.858-2.065 1.447-4.141 2.92-6.441 4.085-2.161 1.311-3.93-.727-3.391-2.996.892-4.233 2.065-8.403 3.023-12.623.299-2.281-2.702.041-3.595.572-.72.905-1.062.244-1.362-.572 2.393-1.748 4.833-3.893 7.476-5.284.54-.268 1.003-.398 1.389-.422zm1.062-9.614h.259c1.18-.039 2.206.851 2.37 2.002.527 2.21-1.82 4.425-3.976 3.54-2.575-1.195-1.278-5.415 1.348-5.542z\' fill=\'#fff\'/></g></svg>');
+    background-repeat: no-repeat;
+}
+.choose-plan .infos-email__text
+{
+    font-size: 1.6em;
+    font-weight: 100;
+    line-height: 1.8em;
+
+    padding-left: 4em;
+}
+.choose-plan .infos-email__email
+{
+    font-weight: normal;
+}
+.payement__title-main
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    height: 0;
+    margin: -1px;
+
+    border: 0;
 }

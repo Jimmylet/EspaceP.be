@@ -1,0 +1,177 @@
+.mag-wrap-top
+  max-width 114em
+  margin 0 auto
+
+.mag-content
+  &__title
+    font-family: montserratfont
+    font-size: 3.6em
+    letter-spacing: 4.32px
+    text-transform: uppercase
+    background #FFF
+    text-align: center
+    margin-top 2.778em // 100px
+    margin-bottom 2.778em // 100px
+    padding 0.611em 0.833em 0.556em 0.833em // 22px 30px 20px 30px
+  &__blockquote
+    margin 0 auto
+    font-size: 2em
+    color color-grey-text
+    line-height: 1.8em
+    max-width 35em
+    text-align center
+    {quote}
+    background-repeat no-repeat
+    background-position center center
+    min-height: 280px
+    position relative
+    padding 0 30px
+    &__text
+      position absolute
+      top: 50%
+      transform: translateY(-50%)
+  &__author
+    position absolute
+    bottom -40px
+    right 0
+    font-size: 16px;
+    text-align: right
+  &__profession
+    position: relative
+    display: block
+    font-weight: bold
+    text-align: right
+    top -10px
+  &__receivemoney
+    margin-top 4.167em // 150px
+    font-family: montserratfont
+    font-size: 3.6em
+    font-weight: bold
+    text-align: center
+    line-height: 1.5em
+    &:before
+    &:after
+      content: ''
+      display block
+      height 5px
+      width 30%
+      background-color color-white
+      margin 0.694em auto 0.694em auto // 25px
+      padding 0 0.833em // 30px
+
+
+/************************************\
+  CHOISIR PLAN
+\************************************/
+
+.choose-plan
+  &__title-main
+    text-align: center
+    font-weight: 100
+    letter-spacing .25px
+    font-size: 3em
+    margin-top: 120px
+    margin-bottom 45px
+    &:after
+      margin: 10px auto 0 auto
+      content ''
+      display block
+      height 1px
+      width 40px
+      background-color color-black
+  &__wrap
+    max-width 61.5em
+    margin 0 auto
+    display flex
+    justify-content space-between
+    align-items: flex-end
+    padding 0 3em
+  &__title
+    font-size: 2em
+    letter-spacing 1px
+    text-transform: uppercase
+    & strong
+      font-weight bold
+  &__soutien
+  &__normal
+    position: relative
+    background color-white
+    text-align: center
+    padding: 37px 15px 49px 15px
+    min-width 26.2em
+    margin-bottom 12em
+  &__price
+    margin-top 3em
+    margin-bottom 40px
+    &__euro
+      font-size: 2em
+      color color-pink
+      vertical-align top
+      position relative
+      top 8px
+      right 5px
+    &__number
+      font-weight 100
+      color color-pink
+      font-size: 6em
+      letter-spacing 3px
+  &__item
+    font-weight: 100
+    color color-grey-v2
+    font-size: 1.6em
+    margin-bottom 15px
+  &__buy
+    font-family: montserratfont
+    font-size: 1.6em
+    background-color color-white
+    border 1px solid color-pink
+    border-radius 100px
+    padding 8px 26px
+    letter-spacing .2px
+    position absolute
+    bottom 0
+    margin-right auto
+    margin-left auto
+    right 0
+    left 0
+    bottom -16px
+    max-width 154px
+    transition all .3s ease
+    transition-property background, color
+    &:hover
+    &:focus
+      background-color color-pink
+      color color-white
+      transition all .3s ease
+      transition-property background, color
+  .infos-email
+    position: relative
+    background color-white
+    max-width 41.9em
+    padding 1.5em 3em
+    margin: 0 auto
+    margin-bottom 15em
+    &:before
+      content ""
+      height 45px
+      width 45px
+      display inline-block
+      {info-button}
+      background-repeat no-repeat
+      position: absolute
+      top -25px
+    &__text
+      font-size: 1.6em
+      font-weight 100
+      line-height: 1.8em
+      padding-left 4em
+    &__email
+      font-weight normal
+
+
+/************************************\
+  PAYEMENT
+\************************************/
+.payement
+  &__title-main
+    {visuallyhidden}
