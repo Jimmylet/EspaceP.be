@@ -2,6 +2,7 @@
 var
     gulp = require('gulp'),
     imagemin = require('gulp-imagemin'), // Minifier for png, jpg, svg
+    tiny = require('gulp-tinypng-nokey'), // Autre minifier mieux que imagemin pour JPG and PNG
     destclean = require('gulp-dest-clean'),
     newer = require('gulp-newer'),
     size = require('gulp-size'), // Connaître la taille d'un fichier
@@ -91,6 +92,7 @@ gulp.task('images', function () {
         .pipe(destclean(imagesOpts.out))
         .pipe(newer(imagesOpts.out))
         .pipe(size({title: 'Images size before compression: ', showFiles: true}))
+        .pipe(tiny())
         .pipe(imagemin())
         .pipe(size({title: 'Images size after compression: ', showFiles: true}))
         .pipe(gulp.dest(imagesOpts.out));
