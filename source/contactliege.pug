@@ -58,6 +58,36 @@ html(lang='fr')
                     div.maps__img
                         span.maps__button Aller vers Google Maps
 
+                div.contact-bottom-wrap
+                    section.details
+                        div.details__wrap-left
+                            h2.details__title Contactez Espace P… Liège
+                            p.details__paragraph N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.
+                            span.details__subtitle Adresse
+                            span.details__subtext 50, Rue Souverain-Pont, 4000 - Liège
+                            span.details__subtitle Téléphone
+                            span.details__subtext 04 221 05 09
+                            span.details__subtitle Fax
+                            span.details__subtext 04 221 11 55
+                        div.details__wrap-right
+                            form.form
+                                div.form__top
+                                    div.form__name
+                                        label.form__item__label(for="name")
+                                        input.form__item__input(type="text" id="name" name="name" placeholder="Votre nom :" required)
+                                    div.form__email
+                                        label.form__item__label(for="email")
+                                        input.form__item__input(type="email" id="email" name="email" placeholder="Votre email :" required)
+                                div.form__middle
+                                    div.form__subject
+                                        label.form__item__label(for="subject")
+                                        input.form__item__input(type="text" id="subject" name="subject" placeholder="Le sujet de votre message :" required)
+                                div.form__bottom
+                                    div.form__message
+                                        label.form__item__message(for="message")
+                                        textarea.form__item__input(id="message" name="message" placeholder="Tappez votre message ici :" required)
+                                input.form__submit(type="submit" value="Envoyer le message")
+
 
 
 
