@@ -1,0 +1,35 @@
+doctype html
+html(lang='fr')
+    head
+        title Contactez-nous - Liège
+        include template/_meta.pug
+    body.no-js.no-main.contact
+        header.header
+            div.header__wrap-title
+                h1.header__title(aria-level="1") Espace P… - Notre manifeste
+            include template/_header
+        main
+            div.site-content
+                div.contact-top-wrap
+                    ol.breadcrumb(itemscop itemtype="http://data-vocabulary.org/Breadcrumb")
+                        li.breadcrumb__link(itemprop="title")
+                            a.breadcrumb__link__text.breadcrumb__link__text--home(itemprop="link" href="index.html" title="Aller vers l’accueil")
+                                span.breadcrumb__link__text--hidden Accueil
+                        li.breadcrumb__link(itemprop="title")
+                            a.breadcrumb__link__text(itemprop="link" href="#") Contactez-nous - Liège
+                    nav.contact-list
+                        h2.contact-list__title Choisissez votre ville
+                        div.contact-list__wrap
+                            a.contact-list__item.contact-list__item--active(href="contactliege.html" title="Vers la page d’Espace P… Liège")
+                                span Espace P… Liège
+                            a.contact-list__item(href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles")
+                                span Espace P… Bruxelles
+                            a.contact-list__item(href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles")
+                                span Espace P… Namur
+                        div.contact-list__wrap
+                            a.contact-list__item(href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles")
+                                span Espace P… Charleroi
+                            a.contact-list__item(href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles")
+                                span Espace P… Mons
+                            a.contact-list__item(href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles")
+                                span Espace P… Arlon
