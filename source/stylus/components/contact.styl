@@ -1,6 +1,7 @@
 /* components - contact.styl */
 
 .contact-top-wrap
+.contact-bottom-wrap
   max-width 114em
   margin: 0 auto
   padding: 0 3em
@@ -54,8 +55,9 @@
     font-family: montserratfont
     font-weight: bold
     font-size: 3.6em
-    letter-spacing: 0.3px
+    letter-spacing: 1px
     margin-bottom: 13rem
+
     &:after
       content: "\a0";
       height: 1px
@@ -72,9 +74,13 @@
       -ms-flex-positive: 1
       flex-grow: 1
   &__person__wrap
+    margin-bottom 10em
+  &__person__row
     display flex
     justify-content space-between
-    margin-bottom 10em
+    margin-bottom 15em
+    &:last-child
+      margin-bottom 10em
   &__person
     &__figure
       background-color color-white
@@ -125,7 +131,6 @@
   color color-black
   padding 1em 1.5em
   background rgba(255,255,255,0.9)
-  border 1px solid color-pink
   float right
   position: relative
   top 10px
@@ -145,3 +150,115 @@
   &:focus .maps__button
     opacity 1
     transition opacity .3s ease
+
+
+/************************************\
+  DETAILS
+\************************************/
+
+.details
+  margin-bottom 15em
+  &__wrap-global
+    display flex
+    justify-content space-between
+  &__title
+    font-family: montserratfont
+    font-weight: bold
+    font-size: 3.6em
+    letter-spacing: 1px
+    margin-bottom 1.5em
+    line-height:1.4em
+  &__paragraph
+    color color-grey-text
+    max-width 37.5rem
+    font-size: 1.6em
+    letter-spacing: 0.4px
+    line-height: 1.875em
+    margin-bottom 3.1rem
+  &__subtitle
+    display: block
+    color color-grey-text
+    text-transform: uppercase
+    font-family: montserratfont
+    font-size: 1.6em
+    letter-spacing 1.51px
+  &__subtext
+    display: block
+    font-weight: bold
+    font-size: 1.6em
+    letter-spacing .44px
+    line-height: 1.875em
+    margin-bottom: 3.1rem
+
+/************************************\
+  FORMULAIRE
+\************************************/
+.details__wrap-right
+  width 56em
+.form
+  max-width 56em
+  overflow hidden
+  margin-top: 1.2em
+  & textarea
+    appearance: none;
+    font-size: 1.6em
+    resize none
+    width 100%
+    min-height 18rem
+    outline none
+    padding 11px 20px
+    margin-bottom: 2rem
+    &::placeholder
+      color #6C6C6C
+      letter-spacing .1px
+  &__name
+  &__email
+  &__subject
+    position: relative
+    min-width 27.2em
+    margin-bottom 2em
+    & label
+      position: absolute
+      color transparent
+      &:before
+        content ""
+        width 23px
+        height 20px
+        display inline-block
+        background-repeat no-repeat
+        position relative
+        left 20px
+    & input
+      width 100%
+      font-size: 1.6em
+      letter-spacing .1px
+      padding 11px 20px 11px 50px
+      border 1px solid #767677
+      &::placeholder
+        color #6C6C6C
+        letter-spacing .1px
+  &__name__label:before
+    {formname}
+    top 11px
+  &__email__label:before
+    {formemail}
+    top 14px
+  &__subject__label:before
+    {formsujet}
+    top 12px
+
+.form__message__label
+  {visuallyhidden}
+
+.form__top
+  display flex
+  justify-content space-between
+
+.form__submit
+  float right
+  font-size: 1.6em
+  {button-style}
+  cursor pointer
+  &:hover
+  &:focus
+    {button-style-hover}
