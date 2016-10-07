@@ -1,0 +1,359 @@
+/* components - manifeste */
+.mag-header
+  min-height 54.2em
+  background linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4) 100%), url("../images/header_manifeste2.jpg")
+  background-size cover
+  background-position center center
+  &__wrap-top
+    max-width 114em
+    margin 0 auto
+    &__title
+      font-family: montserratfont
+      font-size: 6em
+      color: color-pink
+      letter-spacing: 1px;
+      font-weight: bold
+      max-width 660px
+      margin: 0 auto
+      text-align: center
+      line-height: 1.4em
+      margin-top 10rem
+    &__subtitle
+      display: block
+      color color-grey-text
+      font-size:2em
+      font-style italic
+      text-align: center
+      margin-top 28px
+
+
+
+.manifeste
+  .breadcrumb
+    margin-top 0
+    padding-top 5em
+  .site-content
+    background-color color-white
+
+
+.tds
+  max-width 86em
+  margin: 0 auto
+  position: relative
+  &:before
+    content ""
+    display block
+    height 320px
+    width 1px
+    background-color color-grey-text
+    margin: 0 auto
+    position: relative
+    top -80px
+  &__title
+    font-family: montserratfont
+    font-weight: bold
+    font-size: 2.2em
+    letter-spacing 2px
+    display: block
+    text-transform: uppercase
+    text-align: center
+    margin-bottom 3rem
+  &__paragraph
+    font-weight: 100
+    font-size: 2em
+    letter-spacing .33px
+    line-height: 1.5em
+    margin-bottom 1.2em
+
+.mag-propo__wrap
+  max-width 86em
+  margin: 0 auto
+.mag-propo__paragraph
+  font-weight: 100
+  font-size: 2em
+  letter-spacing .33px
+  line-height: 1.5em
+  margin-bottom 1.2em
+
+.mag-constats
+.mag-propo
+  &__title
+    position: relative
+    margin-top: 5.909em  // 130px
+    margin-bottom 2.273em // 50px
+    font-family: montserratfont
+    font-weight: bold
+    font-size: 2.2em
+    letter-spacing 2px
+    text-transform: uppercase
+    color color-pink
+    max-width 27.273em // 600px
+    text-align: center
+    margin: 0 auto
+    line-height: 1.3em
+    &:before
+    &:after
+      position: absolute
+      content ''
+      display inline-block
+      font-size: 10px
+      width 16em
+      height 1px
+      background-color #979797
+    &:before
+      right 610px
+      top 25px
+    &:after
+      left 610px
+      top 25px
+
+.mag-propo__title
+  &:before
+    right 565px
+    top 12px
+  &:after
+    left 565px
+    top 12px
+
+
+.mag-chapter
+  max-width 75.1em
+  margin: 0 auto 10em auto
+  &__title
+    font-size: 2em;
+    text-transform: uppercase
+    letter-spacing 0.33px
+    color #000
+    line-height: 1.6em
+    &:after
+      content ''
+      width 146px
+      height 6px
+      background color-pink
+      display block
+      margin 8px 0 37px 0
+  &__number
+    font-weight: bold
+    font-size: 1.800em // 36px
+    letter-spacing 0.59px
+    display: block
+    margin-bottom 0.8em
+  &__paragraph
+    color color-text-paragraph-manifeste
+    font-size: 1.6em
+    letter-spacing: 0.26px
+    line-height: 1.75em
+    margin-bottom 1.500em // 24px
+
+.mag-quote-img
+  min-height: 38 em
+  text-align: center
+  background color-pink url("../images/manifeste-quote-1.jpg") no-repeat center center
+  background-size cover
+  padding 10.8em 3em 10.8em 3em
+  margin-bottom: 10em
+  & blockquote
+    margin: 0 auto
+    font-size: 3.6em
+    font-family: montserratfont
+    font-weight: bold
+    letter-spacing 1px
+    line-height: 1.5277em
+    color color-white
+    max-width 760px
+
+.mag-quote-img2
+  margin 10em 0 10em 0
+  background color-pink url("../images/manifeste-quote-2.jpg") no-repeat center center
+  background-size cover
+  & blockquote
+    max-width 839px
+
+
+.mag-chapter__list
+  color color-text-paragraph-manifeste
+  font-size: 1.6em
+  letter-spacing: 0.26px
+  line-height: 1.75em
+.mag-chapter__item
+  margin-bottom 1.500em // 24px
+  &:before
+    content '–';
+    display inline-block
+    margin-right .5em
+
+.mag-quote-text
+  max-width 76em
+  font-family: montserratfont
+  font-weight: bold
+  margin: 0 auto
+  &:before
+  &:after
+    content ""
+    display: block
+    height 1px
+    width 99%
+    background color-pink
+  &:before
+    margin-left 100px
+    margin-top 12em
+    width 85.6%
+  &:after
+    margin-bottom 10em
+  & blockquote
+    font-size: 3.6em
+    letter-spacing 1px
+    text-transform: uppercase
+    color #000
+    line-height: 1.526em
+    padding 47px 0 47px
+    position: relative
+    &:before
+      content ""
+      display block
+      width 74px
+      height 49px
+      {manifeste-quote}
+      position: absolute
+      top -25px
+
+
+/************************************\
+  SIGNEZ
+\************************************/
+
+.signez
+  background color-background
+  padding 5em 3em
+  margin: 0 auto
+  &__title
+    font-size: 3.6em
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing 1px
+    line-height 1.5em
+    text-align: center
+    &:before
+      content ''
+      display block
+      width 100px
+      height 96px
+      {signez}
+      margin: 0 auto 25px auto
+    &:after
+      content ''
+      display block
+      width 270px
+      height 1px
+      background #979797
+      margin: 10px auto 45px auto
+  &__paragraph
+    font-size: 1.6em
+    color: color-text-paragraph-manifeste
+    letter-spacing: 0.26px;
+    line-height: 28px;
+    max-width: 751px
+    margin: 0 auto 25px auto
+  &__comwrap
+    border-radius 4px
+    max-width 75.1em
+    background #EFEFEF
+    margin: 5em auto 0 auto
+    padding 3em 2.7em
+    &__title
+      display: block
+      margin-bottom 6.5rem
+      font-size: 1.4em
+      text-transform: uppercase
+      letter-spacing 1.4px
+      color #333333
+      text-align: center
+      font-weight: bold
+    &__namedate
+      font-weight: bold
+      font-size: 1.4em
+      color #333333
+      & time
+        font-weight: normal
+        font-size: 12px
+        margin-left: 8px
+    &__commentaire
+      font-size: 1.4em
+      color #666666
+      line-height: 1.7em
+      margin-top 12px
+    &__response
+      display: block
+      font-size: 1.1em
+      color #333333
+      margin-top 1.25em
+
+.comment
+  margin-bottom 4em
+
+
+/************************************\
+  BOUTON SCROLL
+\************************************/
+.manifeste-button
+  visibility hidden
+  position fixed
+  bottom 10px
+  right: 25px
+  display flex
+  width 24em
+  justify-content space-between
+  align-items flex-start
+  transition bottom .3s ease
+  &__top
+    display block
+    background-color rgba(255,255,255,.9)
+    max-width 42px
+    border 1px solid color-pink
+    padding 1.15em 1.3em 1.2em 1.3em
+    transition background .3s ease
+    & svg
+      position: relative
+      left -3px
+    &__text
+      {visuallyhidden}
+    &:hover
+    &:focus
+      background color-pink
+      transition background .3s ease
+  &__top:hover .manifeste-button__top__svg
+  &__top:focus .manifeste-button__top__svg
+    fill color-white
+    transition fill .3s ease
+  &__signez
+    display: block
+    font-size: 1.4em
+    color color-grey-v2
+    max-width 190px
+    padding .7em 1em 1em 1em
+    border 1px solid color-pink
+    background-color rgba(255,255,255,.9)
+    transition background .3s ease
+    & svg
+      margin-right 8px
+      position: relative
+      top 4px
+    &:hover
+    &:focus
+      background color-pink
+      transition background .3s ease
+      color color-white
+  &__signez:hover .manifeste-button__signez__svg
+  &__signez:focus .manifeste-button__signez__svg
+    fill color-white
+    transition background .3s ease
+
+.button-fixed-manifeste
+  .manifeste-button
+    visibility visible
+    bottom 25px
+    transition bottom .3s ease
+
+.no-js
+  .manifeste-button
+    display none
