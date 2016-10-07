@@ -3,6 +3,7 @@ var
     gulp = require('gulp'),
     imagemin = require('gulp-imagemin'), // Minifier for png, jpg, svg
     tiny = require('gulp-tinypng-nokey'), // Autre minifier mieux que imagemin pour JPG and PNG
+    svgmin = require('gulp-svgmin'),
     destclean = require('gulp-dest-clean'),
     newer = require('gulp-newer'),
     size = require('gulp-size'), // Connaître la taille d'un fichier
@@ -36,6 +37,11 @@ var
         out: dest + 'images/',
         watch: source + 'images/*.*'
     },
+    svgOpts = {
+        in: source + 'images/svg/*.svg',
+        out: dest + 'images/svg/',
+        watch: source + 'images/svg/*.svg'
+    }
     imageUriOpts = {
         in: source + 'images/inline/*.*',
         out: source + 'stylus/images/',
@@ -87,15 +93,37 @@ gulp.task('clean', function () {
     del([dest + '*']);
 });
 
+// add .pipe(tiny())
+
 gulp.task('images', function () {
     return gulp.src(imagesOpts.in)
-        .pipe(destclean(imagesOpts.out))
+        /*.pipe(destclean(imagesOpts.out))*/
         .pipe(newer(imagesOpts.out))
         .pipe(size({title: 'Images size before compression: ', showFiles: true}))
         .pipe(tiny())
         .pipe(imagemin())
         .pipe(size({title: 'Images size after compression: ', showFiles: true}))
         .pipe(gulp.dest(imagesOpts.out));
+});
+
+gulp.task('svg', function () {
+    return gulp.src(svgOpts.in)
+        .pipe(destclean(svgOpts.out))
+        .pipe(newer(svgOpts.out))
+        .pipe(size({title: 'SVG size before compression:', showFiles: true}))
+        .pipe(svgmin({
+            plugins: [{
+                removeTitle: true
+            },
+            {
+                removeDesc: true
+            },
+            {
+                removeViewBox: true
+            }]
+        }))
+        .pipe(size({title: 'SVG size after compression: ', showFiles: true}))
+        .pipe(gulp.dest('./build/images/svg/'));
 });
 
 gulp.task('imageuri', function () {
@@ -150,9 +178,10 @@ gulp.task('browserSync', function() {
 });
 
 // Tâche par défaut exécutée lorsqu’on tape juste *gulp* dans le terminal
-gulp.task('default', ['images', 'stylus', 'pug', 'browserSync', 'concat'], function () {
+gulp.task('default', ['images', 'stylus', 'pug', 'browserSync', 'concat', 'svg'], function () {
     gulp.watch(pugOpts.watch, ['pug', browserSync.reload]);
     gulp.watch(jsOpts.watch, ['concat', browserSync.reload]);
     gulp.watch(imagesOpts.watch, ['images']);
+    gulp.watch(svgOpts.watch, ['svg']);
     gulp.watch(cssStylus.watch, ['stylus']);
 });
