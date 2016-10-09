@@ -1,0 +1,299 @@
+.client-top-wrap
+  max-width 114em
+  margin: 0 auto
+.client
+  &__title
+    font-size: 3.6em
+    font-family: montserratfont
+    margin-top: 50px
+    margin-bottom: 2.778em
+    padding: .611em .833em .556em .833em
+    text-align: center
+    letter-spacing: 4.32px
+    text-transform: uppercase
+    background: #fff
+  &__paragraph
+    font-size: 2em
+    font-weight: 100
+    letter-spacing .3px
+    line-height: 1.65em
+    margin-bottom: 15px
+    margin-left: 10em
+    & strong
+      font-weight: bold
+      display: block
+      margin-bottom 1em
+      position: relative
+      &:before
+        display block
+        content ""
+        height 89px
+        width 129px
+        background-repeat no-repeat
+        background-size contain
+        {quoteclient}
+        position: absolute
+        left -180px
+  &__signature
+    display: block
+    font-size: 2em
+    text-align right
+    margin-top 3em
+    & strong
+      font-weight: bold
+      display: block
+      margin .5em 0 1em
+
+/************************************\
+  GUIDE CLIENT TITLE
+\************************************/
+
+.guideclient
+  &__title
+    margin-top 10em
+    min-height 45em
+    background color-pink url("../images/background_client.jpg") no-repeat center center
+    background-size cover
+    position relative
+    text-align: center
+    & span
+      color color-white
+      font-family: montserratfont
+      font-weight: bold
+      font-size: 3.6em
+      text-transform: uppercase
+      letter-spacing 1px
+      line-height: 1.5em
+      position absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      right: 0
+
+/************************************\
+  GUIDE DU CLIENT
+\************************************/
+
+.guideclient
+  &__wrap
+    max-width 114em
+    margin 10em auto 0 auto
+    position: relative
+    &:after
+      content: "";
+      display: table;
+      clear: both;
+  &__categories
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 292px;
+    z-index: 2;
+    &__link
+      position: relative;
+      display: block;
+      min-height: 50px;
+      line-height: 1.7em
+      padding: 15px 28px 11px 16px;
+      background-color: color-white;
+      color: color-black
+      font-weight: bold
+      font-size: 1.2em
+      border-bottom: 1px solid #D7D7D7;
+      &:before
+      &:after
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        display: inline-block;
+        height: 1px;
+        width: 10px;
+        background-color: #7f868e;
+      &:after
+        transform: rotate(90deg);
+  &__categories li:last-child a
+    border-bottom 0
+
+.guideclient__categories a::before
+  content ""
+  display: block
+  top: 0
+  right: auto
+  left: 0
+  height: 100%
+  width: 3px
+  background-color: #FF7088
+  opacity: 0
+  transition: opacity 0.2s
+
+.guideclient__categories .selected
+  background: color-pink !important
+  color color-white
+
+.guideclient__categories .selected::before
+  opacity: 1
+
+.guideclient__categories.is-fixed
+  position: fixed
+
+.guideclient__section
+  position: fixed;
+  height: 100%;
+  width: 90%;
+  top: 0;
+  right: 0;
+  background: #ffffff;
+  padding: 0 5% 1em;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0) translateX(100%);
+  transition: transform .3s;
+
+.guideclient__section.slide-in
+  transform: translateZ(0) translateX(0%);
+
+@media only screen and (min-width: 768px)
+  .guideclient__section
+    position: static;
+    height: auto;
+    width: 78%;
+    float: right;
+    overflow: visible;
+    transform: translateZ(0) translateX(0);
+    padding: 0;
+    background: transparent;
+
+@media only screen and (min-width: 1024px)
+  .guideclient__section
+    float: none;
+    width: 100%;
+    padding-left: 350px;
+
+.cd-close-panel
+  position: fixed;
+  top: 5px;
+  right: -100%;
+  display: block;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  z-index: 2;
+  transition: right 0.4s;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+.cd-close-panel:before
+.cd-close-panel:after
+  content ''
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  display: inline-block;
+  height: 3px;
+  width: 18px;
+  background: #6c7d8e;
+.cd-close-panel:before
+  transform: rotate(45deg);
+.cd-close-panel:after
+  transform: rotate(-45deg);
+.cd-close-panel.move-left
+  right 2%
+
+.guideclient__section__group
+  display: none;
+.cd-faq-group.selected
+  display block
+
+.guideclient__section__group .guideclient__section__title
+  background: transparent;
+  box-shadow: none;
+  margin: 1em 0;
+
+.no-touch .guideclient__section__group .guideclient__section__title:hover
+  box-shadow: none;
+
+.guideclient__section__group .guideclient__section__title h3
+  font-size: 14px;
+  font-size: 1.4em
+  font-weight: bold;
+  color: #6C6C6C;
+  letter-spacing 0.42px
+
+@media only screen and (min-width: 768px)
+  .guideclient__section__group
+    display: block;
+    padding 0 0 30px 0
+  .guideclient__section__group > li
+    background: #ffffff
+    margin-bottom: 20px
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08)
+    transition: box-shadow 0.2s
+  .no-touch .guideclient__section__group > li:hover
+    box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3);
+  .guideclient__section__group .guideclient__section__title
+    margin: 2em 0 1em
+  .guideclient__section__group:first-child .guideclient__section__title
+    margin-top: 0
+
+.guideclient__section__trigger
+  position: relative;
+  display: block;
+  margin: 16px 0 4px;
+  line-height: 1.2;
+
+@media only screen and (min-width: 768px)
+  .guideclient__section__trigger
+    font-size: 24px;
+    letter-spacing 0.72px
+    line-height 1.6em
+    color color-pink
+    margin: 0 0 20px 0;
+    padding: 18px 72px 18px 36px;
+    &:before
+    &:after
+      content ''
+      position: absolute
+      right: 24px
+      top: 33%
+      height: 2px
+      width: 13px
+      background: color-pink
+      backface-visibility: hidden
+      transition-property: transform
+      transition-duration: 0.2s
+    &:before
+      transform: rotate(45deg);
+      right: 32px;
+    &:after
+      transform: rotate(-45deg);
+
+  .content-visible .guideclient__section__trigger:before
+    content ''
+    transform: rotate(-45deg)
+  .content-visible .guideclient__section__trigger:after
+    content ''
+    transform: rotate(45deg)
+
+
+.guideclient__section__content p
+  font-size 1.6em
+  line-height: 1.8em;
+  color: #4F4F4F
+
+@media only screen and (min-width: 768px)
+  .guideclient__section__content
+    display none
+    padding 0px 36px 20px 36px
+    position: relative
+    top -14px
+  .guideclient__section p
+    line-height: 1.8;
+
+
+.client-page
+  .footer
+    margin-top 15em

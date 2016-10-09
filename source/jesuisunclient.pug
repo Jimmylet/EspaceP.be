@@ -1,0 +1,122 @@
+doctype html
+html(lang='fr')
+    head
+        title Je suis un client - Espace P…
+        include template/_meta.pug
+    body.no-js.no-main.client-page
+        header.header
+            div.header__wrap-title
+                h1.header__title(aria-level="1") Je suis un client - Espace P…
+            include template/_header
+        div.site-content
+            main
+                div.client-top-wrap
+                    ol.breadcrumb(itemscop itemtype="http://data-vocabulary.org/Breadcrumb")
+                        li.breadcrumb__link(itemprop="title")
+                            a.breadcrumb__link__text.breadcrumb__link__text--home(itemprop="link" href="index.html" title="Aller vers l’accueil")
+                                span.breadcrumb__link__text--hidden Accueil
+                        li.breadcrumb__link(itemprop="title")
+                            a.breadcrumb__link__text(itemprop="link" href="#") Je suis un potentiel client
+                    section.client
+                        h2.client__title Je suis un client
+                        p.client__paragraph
+                            strong Chers clients,
+                            | Que vous soyez client régulier, occasionnel ou si vous envisagez une rencontre pour la première fois, ce guide est pour vous.
+                        p.client__paragraph Vous y trouverez des conseils pour profiter au mieux des services sexuels des personnes qui se prostituent de manière professionnelle.
+                        p.client__paragraph Il a été réalisé en collaboration avec des travailleuses du sexe, qui se sont servies de leur expérience de tous les jours pour tenter de répondre à vos questions et vous faire comprendre quelles sont leurs limites et leurs possibilités.
+                        p.client__paragraph Nous espérons que ce guide vous permettra de vivre des expériences agréables, sexy, respectueuses et en toute sécurité avec les personnes prostituées.
+                        span.client__signature Tendrement,
+                            strong Les travailleurs du sexe
+                            img(alt="Lèvres enduite d’un rouge à lèvre" width="46" height="33" src="./images/svg/bigbisous.svg")
+                section.guideclient
+                    h2.guideclient__title
+                        span Le guide du parfait client
+                    div.guideclient__wrap
+                        ul.guideclient__categories
+                            li.guideclient__categories__item
+                                a.guideclient__categories__link.selected(href="#section1") Des réponses à vos questions
+                            li.guideclient__categories__item
+                                a.guideclient__categories__link(href="#section2") Quelques tuyaux pour que l’aventure se passe bien
+                            li.guideclient__categories__item
+                                a.guideclient__categories__link(href="#section3") Une liste des services sexuels les plus courants
+                            li.guideclient__categories__item
+                                a.guideclient__categories__link(href="#section4") Les risques qu’il vaut mieux éviter
+                            li.guideclient__categories__item
+                                a.guideclient__categories__link(href="#section5") Le point sur la violence
+                            li.guideclient__categories__item
+                                a.guideclient__categories__link(href="#section6") Le point sur votre santé sexuelle
+                            li.guideclient__categories__item
+                                a.guideclient__categories__link(href="#section7") Un relevé des principales IST Un rappel sur la façon d’utiliser la capote
+                            li.guideclient__categories__item
+                                a.guideclient__categories__link(href="#section8") Un rappel sur la façon d’utiliser la capote
+                        section.guideclient__section
+                            ul.guideclient__section__group#section1
+                                li.guideclient__section__title
+                                    h3 Des réponses à vos questions
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Qu’est-ce que les personnes prostituées acceptent de faire, que refusent-elles ?
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph «&nbsp;Il n’y a pas deux travailleuses du sexe identiques. Chaque travailleuse du sexe établit ses propres règles et ses limites. Chacune accepte de faire des choses et refuse d’en faire d’autres. Comme client, tu dois demander d’avance et clairement les services que tu veux recevoir. Suite à quoi, la travailleuse du sexe avec qui tu fais affaire te dira ce qu’elle accepte de faire pour répondre à tes désirs. Elle te fera aussi clairement part de ses limites par rapport aux choses qu’elle refuse de faire. Les limites des travailleuses du sexe ne sont pas négociables. Tu dois les respecter. Si la travailleuse du sexe avec qui tu as pris contact a ses limites par rapport aux services que tu désirerais, soit tu acceptes de recevoir les services qu’elle est prête à t’offrir, tu respectes les limites convenues et tu n’insistes pas, soit tu prends contact avec quelqu’un d’autre&nbsp;»
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Est-ce qu’il est possible d’avoir une relation sans préservatif ?
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph « Nous sommes toujours étonnées par cette demande. Plusieurs clients ne semblent pas se rendre compte qu'il est de leur propre intérêt d'utiliser un préservatif, de se protéger et de protéger l'ensemble de leurs partenaires contre les infections sexuellement transmises, les IST. Celles-ci sont pourtant assez répandues et il est impossible de savoir si une personne est porteuse d'une infection ou non en la regardant. L'utilisation du préservatif fait partie de notre travail. Il nous protège et il te protège aussi. Nous l’exigeons, et c'est aussi dans ton intérêt. »
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Est-ce que les personnes qui se prostituent ont le sida ou d’autres IST (infections sexuellement transmises) ?
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph « Nous sommes toujours étonnées par cette demande. Plusieurs clients ne semblent pas se rendre compte qu'il est de leur propre intérêt d'utiliser un préservatif, de se protéger et de protéger l'ensemble de leurs partenaires contre les infections sexuellement transmises, les IST. Celles-ci sont pourtant assez répandues et il est impossible de savoir si une personne est porteuse d'une infection ou non en la regardant. L'utilisation du préservatif fait partie de notre travail. Il nous protège et il te protège aussi. Nous l’exigeons, et c'est aussi dans ton intérêt. »
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Qu’est-ce que je dois faire si je croise par hasard une personne prostituée que je connais en dehors de ses heures de travail ?
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph « Ce qui arrivera dépend de toi et de la travailleuse du sexe en question. Si cela t'inquiète, parles-en avec elle auparavant. En général, si elle ne t'aborde pas, c'est qu'il est préférable de rester discret et de l’ignorer. Certaines préfèrent ne pas être abordées du tout en dehors du travail. »
+                        section.guideclient__section
+                            ul.guideclient__section__group#section2
+                                li.guideclient__section__title
+                                    h3 Quelques tuyaux pour que l’aventure se passe bien
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Essayer d’être poli et respectueur.
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph Cela est une évidence, mais pour que la rencontre se passe bien, soyez poli et respecter la personne avec qui vous envisagez une relation.
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Concluez des arrangements clairs
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph Déterminez le montant d’argent que vous êtes prêt à dépenser, ce que vous voulez, et demandez-en le prix. Voilà qui vous évitera de vous énerver après coup. Chaque prostituée a ses limites et a le droit de dire non.
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Il faut payer d’avance.
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph Payez d’avance et faites en sorte que la travailleuse n’ait pas à vous le demander. Soyez discret, pour votre sécurité et pour la leur.
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Respecter la limite de temps
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph Respectez la limite de temps qui vous est allouée. Si vous voulez prolonger la durée du service, renégociez le prix.
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Communiquez vos besoins
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph Pour une expérience agréable, communiquez vos besoins, ce que vous préférez, ce que vous n’aimez pas.
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Hygiène : soyez un client que l’on a plaisir à voir
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph Votre hygiène sera appréciée par votre partenaire. Prenez une douche et assurez-vous de bien savonner et laver vos zones de plaisir : pénis, scrotum (couilles), anus.
+                        section.guideclient__section#section3
+                            ul.guideclient__section__group
+                                li.guideclient__section__title
+                                    h3 Les services les plus courant
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Annulingus
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph Excitation de l’anus par des caresses faites avec la langue et la bouche.
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Branlette, masturbation
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph C’est une stimulation du pénis ou du clitoris avec la main, d’autres parties du corps, un vibromasseur.
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Branlette espagnole
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph Masturbation du pénis entre les seins de la travailleuse du sexe
+                                li.guideclient__section__item
+                                    a.guideclient__section__trigger(href="#0") Branlette espagnole
+                                    div.guideclient__section__content
+                                        p.guideclient__section__paragraph Masturbation du pénis entre les seins de la travailleuse du sexe
+
+            include template/_footer
+            include template/_scripts
