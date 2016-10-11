@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Espace P…</title>
+    <title><?php echo bloginfo(); ?></title>
     <meta name="description" content="Espace P… est une ASBL qui à pour but de défendre, accompagner et aider les travailleurs du sexe">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/main.css';?>" type="text/css">
+    <?php wp_head(); ?>
   </head>
   <body class="no-js">
     <header class="header">
