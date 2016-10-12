@@ -13,6 +13,7 @@ show_admin_bar(false);
 
 // Définir chemin raccourcis
 $images = get_template_directory_uri() . '/assets/images';
+$scripts = get_template_directory_uri() . '/assets/scripts';
 
 // Enregistrer menu
 register_nav_menu( 'main-nav', __('Menu principal, affiché dans le header.','b') );
@@ -38,3 +39,18 @@ function b_get_menu_items( $location )
     }
     return $navItems;
 }
+
+// Postypes
+register_post_type( 'contact', [
+    'label' => __('Antennes','b'),
+    'labels' => [
+        'singular_name' => __('Antennes','b'),
+        'add_new' => __('Ajouter une nouvelle antenne','b')
+    ],
+    'description' => __('La liste de toutes les antennes affichés sur le site.','b'),
+    'public' => true,
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-email-alt',
+    'supports' => ['title','thumbnail'],
+    'has_archive' => false
+] );
