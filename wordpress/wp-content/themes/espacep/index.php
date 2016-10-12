@@ -36,7 +36,6 @@ Template Name: Page d’accueil
                     <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
                         <a href="<?php echo $navItem->url;?>" class="menu__link <?php echo $thePostID == $navItem->id ? "active" : "" ;?>  "><?php echo $navItem->label;?></a>
                     <?php endforeach; ?>
-
                 </li>
             </ul>
         </div>
@@ -45,10 +44,10 @@ Template Name: Page d’accueil
         <label class="menu__search__label" for="search"></label>
         <input class="menu__search__input" type="search" id="search" required placeholder="Rechercher">
         <input class="menu__search__submit" type="image" name="image" src="<?php echo $images . '/svg/search.svg'; ?>" width="37"
-               height="37">
+               height="37" alt="Bouton de recherche">
     </form>
     <nav class="submenu">
-        <h2 class="submenu__title">Choisissez votre profile</h2><a class="submenu__link submenu__link--sexworker" href="#" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_sexworker.png'; ?>" alt="Photo des jambes d’une travailleuse du sexe" srcset="<?php echo $images . '/button_sexworker@2x.png'; ?>, 2x" width="82" height="82"><span class="submenu__text submenu__text--sexworker">Je suis travailleur du sexe</span></a><a class="submenu__sublink" href="#" title="Go to…" lang="en">I'm sex worker and I speak English</a><a class="submenu__link" href="#" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_student.png'; ?>" alt="Photo d’une étudiante souriante" srcset="<?php echo $images . '/button_student@2x.png'; ?>, 2x" width="82" height="82"><span class="submenu__text">Je suis un étudiant</span></a><a class="submenu__link" href="#" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_curieux.png'; ?>" alt="Photo d’une personne sympathisante" srcset="<?php echo $images . '/button_curieux@2x.png'; ?>, 2x" width="82" height="82"><span class="submenu__text">Je suis un sympathisant</span></a><a class="submenu__link" href="jesuisunclient.html" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_client.png'; ?>" alt="Photo d’une personne vue de derrière portant une capuche" srcset="<?php echo $images . '/button_client@2x.png'; ?>, 2x" width="82" height="82"><span class="submenu__text">Je suis un futur client</span></a>
+        <h2 class="submenu__title">Choisissez votre profile</h2><a class="submenu__link submenu__link--sexworker" href="#" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_sexworker.png'; ?>" alt="Photo des jambes d’une travailleuse du sexe" srcset="<?php echo $images . '/button_sexworker@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text submenu__text--sexworker">Je suis travailleur du sexe</span></a><a class="submenu__sublink" href="#" title="Go to…" lang="en">I'm sex worker and I speak English</a><a class="submenu__link" href="#" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_student.png'; ?>" alt="Photo d’une étudiante souriante" srcset="<?php echo $images . '/button_student@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text">Je suis un étudiant</span></a><a class="submenu__link" href="#" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_curieux.png'; ?>" alt="Photo d’une personne sympathisante" srcset="<?php echo $images . '/button_curieux@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text">Je suis un sympathisant</span></a><a class="submenu__link" href="jesuisunclient.html" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_client.png'; ?>" alt="Photo d’une personne vue de derrière portant une capuche" srcset="<?php echo $images . '/button_client@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text">Je suis un futur client</span></a>
     </nav>
 </header>
 <main>
@@ -77,8 +76,8 @@ Template Name: Page d’accueil
                 </section>
                 <section class="last-facebook__comment">
                     <h3 class="last-facebook__comment__title">Dernier commentaire</h3>
-                    <time class="last-facebook__comment__date" pubdate>Le 29 septembre 2016</time>
-                    <div class="last-facebook__comment__text-container"><img class="last-facebook__comment__img" src="<?php echo $images . '/logo_v2.jpg'; ?>" alt="Logo de espace p…" width="89" height="""89">
+                    <span> class="last-facebook__comment__date">Le 29 septembre 2016</span>
+                    <div class="last-facebook__comment__text-container"><img class="last-facebook__comment__img" src="<?php echo $images . '/logo_v2.jpg'; ?>" alt="Logo de espace p…" width="89" height="89">
                         <p class="last-facebook__comment__text">Le Centre De Ressources Crhs est actuellement entrain de
                             réaliser une étude sur l'accompagnement sexuel et la place qu'il prend au sein du paysage
                             wallon. Ils sont à la recherche de personnes en situation de handicap qui seraient prêtes à
@@ -100,67 +99,14 @@ Template Name: Page d’accueil
             <h2 class="home-mag__title">Nous publions un magazine</h2>
             <p class="home-mag__text">Quatre fois par an, nous éditons un magazine sur le milieu de la prostitution afin
                 d’informer les lecteurs et de soutenir financièrement l’organisation.<br>Soutenez-nous en vous abonnant.
-            </p><a class="home-mag__button" href="souteneznotreaction.html" title="Aller vers la page du magazine">S’abonner</a>
+            </p><a class="home-mag__button" href="<?php echo the_permalink('25'); ?>" title="Aller vers la page du magazine">S’abonner</a>
         </section>
         <section class="home-manifeste">
             <h2 class="home-manifeste__title">Signez notre manifeste</h2>
-            <p class="home-manifeste__text">Montrer votre attachement à notre cause le signant !</p><a
-                class="home-manifeste__button" href="manifeste.html" title="Aller vers la page du manifeste">Lire et
-                signer</a>
+            <p class="home-manifeste__text">Montrez votre attachement à notre cause le signant !</p><a
+                class="home-manifeste__button" href="<?php echo the_permalink('29'); ?>" title="Aller vers la page du manifeste">Lire et signer</a>
         </section>
     </div>
 </main>
-<footer class="footer">
-    <div class="footer__section1">
-        <div class="footer__wrap">
-            <div class="footer__espacep"><span class="footer__espacep__logo">Logo d’espace P…</span><span
-                    class="footer__espacep__title">Espace P…</span>
-                <p class="footer__espacep__description">Espace P… est une A.S.B.L ayant pour but de soutenir, défendre
-                    et accompagner les travailleurs du sexe, que ce soit dans la vie ou dans leur métier.</p>
-            </div>
-            <div class="footer__informations"><span class="footer__informations__title">Informations</span><a
-                    class="footer__informations__link" href="#" title="Aller vers la page…">Je suis un travailleur du
-                    sexe</a><a class="footer__informations__link" href="#" title="Aller vers la page…">Je suis un
-                    étudiant</a><a class="footer__informations__link" href="#" title="Aller vers la page…">Je suis un
-                    sympathisant</a><a class="footer__informations__link" href="jesuisunclient.html"
-                                       title="Aller vers la page…">Je suis un potentiel client</a></div>
-            <div class="footer__contacts"><span class="footer__contacts__title">Contacts</span>
-                <div class="footer__contacts__wrap"><a class="footer__contacts__link" href="contactliege.html"
-                                                       title="Aller sur la page">Liège</a><a
-                        class="footer__contacts__link" href="contactbruxelles.html"
-                        title="Aller sur la page">Bruxelles</a><a class="footer__contacts__link"
-                                                                  href="contactliege.html" title="Aller sur la page">Namur</a><a
-                        class="footer__contacts__link" href="contactliege.html" title="Aller sur la page">Mons</a><a
-                        class="footer__contacts__link" href="contactliege.html" title="Aller sur la page">Arlon</a><a
-                        class="footer__contacts__link" href="contactliege.html" title="Aller sur la page">Charleroi</a>
-                </div>
-            </div>
-            <div class="footer__navigation"><span class="footer__navigation__title">Navigation</span><a
-                    class="footer__navigation__link" href="souteneznotreaction.html" title="Aller vers la page…">Achetez
-                    notre magazine</a><a class="footer__navigation__link" href="partenaires.htm"
-                                         title="Aller vers la page…">Nos partenaires</a><a
-                    class="footer__navigation__link" href="manifeste.html" title="Aller vers la page…">Notre
-                    manifeste</a></div>
-        </div>
-    </div>
-    <div class="subfooter">
-        <div class="subfooter__wrap"><span class="subfooter__copyright">© Espace P… - Tous droits réservés.</span><a
-                class="subfooter__webdesigner" href="http://letecheur.me" rel="ext" title="Vers le site du webdesigner">Made
-                with<span class="subfooter__webdesigner__heart">&nbsp;❤&nbsp;</span>by Jimmy Letecheur</a>
-            <div class="subfooter__espaceplegal"><a class="subfooter__espaceplegal__rapport" href="rapport.html"
-                                                    title="Vers notre rapport d’activité">Notre rapport d’activité</a><a
-                    class="subfooter__espaceplegal__statut" href="statut.html" title="Vers notre statut légal">Notre
-                    statut</a><a class="subfooter__espaceplegal__facebook" href="#"
-                                 title="Vers notre page facebook"><span class="subfooter__espaceplegal__facebook__text">Notre facebook</span></a>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="scripts/menu.js"></script>
-<script src="scripts/no-js.js"></script>
-<script src="scripts/payement.js"></script>
-<script src="scripts/button-fixed-manifeste.js"></script>
-<script src="scripts/client.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>
+
