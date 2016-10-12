@@ -54,3 +54,7 @@ register_post_type( 'contact', [
     'supports' => ['title','thumbnail'],
     'has_archive' => false
 ] );
+
+// Thumbnails
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'thumb-antenne-membre', 115, 115, true );
