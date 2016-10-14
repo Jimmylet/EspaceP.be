@@ -58,7 +58,7 @@
     text-transform: uppercase
     text-align: center
     margin-bottom 3rem
-  &__paragraph
+  & p
     font-weight: 100
     font-size: 2em
     letter-spacing .33px
@@ -69,6 +69,7 @@
   max-width 86em
   margin: 0 auto
 .mag-propo__paragraph
+.mag-propo__wrap > p
   font-weight: 100
   font-size: 2em
   letter-spacing .33px
@@ -139,6 +140,7 @@
     display: block
     margin-bottom 0.8em
   &__paragraph
+  & p
     color color-text-paragraph-manifeste
     font-size: 1.6em
     letter-spacing: 0.26px
@@ -150,9 +152,12 @@
   text-align: center
   background color-pink url("../images/manifeste-quote-1.jpg") no-repeat center center
   background-size cover
-  padding 10.8em 3em 10.8em 3em
+  /*padding 10.8em 3em 10.8em 3em*/ // Before parallax
+  padding 10.8em 3em 10.8em 3em // With parallax
   margin-bottom: 10em
   & blockquote
+    position relative
+    top -125px
     margin: 0 auto
     font-size: 3.6em
     font-family: montserratfont
@@ -168,6 +173,7 @@
   background-size cover
   & blockquote
     max-width 839px
+    top -374px
 
 
 .mag-chapter__list
@@ -224,7 +230,7 @@
 
 .signez
   background color-background
-  padding 5em 3em
+  padding 5em 3em 15em
   margin: 0 auto
   &__title
     font-size: 3.6em
@@ -357,3 +363,7 @@
 .no-js
   .manifeste-button
     display none
+
+.manifeste
+  .footer
+    margin-top: 0

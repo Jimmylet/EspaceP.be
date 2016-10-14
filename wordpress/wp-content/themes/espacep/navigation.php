@@ -9,8 +9,9 @@
         <ul class="menu__list">
             <li class="menu__item">
                 <a class="menu__link menu__logo menu__item0" href="<?php echo get_home_url(); ?>">Accueil</a>
+                <?php global $post; $thePostID = $post->ID; ?>
                 <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
-                    <a href="<?php echo $navItem->url;?>" class="menu__link <?php echo $thePostID == $navItem->id ? "active" : "" ;?>  "><?php echo $navItem->label;?></a>
+                    <a href="<?php echo $navItem->url;?>" class="menu__link <?php echo $thePostID == $navItem->id ? "menu-active" : "" ;?>  "><?php echo $navItem->label;?></a>
                 <?php endforeach; ?>
             </li>
         </ul>

@@ -18,7 +18,7 @@ include 'meta.php';
         <div class="contact-top-wrap">
             <ol class="breadcrumb" itemscop itemtype="http://data-vocabulary.org/Breadcrumb">
                 <li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text breadcrumb__link__text--home" itemprop="link" href="index.html" title="Aller vers l’accueil"><span class="breadcrumb__link__text--hidden">Accueil</span></a></li>
-                <li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text" itemprop="link" href="#">Contactez-nous - Liège</a></li>
+                <li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text" itemprop="link" href="#">Contactez-nous - <?php the_field('antennes_ville');?></a></li>
             </ol>
             <nav class="contact-list">
                 <h2 class="contact-list__title">Choisissez votre ville</h2>
@@ -46,6 +46,9 @@ include 'meta.php';
                         </section>
                         <?php endwhile; ?>
                         <?php endif; ?>
+                        <?php /*for ($i=the_field('antennes_équipe'); $i % 3 != 0; $i++ ): */?><!--
+                        <div class="team__person"></div>
+                        --><?php /*endfor; */?>
                         <!-- End while with ACF -->
 
                     </div>
@@ -55,10 +58,15 @@ include 'meta.php';
             <div class="maps__img"><span class="maps__button">Aller vers Google Maps</span></div></a>
         <div class="contact-bottom-wrap">
             <section class="details">
-                <h2 class="details__title">Contactez Espace P… Liège</h2>
+                <h2 class="details__title">Contactez Espace P… <?php the_field('antennes_ville');?></h2>
                 <div class="details__wrap-global">
                     <div class="details__wrap-left">
-                        <p class="details__paragraph">N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.</p><span class="details__subtitle">Adresse</span><span class="details__subtext">50, Rue Souverain-Pont, 4000 - Liège</span><span class="details__subtitle">Téléphone</span><span class="details__subtext">04 221 05 09</span><span class="details__subtitle">Fax</span><span class="details__subtext">04 221 11 55</span>
+                        <p class="details__paragraph">N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.</p><span class="details__subtitle">Adresse</span><span class="details__subtext">50, Rue Souverain-Pont, 4000 - Liège</span><span class="details__subtitle">Téléphone</span>
+                        <span class="details__subtext">04 221 05 09</span>
+                        <?php if( get_field('antennes_fax') ): ?>
+                        <span class="details__subtitle">Fax</span>
+                        <span class="details__subtext"><?php the_field('antennes_fax'); ?></span>
+                        <?php endif;?>
                     </div>
                     <div class="details__wrap-right">
                         <form class="form">
