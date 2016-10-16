@@ -367,3 +367,76 @@
 .manifeste
   .footer
     margin-top: 0
+
+// form manifeste
+.signez__send
+  &__title
+    font-family: montserratfont
+    font-size: 2em;
+    letter-spacing .5px
+    font-weight: bold;
+    color: #333;
+    margin-bottom 8px
+    line-height: 1.4em
+    &:before
+      content ''
+      display: block
+      margin: 0 auto 1.6em auto
+      width 80%
+      height 1px
+      background darkgrey
+  &__notes
+    font-size: 1.4em
+    color #5d5d5d
+    margin-bottom 30px
+
+.comment-name-wrap
+.comment-mail-wrap
+  position: relative;
+  min-width: 32.2em;
+  margin-bottom: 2em;
+  & label
+    position: absolute;
+    color: transparent;
+    &:before
+      position: relative;
+      left: 20px;
+      display: inline-block;
+      width: 23px;
+      height: 20px;
+      content: '';
+      background-repeat: no-repeat;
+      top 12px
+  & input
+    font-size: 1.4em;
+    width: 100%;
+    padding: 11px 20px 11px 50px;
+    letter-spacing: .1px;
+    border: 1px solid #767677;
+
+.comment-name-wrap label:before
+  {formname}
+.comment-mail-wrap label:before
+  {formemail}
+.comment-wrap-top
+  display flex
+  justify-content space-between
+.comment-form-comment
+  & label
+    {visuallyhidden}
+  & textarea
+    width: 100%
+    min-height: 18rem
+    font-size: 1.4em
+    margin-bottom: 2rem
+    padding: 11px 20px
+    resize: none
+    outline: none
+    appearance: none;
+.form-submit
+  & input
+    font-size 1.4em
+    {button-style}
+  & input:hover
+    cursor pointer
+    {button-style-hover}

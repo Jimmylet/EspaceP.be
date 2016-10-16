@@ -58,3 +58,44 @@ register_post_type( 'contact', [
 // Thumbnails
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'thumb-antenne-membre', 115, 115, true );
+
+
+// Delete URL from form
+function disable_comment_url($fields) {
+    $fields = array(
+        'author' =>
+            '<div class="comment-wrap-top"> <div class="comment-name-wrap"><p class="comment-form-author"><label for="author">' . __( 'Nom&nbsp;:', 'domainreference' ) . '</label> ' .
+            '<input id="author" required name="author" type="text" placeholder="Votre nom ou pseudo" value="' . esc_attr( $commenter['comment_author'] ) .
+            '" size="30"' . $aria_req . ' /></p></div>',
+        'email' =>
+            '<div class="comment-mail-wrap"><p class="comment-form-email"><label for="email">' . __( 'Adresse email&nbsp;:', 'domainreference' ) . '</label> ' .
+            '<input id="email" required name="email" type="text" placeholder="Votre adresse email" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+            '" size="30"' . $aria_req . ' /></p></div></div>',
+    );
+    unset($fields['url']);
+    return $fields;
+}
+add_filter('comment_form_default_fields','disable_comment_url');
+
+// Deplace form textarea after inputs
+function move_comment_field_to_bottom( $fields ) {
+    $comment_field = $fields['comment'];
+    unset( $fields['comment'] );
+    $fields['comment'] = $comment_field;
+    return $fields;
+}
+
+add_filter( 'comment_form_fields', 'move_comment_field_to_bottom' );
+
+// Add placeholder to comment textarea
+function textarea_placeholder( $fields )
+{
+    $fields['comment_field'] = str_replace(
+        '<textarea',
+        '<textarea placeholder="Votre commentaire"',
+        $fields['comment_field']
+    );
+    return $fields;
+}
+add_filter( 'comment_form_defaults', 'textarea_placeholder' );
+
