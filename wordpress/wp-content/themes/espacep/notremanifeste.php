@@ -18,10 +18,9 @@ include 'meta.php';?>
     <main>
         <div class="mag-header">
             <section class="mag-header__wrap-top">
-                <ol class="breadcrumb" itemscop itemtype="http://data-vocabulary.org/Breadcrumb">
-                    <li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text breadcrumb__link__text--home" itemprop="link" href="index.html" title="Aller vers l’accueil"><span class="breadcrumb__link__text--hidden">Accueil</span></a></li>
-                    <li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text" itemprop="link" href="#">Notre manifeste</a></li>
-                </ol>
+                
+								<?php the_breadcrumb(); ?>
+							
                 <h2 class="mag-header__wrap-top__title" id="manifeste-top">Lisez et signez notre manifeste</h2><small class="mag-header__wrap-top__subtitle"><?php echo get_bloginfo('description'); ?></small>
             </section>
         </div>

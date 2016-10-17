@@ -16,10 +16,9 @@ include 'meta.php';
 <div class="site-content">
     <main>
         <div class="contact-top-wrap">
-            <ol class="breadcrumb" itemscop itemtype="http://data-vocabulary.org/Breadcrumb">
-                <li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text breadcrumb__link__text--home" itemprop="link" href="index.html" title="Aller vers l’accueil"><span class="breadcrumb__link__text--hidden">Accueil</span></a></li>
-                <li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text" itemprop="link" href="#">Contactez-nous - <?php the_field('antennes_ville');?></a></li>
-            </ol>
+					
+					<?php the_breadcrumb(); ?>
+					
             <nav class="contact-list">
                 <h2 class="contact-list__title">Choisissez votre ville</h2>
                 <div class="contact-list__wrap"><a class="contact-list__item contact-list__item--active" href="contactliege.html" title="Vers la page d’Espace P… Liège"><span>Espace P… Liège</span></a><a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles"><span>Espace P… Bruxelles</span></a><a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles"><span>Espace P… Namur</span></a></div>
