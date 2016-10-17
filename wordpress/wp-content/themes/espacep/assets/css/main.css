@@ -4178,3 +4178,70 @@ form input
     margin-bottom: 20px;
     margin-bottom: 2rem;
 }
+.partenaires-page .partenaires
+{
+    max-width: 114em;
+    margin: 0 auto;
+}
+.partenaires-page .partenaires__title
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    height: 0;
+    margin: -1px;
+
+    border: 0;
+}
+.partenaires-page .partenaires__img
+{
+    float: left;
+
+    margin-right: 4em;
+}
+.paretnaires__wrap
+{
+    overflow: hidden;
+
+    margin-bottom: 7em;
+}
+.description__wrap
+{
+    overflow: hidden;
+
+    max-width: 80%;
+    padding: 2.8em 4em;
+
+    background-color: #fff;
+}
+.description__title
+{
+    font-family: montserrat, Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.5em;
+
+    display: block;
+
+    margin-bottom: 1em;
+
+    letter-spacing: .12px;
+}
+.description__text
+{
+    font-size: 1.6em;
+    line-height: 1.5em;
+
+    letter-spacing: .11px;
+}
+.description__link
+{
+    font-size: 1.6em;
+    font-weight: bold;
+
+    display: inline-block;
+    float: right;
+
+    margin-top: 1em;
+}
