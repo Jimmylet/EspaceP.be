@@ -45,9 +45,6 @@ include 'meta.php';
                         </section>
                         <?php endwhile; ?>
                         <?php endif; ?>
-                        <?php /*for ($i=the_field('antennes_équipe'); $i % 3 != 0; $i++ ): */?><!--
-                        <div class="team__person"></div>
-                        --><?php /*endfor; */?>
                         <!-- End while with ACF -->
 
                     </div>

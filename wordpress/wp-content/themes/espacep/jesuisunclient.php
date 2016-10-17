@@ -26,11 +26,9 @@ include 'meta.php';?>
 		<section class="guideclient">
 			<h2 class="guideclient__title"><span>Le guide du parfait client</span></h2>
 			<div class="guideclient__wrap">
-				<?php /*$guide = get_field('client_guide'); */?><!--
-				--><?php /*var_dump($guide); */?>
 				<ul class="guideclient__categories">
 					<?php foreach (get_field('client_guide') as $guide ): ?>
-					<li class="guideclient__categories__item"><a class="guideclient__categories__link" href="#section<?php count($guide);?>">
+					<li class="guideclient__categories__item"><a class="guideclient__categories__link" href="#section1"> <!-- TODO: Class selected and section number -->
 							<?php echo $guide['client_section'] ;?>
 					</a></li>
 					<?php endforeach; ?>
