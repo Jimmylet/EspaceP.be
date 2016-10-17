@@ -49,5 +49,8 @@
 </div> <!-- end site-content -->
 <?php wp_footer(); ?>
 <script src="<?php echo $scripts . '/main.js'; ?>"></script>
+<?php if (is_page(128)): ?> <!-- Si c'est la page client -->
+<script src="<?php echo $scripts . '/client.js'; ?>"></script>
+<?php endif; ?>
 </body>
 </html>
