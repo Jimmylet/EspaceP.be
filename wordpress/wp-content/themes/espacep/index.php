@@ -48,40 +48,7 @@ Template Name: Page d’accueil
 					 height="37" alt="Bouton de recherche">
 	</form>
 	<nav class="submenu">
-		<h2 class="submenu__title">Choisissez votre profile</h2>
-		<a class="submenu__link submenu__link--sexworker" href="#" title="Aller vers #">
-			<img class="submenu__img" src="<?php echo $images . '/button_sexworker.png'; ?>"
-					 alt="Photo des jambes d’une travailleuse du sexe"
-					 srcset="<?php echo $images . '/button_sexworker@2x.png'; ?> 2x" width="82" height="82">
-			<span class="submenu__text submenu__text--sexworker">
-				Je suis travailleur du sexe
-			</span>
-		</a>
-		<a class="submenu__sublink" href="#" title="Go to…" lang="en">
-			I'm sex worker and I speak English</a>
-		<a class="submenu__link" href="#" title="Aller vers #">
-			<img class="submenu__img" src="<?php echo $images . '/button_student.png'; ?>"
-					 alt="Photo d’une étudiante souriante" srcset="<?php echo $images . '/button_student@2x.png'; ?> 2x"
-					 width="82" height="82">
-			<span class="submenu__text">
-				Je suis un étudiant</span>
-		</a>
-		<a class="submenu__link" href="#" title="Aller vers #">
-			<img class="submenu__img" src="<?php echo $images . '/button_curieux.png'; ?>"
-					 alt="Photo d’une personne sympathisante" srcset="<?php echo $images . '/button_curieux@2x.png'; ?> 2x"
-					 width="82" height="82">
-			<span class="submenu__text">
-				Je suis un sympathisant
-			</span>
-		</a>
-		<a class="submenu__link" href="jesuisunclient.html" title="Aller vers #">
-			<img class="submenu__img" src="<?php echo $images . '/button_client.png'; ?>"
-					 alt="Photo d’une personne vue de derrière portant une capuche"
-					 srcset="<?php echo $images . '/button_client@2x.png'; ?> 2x" width="82" height="82">
-			<span class="submenu__text">
-				Je suis un futur client
-			</span>
-		</a>
+		<h2 class="submenu__title">Choisissez votre profile</h2><a class="submenu__link submenu__link--sexworker" href="#" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_sexworker.png'; ?>" alt="Photo des jambes d’une travailleuse du sexe" srcset="<?php echo $images . '/button_sexworker@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text submenu__text--sexworker">Je suis travailleur du sexe</span></a><a class="submenu__sublink" href="#" title="Go to…" lang="en">I'm sex worker and I speak English</a><a class="submenu__link" href="#" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_student.png'; ?>" alt="Photo d’une étudiante souriante" srcset="<?php echo $images . '/button_student@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text">Je suis un étudiant</span></a><a class="submenu__link" href="#" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_curieux.png'; ?>" alt="Photo d’une personne sympathisante" srcset="<?php echo $images . '/button_curieux@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text">Je suis un sympathisant</span></a><a class="submenu__link" href="jesuisunclient.html" title="Aller vers #"><img class="submenu__img" src="<?php echo $images . '/button_client.png'; ?>" alt="Photo d’une personne vue de derrière portant une capuche" srcset="<?php echo $images . '/button_client@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text">Je suis un futur client</span></a>
 	</nav>
 </header>
 <main>

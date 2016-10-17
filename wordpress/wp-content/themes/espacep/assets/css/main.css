@@ -3506,7 +3506,8 @@ form input
 
     background: #fff;
 }
-.client__paragraph
+.client__paragraph,
+.client p
 {
     font-size: 2em;
     font-weight: 100;
@@ -3517,7 +3518,8 @@ form input
 
     letter-spacing: .3px;
 }
-.client__paragraph strong
+.client__paragraph strong,
+.client p strong
 {
     font-weight: bold;
 
@@ -3527,7 +3529,8 @@ form input
 
     margin-bottom: 1em;
 }
-.client__paragraph strong:before
+.client__paragraph strong:before,
+.client p strong:before
 {
     position: absolute;
     left: -180px;
