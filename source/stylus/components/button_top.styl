@@ -1,0 +1,68 @@
+/************************************\
+  BOUTON SCROLL
+\************************************/
+.button-scroll
+  visibility hidden
+  position fixed
+  bottom 10px
+  right: 25px
+  display flex
+  width 4em
+  justify-content space-between
+  align-items flex-start
+  transition bottom .3s ease
+  &__top
+    display block
+    background-color rgba(255,255,255,.9)
+    max-width 42px
+    border 1px solid color-pink
+    padding 1.15em 1.3em 1.2em 1.3em
+    transition background .3s ease
+    & svg
+      position: relative
+      left -3px
+    &__text
+      {visuallyhidden}
+    &:hover
+    &:focus
+      background color-pink
+      transition background .3s ease
+  &__top:hover .button-scroll__top__svg
+  &__top:focus .button-scroll__top__svg
+    fill color-white
+    transition fill .3s ease
+  &__signez
+    display: block
+    font-size: 1.4em
+    color color-grey-v2
+    max-width 190px
+    padding .7em 1em 1em 1em
+    border 1px solid color-pink
+    background-color rgba(255,255,255,.9)
+    transition background .3s ease
+    & svg
+      margin-right 8px
+      position: relative
+      top 4px
+    &:hover
+    &:focus
+      background color-pink
+      transition background .3s ease
+      color color-white
+
+.button-fixed-profile
+  .button-scroll
+    visibility visible
+    bottom 25px
+    transition bottom .3s ease
+
+.no-js
+  .button-scroll
+    display none
+
+.button-fixed-profile-out
+  .button-scroll
+    bottom 10px
+    opacity 0
+    transition all .3s ease
+    transition-property bottom visibility

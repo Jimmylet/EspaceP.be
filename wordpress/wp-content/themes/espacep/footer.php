@@ -49,8 +49,14 @@
 </div> <!-- end site-content -->
 <?php wp_footer(); ?>
 <script src="<?php echo $scripts . '/main.js'; ?>"></script>
+<?php if (is_page(29)): ?>
+<script src="<?php echo $scripts . '/button-fixed-manifeste.js'; ?>"></script>
+<?php endif; ?>
 <?php if (is_page(128)): ?> <!-- Si c'est la page client -->
 <script src="<?php echo $scripts . '/client.js'; ?>"></script>
+<?php endif; ?>
+<?php if (is_page(185) || is_page(128)): ?> <!-- Si c'est une des page profile -->
+<script src="<?php echo $scripts . '/button-scroll-profile.js'; ?>"></script>
 <?php endif; ?>
 </body>
 </html>

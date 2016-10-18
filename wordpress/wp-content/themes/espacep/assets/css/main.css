@@ -4410,3 +4410,130 @@ form input
     counter-increment: section;
     letter-spacing: .43px;
 }
+.button-scroll
+{
+    position: fixed;
+    right: 25px;
+    bottom: 10px;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    visibility: hidden;
+
+    width: 4em;
+
+    -webkit-transition: bottom .3s ease;
+            transition: bottom .3s ease;
+
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+            align-items: flex-start;
+}
+.button-scroll__top
+{
+    display: block;
+
+    max-width: 42px;
+    padding: 1.15em 1.3em 1.2em 1.3em;
+
+    -webkit-transition: background .3s ease;
+            transition: background .3s ease;
+
+    border: 1px solid #d85e72;
+    background-color: rgba(255,255,255,.9);
+}
+.button-scroll__top svg
+{
+    position: relative;
+    left: -3px;
+}
+.button-scroll__top__text
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    height: 0;
+    margin: -1px;
+
+    border: 0;
+}
+.button-scroll__top:hover,
+.button-scroll__top:focus
+{
+    -webkit-transition: background .3s ease;
+            transition: background .3s ease;
+
+    background: #d85e72;
+}
+.button-scroll__top:hover .button-scroll__top__svg,
+.button-scroll__top:focus .button-scroll__top__svg
+{
+    -webkit-transition: fill .3s ease;
+            transition: fill .3s ease;
+
+    fill: #fff;
+}
+.button-scroll__signez
+{
+    font-size: 1.4em;
+
+    display: block;
+
+    max-width: 190px;
+    padding: .7em 1em 1em 1em;
+
+    -webkit-transition: background .3s ease;
+            transition: background .3s ease;
+
+    color: #4f4f4f;
+    border: 1px solid #d85e72;
+    background-color: rgba(255,255,255,.9);
+}
+.button-scroll__signez svg
+{
+    position: relative;
+    top: 4px;
+
+    margin-right: 8px;
+}
+.button-scroll__signez:hover,
+.button-scroll__signez:focus
+{
+    -webkit-transition: background .3s ease;
+            transition: background .3s ease;
+
+    color: #fff;
+    background: #d85e72;
+}
+.button-fixed-profile .button-scroll
+{
+    bottom: 25px;
+
+    visibility: visible;
+
+    -webkit-transition: bottom .3s ease;
+            transition: bottom .3s ease;
+}
+.no-js .button-scroll
+{
+    display: none;
+}
+.button-fixed-profile-out .button-scroll
+{
+    bottom: 10px;
+
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+    -webkit-transition-property: bottom visibility;
+            transition-property: bottom visibility;
+
+    opacity: 0;
+}
