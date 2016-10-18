@@ -59,6 +59,7 @@ register_post_type( 'contact', [
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'thumb-antenne-membre', 115, 115, true );
 add_image_size( 'thumb-partenaires', 270, 250);
+add_image_size('thumb-article-home', 610, 415);
 
 
 // Delete URL from form
