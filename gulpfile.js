@@ -97,8 +97,8 @@ gulp.task('clean', function () {
 
 gulp.task('images', function () {
     return gulp.src(imagesOpts.in)
-        /*.pipe(destclean(imagesOpts.out))*/
-        .pipe(newer(imagesOpts.out))
+    /*.pipe(destclean(imagesOpts.out))*/
+        .pipe(newer('./wordpress/wp-content/themes/espacep/assets/images'))
         .pipe(size({title: 'Images size before compression: ', showFiles: true}))
         .pipe(tiny())
         .pipe(imagemin())
