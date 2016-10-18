@@ -3977,6 +3977,26 @@ form input
 {
     margin-top: 15em;
 }
+.myarticle strong,
+.myarticle b
+{
+    font-weight: bold;
+}
+.myarticle i
+{
+    font-style: italic;
+}
+.myarticle img
+{
+    max-width: 100%;
+    height: auto;
+}
+.myarticle .aligncenter
+{
+    display: block;
+
+    margin: 0 auto;
+}
 .myarticle__content
 {
     max-width: 90em;
@@ -4036,7 +4056,8 @@ form input
     margin-top: 30px;
     margin-bottom: .75em;
 }
-.myarticle__paragraph
+.myarticle__paragraph,
+.myarticle p
 {
     font-size: 1.8em;
     line-height: 1.6em;
