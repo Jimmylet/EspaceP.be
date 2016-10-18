@@ -103,7 +103,7 @@ gulp.task('images', function () {
         .pipe(tiny())
         .pipe(imagemin())
         .pipe(size({title: 'Images size after compression: ', showFiles: true}))
-        .pipe(gulp.dest(imagesOpts.out));
+        .pipe(gulp.dest('./wordpress/wp-content/themes/espacep/assets/images'));
 });
 
 gulp.task('svg', function () {
