@@ -112,7 +112,7 @@ function the_breadcrumb()
         echo 'breadcrumb__link__text--hidden>';
         echo _e('Accueil', 'b');
         echo "</span></a></li>";
-        echo '</li><li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text" itemprop="link" href="';
+        echo '<li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text" itemprop="link" href="';
         echo the_permalink();
         echo '">';
         the_title();
