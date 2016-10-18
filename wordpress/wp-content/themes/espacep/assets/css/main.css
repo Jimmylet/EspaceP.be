@@ -4537,3 +4537,143 @@ form input
 
     opacity: 0;
 }
+.etudiant-page .headintro
+{
+    background-image: url('../images/header_etudiant.jpg');
+}
+.etudiant-page .client-top-wrap
+{
+    max-width: 104em;
+}
+.etudiant-page .etudiant-philosophie
+{
+    background: url('../images/svg/philosophie.svg') no-repeat right 0;
+    background-size: 70px;
+}
+.etudiant-page .etudiant-section
+{
+    max-width: 104em;
+    margin: 12em auto 0 auto;
+}
+.etudiant-page .etudiant-section ol
+{
+    display: block;
+
+    list-style-type: none;
+
+    counter-reset: section;
+}
+.etudiant-page .etudiant-section__title
+{
+    font-family: montserrat, Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+
+    display: block;
+
+    letter-spacing: .5px;
+}
+.etudiant-page .etudiant-section__title:after
+{
+    display: block;
+
+    width: 120px;
+    height: 6px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    content: '';
+
+    background-color: #d85e72;
+}
+.etudiant-page .etudiant-section__subtitle
+{
+    font-size: 2.6em;
+    font-weight: 600;
+
+    letter-spacing: .43px;
+}
+.etudiant-page .etudiant-section li
+{
+    display: block;
+
+    margin-bottom: 5em;
+}
+.etudiant-page .etudiant-section p
+{
+    font-size: 2em;
+    line-height: 1.5em;
+
+    display: block;
+
+    margin: 17px 0 0 0;
+
+    letter-spacing: .19px;
+
+    color: #3e3e3e;
+}
+.etudiant-page .etudiant-section strong
+{
+    font-weight: bold;
+}
+.etudiant-page .etudiant-section em
+{
+    font-style: italic;
+}
+.etudiant-page .etudiant-section a
+{
+    font-weight: bold;
+
+    color: #d85e72;
+}
+.etudiant-page .etudiant-section a:hover,
+.etudiant-page .etudiant-section a:focus
+{
+    text-decoration: underline;
+}
+.etudiant-page .etudiant-section li:before
+{
+    font-size: 2.6em;
+    font-weight: 600;
+
+    content: counters(section, '.') '. ';
+    counter-increment: section;
+    letter-spacing: .43px;
+}
+.etudiant-page .etudiant-actions
+{
+    margin-top: 10em;
+
+    background: url('../images/svg/actions.svg') no-repeat right 0;
+    background-size: 75px;
+}
+.etudiant-page .etudiant-legi
+{
+    background: url('../images/svg/legi.svg') no-repeat right 0;
+    background-size: 110px;
+}
+.etudiant-page .etudiant-stages
+{
+    background: url('../images/svg/stage.svg') no-repeat right 0;
+    background-size: 110px;
+}
+.etudiant-page .etudiant-stages ul ul
+{
+    margin-top: 2em;
+}
+.etudiant-page .etudiant-stages ul ul li
+{
+    font-size: 2em;
+
+    margin-bottom: .7em;
+}
+.etudiant-page .etudiant-stages ul ul li:before
+{
+    font-size: 1em;
+
+    content: '– ';
+}
+.etudiant-page .etudiant-stages li:before
+{
+    font-size: 0;
+}

@@ -1,0 +1,80 @@
+.etudiant-page
+  .headintro
+    background-image url("../images/header_etudiant.jpg")
+  .client-top-wrap
+    max-width 104em
+  .etudiant-philosophie
+    background url("../images/svg/philosophie.svg") no-repeat right 0px
+    background-size 70px
+  .etudiant-section
+    max-width 104em
+    margin: 12em auto 0 auto
+    & ol
+      display: block
+      counter-reset: section;
+      list-style-type: none;
+    &__title
+      display: block
+      font-family: montserratfont
+      font-weight: bold
+      font-size 3em
+      letter-spacing 0.5px
+      &:after
+        display: block
+        content ''
+        width 120px
+        height 6px
+        margin-bottom 50px
+        margin-top 10px
+        background-color color-pink
+    &__subtitle
+      font-weight 600
+      font-size: 2.6em
+      letter-spacing 0.43px
+    & li
+      display: block
+      margin-bottom 5em
+    & p
+      display block
+      font-size: 2em
+      line-height: 1.5em
+      letter-spacing 0.19px
+      margin 17px 0 0 0
+      color #3E3E3E
+    & strong
+      font-weight: bold
+    & em
+      font-style: italic
+    & a
+      color color-pink
+      font-weight: bold
+      &:hover
+      &:focus
+        text-decoration underline
+    & li:before
+      counter-increment: section;
+      content: counters(section,".") ". ";
+      font-weight 600
+      font-size: 2.6em
+      letter-spacing 0.43px
+  .etudiant-actions
+    background url("../images/svg/actions.svg") no-repeat right 0px
+    background-size 75px
+    margin-top 10em
+  .etudiant-legi
+    background url("../images/svg/legi.svg") no-repeat right 0px
+    background-size 110px
+  .etudiant-stages
+    background url("../images/svg/stage.svg") no-repeat right 0px
+    background-size 110px
+    & ul ul
+      margin-top 2em
+      & li
+        margin-bottom: .7em
+        font-size: 2em
+        &:before
+          content "– "
+          font-size: 1em
+
+    & li:before
+      font-size: 0
