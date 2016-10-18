@@ -27,16 +27,18 @@ include 'meta.php';?>
 			<h2 class="guideclient__title"><span>Le guide du parfait client</span></h2>
 			<div class="guideclient__wrap">
 				<ul class="guideclient__categories">
+					<?php $i = 1; ?>
 					<?php foreach (get_field('client_guide') as $guide ): ?>
-					<li class="guideclient__categories__item"><a class="guideclient__categories__link" href="#section1"> <!-- TODO: Class selected and section number -->
+					<li class="guideclient__categories__item"><a class="guideclient__categories__link" href="#section<?php echo $i; $i++;?>"> <!-- TODO: Class selected and section number -->
 							<?php echo $guide['client_section'] ;?>
-					</a></li>
+						</a></li>
 					<?php endforeach; ?>
 				</ul>
+				<?php $e = 1; ?>
 				<?php if( have_rows('client_guide') ): ?>
 				<?php while( have_rows('client_guide') ): the_row(); ?>
 				<section class="guideclient__section">
-					<ul class="guideclient__section__group" id="section1">
+					<ul class="guideclient__section__group" id="section<?php echo $e; $e++; ?>">
 						<li class="guideclient__section__title">
 							<h3><?php the_sub_field('client_section'); ?></h3>
 						</li>
