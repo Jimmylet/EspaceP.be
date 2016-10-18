@@ -10,3 +10,4 @@ wordpress/wp-content/*
 wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/espacep/
 /npm-debug.log
+/wordpress/wp-content/themes/espacep/assets/images.safecopy
