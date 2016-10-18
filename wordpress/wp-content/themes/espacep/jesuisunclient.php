@@ -15,13 +15,20 @@ include 'meta.php';?>
 </header>
 <div class="site-content">
 	<main>
+		
+		<div class="headintro">
+			<span aria-level="2" class="headintro__title">
+				Vous êtes un client
+			</span>
+			<p><?php the_field('meta-description'); ?></p>
+		</div>
+		
 		<div class="client-top-wrap">
 			<?php the_breadcrumb(); ?>
-			<section class="client">
-				<h2 class="client__title">Je suis un client</h2>
+			<div class="client">
 				<?php the_field('client_intro'); ?>
 				<span class="client__signature">Tendrement,<strong>Les travailleurs du sexe</strong><img alt="Lèvres enduite d’un rouge à lèvre" width="46" height="33" src="<?php echo $images . '/svg/bigbisous.svg';?>"></span>
-			</section>
+			</div>
 		</div>
 		<section class="guideclient">
 			<h2 class="guideclient__title"><span>Le guide du parfait client</span></h2>
