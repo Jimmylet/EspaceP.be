@@ -3486,10 +3486,18 @@ form input
 
     background-color: #dc6e80;
 }
+.client-page .headintro
+{
+    background-image: url('../images/header_client.jpg');
+}
 .client-top-wrap
 {
     max-width: 114em;
     margin: 0 auto;
+}
+.client
+{
+    margin-top: 8em;
 }
 .client__title
 {
@@ -4265,4 +4273,140 @@ form input
     float: right;
 
     margin-top: 1em;
+}
+.headintro
+{
+    height: 48em;
+    padding: 13em 3em 3em 3em;
+
+    background: #d85e72 no-repeat center center;
+    background-size: cover;
+}
+.headintro__title
+{
+    font-family: montserrat, Helvetica, Arial, sans-serif;
+    font-size: 4.5em;
+    font-weight: bold;
+    line-height: 1.4em;
+
+    display: block;
+
+    text-align: center;
+    letter-spacing: .75px;
+
+    color: #fff;
+}
+.headintro p
+{
+    font-size: 2.6em;
+    font-weight: 100;
+    line-height: 1.5em;
+
+    max-width: 720px;
+    margin: 30px auto 0 auto;
+
+    text-align: center;
+    letter-spacing: .21px;
+
+    color: #fff;
+}
+.curieux-page .headintro
+{
+    background-image: url('../images/header_curieux.jpg');
+}
+.curieux-page .client-top-wrap
+{
+    max-width: 104em;
+}
+.curieux-page .curieux-legislation
+{
+    padding-top: 5em;
+    padding-bottom: 8em;
+
+    background: url('../images/svg/legi.svg') no-repeat right 50px;
+    background-size: 110px;
+}
+.curieux-page .curieux-manifeste
+{
+    background: url('../images/svg/manifeste.svg') no-repeat right 0;
+    background-size: 100px;
+}
+.curieux-page .curieux-legislation,
+.curieux-page .curieux-manifeste
+{
+    max-width: 104em;
+    margin: 0 auto;
+}
+.curieux-page .curieux-legislation ol,
+.curieux-page .curieux-manifeste ol
+{
+    display: block;
+
+    list-style-type: none;
+
+    counter-reset: section;
+}
+.curieux-page .curieux-legislation__title,
+.curieux-page .curieux-manifeste__title
+{
+    font-family: montserrat, Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+
+    display: block;
+
+    letter-spacing: .5px;
+}
+.curieux-page .curieux-legislation__title:after,
+.curieux-page .curieux-manifeste__title:after
+{
+    display: block;
+
+    width: 120px;
+    height: 6px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    content: '';
+
+    background-color: #d85e72;
+}
+.curieux-page .curieux-legislation__subtitle,
+.curieux-page .curieux-manifeste__subtitle
+{
+    font-size: 2.6em;
+    font-weight: 600;
+
+    letter-spacing: .43px;
+}
+.curieux-page .curieux-legislation li,
+.curieux-page .curieux-manifeste li
+{
+    display: block;
+
+    margin-bottom: 5em;
+}
+.curieux-page .curieux-legislation p,
+.curieux-page .curieux-manifeste p
+{
+    font-size: 2em;
+    line-height: 1.5em;
+
+    display: block;
+
+    margin: 17px 0 0 0;
+
+    letter-spacing: .19px;
+
+    color: #3e3e3e;
+}
+.curieux-page .curieux-legislation li:before,
+.curieux-page .curieux-manifeste li:before
+{
+    font-size: 2.6em;
+    font-weight: 600;
+
+    content: counters(section, '.') '. ';
+    counter-increment: section;
+    letter-spacing: .43px;
 }

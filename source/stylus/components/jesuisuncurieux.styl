@@ -1,0 +1,55 @@
+.curieux-page
+  .headintro
+    background-image url("../images/header_curieux.jpg")
+  .client-top-wrap
+    max-width 104em
+  .curieux-legislation
+    background url("../images/svg/legi.svg") no-repeat right 50px
+    background-size 110px
+    padding-top 5em
+    padding-bottom 8em
+  .curieux-manifeste
+    background url("../images/svg/manifeste.svg") no-repeat right 0px
+    background-size 100px
+  .curieux-legislation
+  .curieux-manifeste
+    max-width 104em
+    margin: 0 auto
+    & ol
+      display: block
+      counter-reset: section;
+      list-style-type: none;
+    &__title
+      display: block
+      font-family: montserratfont
+      font-weight: bold
+      font-size 3em
+      letter-spacing 0.5px
+      &:after
+        display: block
+        content ''
+        width 120px
+        height 6px
+        margin-bottom 50px
+        margin-top 10px
+        background-color color-pink
+    &__subtitle
+      font-weight 600
+      font-size: 2.6em
+      letter-spacing 0.43px
+    & li
+      display: block
+      margin-bottom 5em
+    & p
+      display block
+      font-size: 2em
+      line-height: 1.5em
+      letter-spacing 0.19px
+      margin 17px 0 0 0
+      color #3E3E3E
+    & li:before
+      counter-increment: section;
+      content: counters(section,".") ". ";
+      font-weight 600
+      font-size: 2.6em
+      letter-spacing 0.43px
