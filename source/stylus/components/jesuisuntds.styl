@@ -1,0 +1,39 @@
+.tds-page
+  .headintro
+    background-image url("../images/header_tds.jpg")
+    & p
+      max-width 800px
+    & .language
+      display: block
+      max-width 300px
+      margin: 0 auto
+      position: relative
+      top -2em
+      color color-white
+      font-size: 1.4em
+      background: rgba(206,90,102,0.50);
+      text-align: center
+      padding 0.08em .8em .5em .8em
+      border-radius 300px
+      transition background .3s ease
+      &__message:before
+        content ""
+        display inline-block
+        background-repeat no-repeat
+        width 18px
+        height 18px
+        position: relative
+        margin-right 7px
+        top 5px
+      &:hover
+      &:focus
+        background rgba(206,90,102,0.9);
+        transition background .3s ease
+  .client-top-wrap
+    max-width 104em
+
+.tds-page-fr
+  & .headintro
+    & .language
+      &__message:before
+        {english}
