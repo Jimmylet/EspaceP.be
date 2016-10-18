@@ -54,17 +54,32 @@ Template Name: Page d’accueil
 <main>
 	<div class="wrap-top">
 		<section class="last-article">
-			<h2 class="last-article__title">Notre dernier article</h2><a class="last-article__link" href="article.html"
-																																	 title="Vers l’article">
+			<h2 class="last-article__title">Notre dernier article</h2>
+			
+			
+			<!-- Debut WP_QUERY -->
+			<?php
+			$posts = new WP_Query( ['posts_per_page' => 1, 'post_type' => 'post'] );
+			if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();
+			?>
+			<!-- Recup thumbnail et size -->
+			<?php $url = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID()), 'thumb-article-home' ); ?>
+			
+			<a class="last-article__link" href="<?php the_permalink();?>" title="Vers l’article <?php echo the_title(); ?>">
 				<article class="article">
-					<div class="article__wrap-text"><span class="article__category">Divers</span>
-						<h3 class="article__title">Expo de débat à Arlon&nbsp;: un regard éclairé sur la prostitution en
-							milieu rural…</h3>
+					<div class="article__wrap-text">
+						<span class="article__category">
+							<?php $categorie = get_the_category();?>
+							<?php echo ($categorie[0]->name);?>
+						</span>
+						<h3 class="article__title"><?php the_title(); ?></h3>
 						<span class="article__link">Lire l'article</span>
 					</div>
-					<div class="article__img"></div>
+					<div class="article__img" style="background-image: url('<?php echo $url[0];?>');"></div>
 				</article>
 			</a>
+			<?php wp_reset_postdata(); ?>
+			<?php endwhile; endif; ?>
 		</section>
 		<section class="last-facebook">
 			<h2 class="last-facebook__title">Notre dernier message sur facebook</h2>
