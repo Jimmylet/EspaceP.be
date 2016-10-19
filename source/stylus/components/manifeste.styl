@@ -40,6 +40,7 @@
   max-width 86em
   margin: 0 auto
   position: relative
+  padding 0 1em
   &:before
     content ""
     display block
@@ -68,6 +69,7 @@
 .mag-propo__wrap
   max-width 86em
   margin: 0 auto
+  padding 0 1em
 .mag-propo__paragraph
 .mag-propo__wrap > p
   font-weight: 100
@@ -120,6 +122,7 @@
 .mag-chapter
   max-width 75.1em
   margin: 0 auto 10em auto
+  padding 0 1em
   &__title
     font-size: 2em;
     text-transform: uppercase
@@ -157,7 +160,6 @@
   margin-bottom: 10em
   & blockquote
     position relative
-    top -125px
     margin: 0 auto
     font-size: 3.6em
     font-family: montserratfont
@@ -173,7 +175,7 @@
   background-size cover
   & blockquote
     max-width 839px
-    top -374px
+
 
 
 .mag-chapter__list
@@ -193,6 +195,7 @@
   font-family: montserratfont
   font-weight: bold
   margin: 0 auto
+  padding 0 1em
   &:before
   &:after
     content ""
@@ -387,6 +390,7 @@
       background darkgrey
   &__notes
     font-size: 1.4em
+    line-height: 1.4em
     color #5d5d5d
     margin-bottom 30px
 
@@ -440,3 +444,50 @@
   & input:hover
     cursor pointer
     {button-style-hover}
+
+
+
+@media screen and ( max-width: 1155px )
+  .mag-header__wrap-top
+    padding 0 1em
+
+@media screen and ( max-width: 985px )
+  .manifeste
+    .mag-constats__title:before
+    .mag-constats__title:after
+    .mag-propo__title:after
+    .mag-propo__title:before
+      display none
+
+
+@media screen and ( max-width: 788px )
+  .manifeste
+    .comment-wrap-top
+      display block
+    .comment-name-wrap
+    .comment-mail-wrap
+      min-width auto
+
+@media screen and ( max-width: 720px )
+  .manifeste
+    .mag-header__wrap-top__title
+      font-size: 4em;
+    .mag-header__wrap-top__subtitle
+      line-height: 1.4em
+    .tds:before
+      height 150px
+
+@media screen and ( max-width: 560px )
+  .manifeste
+    .mag-quote-text blockquote
+      font-size: 2.6em;
+    .mag-quote-text:before
+      display none
+    .mag-quote-img blockquote
+      font-size: 2.2em
+    .signez__title
+      font-size: 2.6em
+    .signez
+      padding 5em 1.5em 15em
+    .manifeste-button
+      bottom 5px
