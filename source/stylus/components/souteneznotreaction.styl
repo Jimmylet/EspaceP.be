@@ -1,6 +1,7 @@
 .mag-wrap-top
   max-width 114em
   margin 0 auto
+  padding 0 1em
 
 .mag-content
   &__title
@@ -10,6 +11,7 @@
     text-transform: uppercase
     background #FFF
     text-align: center
+    line-height: 1.4em
     margin-top 2.778em // 100px
     margin-bottom 2.778em // 100px
     padding 0.611em 0.833em 0.556em 0.833em // 22px 30px 20px 30px
@@ -27,9 +29,7 @@
     position relative
     padding 0 30px
     &__text
-      position absolute
-      top: 50%
-      transform: translateY(-50%)
+      padding-top 2em
   &__author
     position absolute
     bottom -40px
@@ -285,3 +285,44 @@
   .payement
     .clickplan.clickplannormal
       display none
+
+
+/************************************\
+  RESPONSIVE
+\************************************/
+
+@media screen and ( max-width: 628px )
+  .mag-content__title
+    font-size: 2.6em
+  .mag-content__author
+    right 0
+    left 0
+    margin-left auto
+    margin-right auto
+  .mag-content__profession
+    text-align: center
+    position static
+  .mag-content__receivemoney
+    font-size: 2.6em;
+  .choose-plan__title-main
+    font-size: 2.4em
+  .choose-plan__wrap
+    display block
+    padding 0
+  .choose-plan__normal
+    margin-bottom 6em
+  .payementnormal--clicked
+  .payementsoutien--clicked
+    .clickplan
+      max-width 87%
+      &__amount
+      &__communication
+      &__account-number
+        line-height 1.4
+      &__confirm
+        position static
+        text-align: center
+        &:before
+          position: static
+          display: block
+          margin: 0 auto 15px auto

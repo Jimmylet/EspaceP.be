@@ -2092,11 +2092,13 @@ form input
 {
     max-width: 114em;
     margin: 0 auto;
+    padding: 0 1em;
 }
 .mag-content__title
 {
     font-family: montserrat, Helvetica, Arial, sans-serif;
     font-size: 3.6em;
+    line-height: 1.4em;
 
     margin-top: 2.778em;
     margin-bottom: 2.778em;
@@ -2129,12 +2131,7 @@ form input
 }
 .mag-content__blockquote__text
 {
-    position: absolute;
-    top: 50%;
-
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    padding-top: 2em;
 }
 .mag-content__author
 {
@@ -2559,6 +2556,75 @@ form input
 .payementsoutien--clicked .payement .clickplan.clickplannormal
 {
     display: none;
+}
+@media screen and (max-width: 628px)
+{
+    .mag-content__title
+    {
+        font-size: 2.6em;
+    }
+    .mag-content__author
+    {
+        right: 0;
+        left: 0;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .mag-content__profession
+    {
+        position: static;
+
+        text-align: center;
+    }
+    .mag-content__receivemoney
+    {
+        font-size: 2.6em;
+    }
+    .choose-plan__title-main
+    {
+        font-size: 2.4em;
+    }
+    .choose-plan__wrap
+    {
+        display: block;
+
+        padding: 0;
+    }
+    .choose-plan__normal
+    {
+        margin-bottom: 6em;
+    }
+    .payementnormal--clicked .clickplan,
+    .payementsoutien--clicked .clickplan
+    {
+        max-width: 87%;
+    }
+    .payementnormal--clicked .clickplan__amount,
+    .payementsoutien--clicked .clickplan__amount,
+    .payementnormal--clicked .clickplan__communication,
+    .payementsoutien--clicked .clickplan__communication,
+    .payementnormal--clicked .clickplan__account-number,
+    .payementsoutien--clicked .clickplan__account-number
+    {
+        line-height: 1.4;
+    }
+    .payementnormal--clicked .clickplan__confirm,
+    .payementsoutien--clicked .clickplan__confirm
+    {
+        position: static;
+
+        text-align: center;
+    }
+    .payementnormal--clicked .clickplan__confirm:before,
+    .payementsoutien--clicked .clickplan__confirm:before
+    {
+        position: static;
+
+        display: block;
+
+        margin: 0 auto 15px auto;
+    }
 }
 .mag-header
 {
