@@ -124,3 +124,42 @@
   &:focus
     color color-pink
     transition color .3s ease
+
+/************************************\
+  RESPONSIVE
+\************************************/
+
+@media screen and ( max-width: 1024px )
+  .footer
+    &__wrap
+      display flex
+
+    &__espacep
+      display none
+@media screen and ( max-width: 699px )
+  .footer
+    &__wrap
+      max-width 23em
+      display flex
+      flex-direction column
+      margin: 0 auto
+    &__informations
+    &__contacts
+      margin-bottom 3em
+  .subfooter__wrap
+    flex-direction: column;
+    max-width 20em
+  .subfooter
+    &__espaceplegal__facebook
+      float none
+      position: relative
+      top 10px
+    &__copyright
+      display: inline-block
+      margin-bottom 1em
+    &__webdesigner
+      display: inline-block
+      margin-bottom 1em
+    &__espaceplegal__rapport
+      display: inline-block
+      margin-bottom: 1em
