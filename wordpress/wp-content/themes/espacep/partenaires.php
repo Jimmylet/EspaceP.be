@@ -49,7 +49,5 @@ include 'meta.php';?>
 			<?php endif; ?>
 		</section>
 	</main>
-</div>
-		
-		
 <?php include 'footer.php'; ?>
+</div>

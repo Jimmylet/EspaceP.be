@@ -4663,6 +4663,26 @@ form input
 
     margin-top: 1em;
 }
+.partenaires-page main
+{
+    padding: 0 1em;
+}
+@media screen and (max-width: 866px)
+{
+    .partenaires-page .partenaires__img
+    {
+        display: block;
+        float: none;
+
+        margin: 0 auto 2em auto;
+
+        text-align: center;
+    }
+    .partenaires-page .description__wrap
+    {
+        max-width: 100%;
+    }
+}
 .headintro
 {
     height: 48em;
