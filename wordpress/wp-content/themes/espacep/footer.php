@@ -58,5 +58,27 @@
 <?php if (is_page(185) || is_page(128) || is_page(241) || is_page(287) ||is_page(209)): ?> <!-- Si c'est une des page profile -->
 <script src="<?php echo $scripts . '/button-scroll-profile.js'; ?>"></script>
 <?php endif; ?>
+<script>
+	$(".select").change(function() {
+		$(this).css('color','#383838')
+	})
+</script>
+<script>
+	$(".wpcf7-form").validate({
+		rules: {
+			yourname: "required",
+			youremail: {
+				required: true,
+				email: true
+			},
+		},
+		messages: {
+			yourname: "Please include your name.",
+			youremail: "Please include a valid email address.",
+			yourmessage: "Please tell me how I can help you.",
+			
+		},
+	});
+</script>
 </body>
 </html>

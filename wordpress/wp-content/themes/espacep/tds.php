@@ -81,7 +81,8 @@ include 'meta.php';?>
 						<span class="tds-vaccins__ask__title">Demander le passage d’une équipe</span>
 						<?php the_field('tds-passage'); ?>
 					</div>
-					<form class="form">
+					<?php echo do_shortcode('[contact-form-7 id="293" title="Demander le passage d’une équipe" html_class="form"]'); ?>
+					<!--<form class="form">
 					<div class="form__top">
 						<div class="form__name">
 							<label class="form__name__label" for="name">Votre nom</label>
@@ -111,7 +112,7 @@ include 'meta.php';?>
 						</div>
 					</div>
 					<input class="form__submit" type="submit" value="Envoyer le message">
-				</form>
+				</form>-->
 				</div>
 			</div>
 		</section>

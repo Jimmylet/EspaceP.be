@@ -8,6 +8,8 @@ function my_jquery_enqueue() {
     wp_enqueue_script('jquery');
 }
 
+
+
 // Désactiver la barre d’administration
 show_admin_bar(false);
 
