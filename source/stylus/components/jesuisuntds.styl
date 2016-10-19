@@ -37,3 +37,194 @@
     & .language
       &__message:before
         {english}
+
+.tds-page-en
+  & .headintro
+    & .language
+      max-width 350px
+      &__message:before
+        {french}
+        top 4px
+
+.tds-page
+  .etudiant-philosophie
+    background url("../images/svg/philosophie.svg") no-repeat right 0px
+    background-size 70px
+  .tds-section
+    max-width 104em
+    margin: 12em auto 0 auto
+    & ol
+      display: block
+      counter-reset: section;
+      list-style-type: none;
+    &__title
+      display: block
+      font-family: montserratfont
+      font-weight: bold
+      font-size 3em
+      line-height: 1.4em
+      letter-spacing 0.5px
+      &:after
+        display: block
+        content ''
+        width 120px
+        height 6px
+        margin-bottom 50px
+        margin-top 10px
+        background-color color-pink
+    &__subtitle
+      font-weight 600
+      font-size: 2.6em
+      letter-spacing 0.43px
+    & li
+      display: block
+      margin-bottom 5em
+    & p
+      display block
+      font-size: 2em
+      line-height: 1.5em
+      letter-spacing 0.19px
+      margin 17px 0 0 0
+      color #3E3E3E
+    & strong
+      font-weight: bold
+    & em
+      font-style: italic
+    & a
+      color color-pink
+      font-weight: bold
+      &:hover
+      &:focus
+        text-decoration underline
+    & li:before
+      counter-increment: section;
+      content: counters(section,".") ". ";
+      font-weight 600
+      font-size: 2.6em
+      letter-spacing 0.43px
+  .tds-action
+    background url("../images/svg/actions.svg") no-repeat right 0px
+    background-size 75px
+    margin-top 10em
+  .tds-droits
+    background url("../images/svg/legi.svg") no-repeat right 0px
+    background-size 110px
+  .tds-vaccins
+    background url("../images/svg/vaccins.svg") no-repeat right 0px
+    background-size 110px
+  .tds-files
+    background url("../images/svg/download.svg") no-repeat right 0px
+    background-size 80px
+  .tds-stages
+    & ul ul
+      margin-top 2em
+      & li
+        margin-bottom: .7em
+        font-size: 2em
+        &:before
+          content "– "
+          font-size: 1em
+          counter-increment none
+      & li:before
+        font-size: 0
+  .tds-section__ol
+    & ul
+      margin-top 2em
+      & li
+        margin-bottom: .7em
+        font-size: 2em
+        &:before
+          content "– "
+          counter-increment none
+          font-size: 1em
+
+  .tds-droits
+    .tds-section__subtitle
+      display: block
+      font-weight: bold
+      margin-top: 50px
+      color color-pink
+
+  .tds-vaccins
+    &__ask
+      overflow hidden
+      margin-top 8em
+      &__wrap
+        float: left
+        max-width 40%
+    &__ask__title
+      font-size: 2.6em;
+      font-weight: 600;
+      letter-spacing: .43px;
+      line-height: 1.4em
+    form
+      margin: 0
+      float: right
+    select.select
+      appearance: none;
+      outline none
+      border-radius: 2px;
+      padding-end: 20px;
+      padding-start: 2px;
+      user-select: none;
+      background-image: url('../images/svg/imgselect.svg')
+      background-color #FFF
+      background-position: 97% center;
+      background-repeat: no-repeat;
+      border: 1px solid #767677
+      color: #6C6C6C;
+      font-size: 1.6em;
+      overflow: hidden;
+      padding: 11px 20px 11px 19px
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+      margin-bottom: 20px
+    .form__submit
+      float none
+    .form__name
+      &__input
+        width 90%
+
+
+  .tds-files
+    a
+      display: inline-block
+      vertical-align: top
+      text-align: center
+      height 100%
+      background-color color-white
+      color color-black
+      font-weight: normal
+      font-size: 1.8em
+      line-height: 1.4em
+      padding 15px
+      border-radius 6px
+      &:hover
+      &:focus
+        text-decoration none
+    &__name
+      display block
+      margin-bottom 10px
+      font-weight: bold
+      max-width: 300px
+    & img
+      display block
+      margin: 0 auto 10px auto
+    &__download
+      display: block
+      text-align: center
+  .tds-files__wrap:hover .tds-files__download
+    color color-pink
+    transition color .3s ease
+  .tds-files__wrap
+    display inline-block
+    margin 0 2em 2em 0
+    &:last-child
+      margin 0 0 2em 0
+  .div-content
+    display flex
+    flex-wrap: wrap
+    align-items stretch
+    align-content flex-end
+
