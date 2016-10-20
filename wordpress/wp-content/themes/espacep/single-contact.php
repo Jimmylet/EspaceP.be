@@ -37,17 +37,17 @@ include 'meta.php';
                         <?php if( have_rows('antennes_équipe') ):
                         while ( have_rows('antennes_équipe') ) : the_row();
                         $image = wp_get_attachment_image_src(get_sub_field('membre_photo')['id'], 'thumb-antenne-membre');?>
-                        <section class="team__person">
+                        <div class="team__person">
                             <figure class="team__person__figure">
                                 <img class="team__person__img" src="<?= $image[0]; ?>" width="115" height="115" alt="Photo de Joséphine Ange-Gardien">
                                 <figcaption class="team__person__details">
-                                    <h3 class="team__person__title"><?php echo the_sub_field('membre_name'); ?></h3>
+                                    <p class="team__person__title"><?php echo the_sub_field('membre_name'); ?></p>
                                     <p class="team__person__paragraph">
                                         <?php echo the_sub_field('membre_description'); ?>
                                     </p>
                                 </figcaption>
                             </figure>
-                        </section>
+                        </div>
                         <?php endwhile; ?>
                         <?php endif; ?>
                         <!-- End while with ACF -->
@@ -58,16 +58,6 @@ include 'meta.php';
         </div><a class="maps" href="https://www.google.be/maps/place/Espace+p...+Asbl/@50.6434524,5.5734331,17z/data=!4m13!1m7!3m6!1s0x47c0fa0eea904019:0xbf91a142d6e5adad!2sRue+Souverain+Pont+50,+4000+Li%C3%A8ge,+Belgique!3b1!8m2!3d50.6434524!4d5.5756218!3m4!1s0x47c0fa0eeaf2600d:0x57b2f2f122d7eb3c!8m2!3d50.6434448!4d5.5755642" title="Vers Google Maps" rel="external" target="_blank">
 				<?php $image = get_field('antennes_map'); ?>
 				<?php $imageResponsive = get_field('antennes_map-res'); ?>
-				<style>
-					.contact .maps__img{
-						background-image: url("<?php echo $image['url']; ?>");
-					}
-					@media screen and ( max-width: 482px ){
-						.contact .maps__img{
-							background-image: url("<?php echo $imageResponsive['url']; ?>");
-						}
-					}
-				</style>
             <div class="maps__img"><span class="maps__button">Aller vers Google Maps</span></div></a>
         <div class="contact-bottom-wrap">
             <section class="details">
