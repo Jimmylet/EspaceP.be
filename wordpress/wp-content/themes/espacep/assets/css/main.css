@@ -5481,6 +5481,7 @@ form input
 {
     max-width: 104em;
     margin: 12em auto 0 auto;
+    padding: 0 1em;
 }
 .tds-page .tds-section ol
 {
@@ -5782,6 +5783,44 @@ form input
     -webkit-align-content: flex-end;
     -ms-flex-line-pack: end;
             align-content: flex-end;
+}
+@media screen and (max-width: 1005px)
+{
+    .tds-page .tds-section
+    {
+        background: none;
+    }
+    .tds-page .tds-vaccins
+    {
+        float: none;
+    }
+    .tds-page .tds-vaccins__ask__wrap
+    {
+        float: none;
+
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .tds-page .tds-vaccins .form
+    {
+        float: none;
+
+        max-width: 100%;
+    }
+    .tds-page .tds-vaccins .form__name__input,
+    .tds-page .tds-vaccins .form__email__input
+    {
+        width: 100%;
+    }
+    .tds-page .tds-vaccins .form__name,
+    .tds-page .tds-vaccins .form__email
+    {
+        min-width: 45.2em;
+    }
+    .tds-page .tds-vaccins .form__top
+    {
+        display: block;
+    }
 }
 .wpcf7-not-valid-tip
 {

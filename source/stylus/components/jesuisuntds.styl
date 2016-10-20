@@ -53,6 +53,7 @@
   .tds-section
     max-width 104em
     margin: 12em auto 0 auto
+    padding 0 1em
     & ol
       display: block
       counter-reset: section;
@@ -231,3 +232,24 @@
     align-items stretch
     align-content flex-end
 
+@media screen and ( max-width: 1005px )
+  .tds-page
+    .tds-section
+      background none
+    .tds-vaccins
+      float none
+    .tds-vaccins__ask__wrap
+      float none
+      max-width: 100%
+      margin-bottom 30px
+    .tds-vaccins .form
+      max-width: 100%
+      float none
+    .tds-vaccins .form__name__input
+    .tds-vaccins .form__email__input
+      width 100%
+    .tds-vaccins .form__name
+    .tds-vaccins .form__email
+      min-width 45.2em
+    .tds-vaccins .form__top
+      display block
