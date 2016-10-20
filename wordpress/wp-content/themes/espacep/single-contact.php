@@ -87,12 +87,15 @@ include 'meta.php';
                 <h2 class="details__title">Contactez Espace P… <?php the_field('antennes_ville');?></h2>
                 <div class="details__wrap-global">
                     <div class="details__wrap-left">
-                        <p class="details__paragraph">N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.</p><div class="details__wrap"> <span class="details__subtitle">Adresse</span><span class="details__subtext">50, Rue Souverain-Pont, 4000 - Liège</span><span class="details__subtitle">Téléphone</span>
+											<p class="details__paragraph">N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.</p>
+                        <div class="details__wrap">
+													<span class="details__subtitle">Adresse</span><span class="details__subtext">50, Rue Souverain-Pont, 4000 - Liège</span><span class="details__subtitle">Téléphone</span>
                         <span class="details__subtext">04 221 05 09</span>
                         <?php if( get_field('antennes_fax') ): ?>
                         <span class="details__subtitle">Fax</span>
-                        <span class="details__subtext"><?php the_field('antennes_fax'); ?></span></div>
+                        <span class="details__subtext"><?php the_field('antennes_fax'); ?></span>
                         <?php endif;?>
+												</div>
                     </div>
                     <div class="details__wrap-right">
                         <form class="form">
