@@ -22,28 +22,15 @@ include 'meta.php';
             <nav class="contact-list">
                 <h2 class="contact-list__title">Choisissez votre ville</h2>
                 <div class="contact-list__wrap">
-									<a class="contact-list__item contact-list__item--active" href="contactliege.html" title="Vers la page d’Espace P… Liège">
-											<span>Espace P… Liège</span>
-									</a>
-									<a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles">
-										<span>Espace P… Bruxelles</span>
-									</a>
-									<a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles">
-										<span>Espace P… Namur</span>
-									</a>
-									<a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles">
-										<span>Espace P… Charleroi</span>
-									</a>
-									<a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles">
-										<span>Espace P… Mons</span>
-									</a>
-									<a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles">
-										<span>Espace P… Arlon</span>
-									</a>
+									<?php global $post; $thePostID = $post->ID; ?>
+									<?php foreach (b_get_menu_items('city-nav') as $navItem): ?>
+										<a href="<?php echo $navItem->url;?>" class="contact-list__item <?php echo $thePostID == $navItem->id ? "contact-list__item--active" : "" ;?>  "><?php echo $navItem->label;?></a>
+									<?php endforeach; ?>
+									
 								</div>
             </nav>
             <section class="team">
-                <h2 class="team__title">L’équipe de Liège</h2>
+                <h2 class="team__title">L’équipe de <?php the_field('antennes_ville'); ?></h2>
                 <div class="team__person__wrap">
                     <div class="team__person__row">
                     <!-- Start while with ACF -->
@@ -89,8 +76,8 @@ include 'meta.php';
                     <div class="details__wrap-left">
 											<p class="details__paragraph">N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.</p>
                         <div class="details__wrap">
-													<span class="details__subtitle">Adresse</span><span class="details__subtext">50, Rue Souverain-Pont, 4000 - Liège</span><span class="details__subtitle">Téléphone</span>
-                        <span class="details__subtext">04 221 05 09</span>
+													<span class="details__subtitle">Adresse</span><span class="details__subtext"><?php the_field('antennes_adresse');?></span><span class="details__subtitle">Téléphone</span>
+                        <span class="details__subtext"><?php the_field('antennes_telephone'); ?></span>
                         <?php if( get_field('antennes_fax') ): ?>
                         <span class="details__subtitle">Fax</span>
                         <span class="details__subtext"><?php the_field('antennes_fax'); ?></span>

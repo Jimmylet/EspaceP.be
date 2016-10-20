@@ -20,6 +20,8 @@ $scripts = get_template_directory_uri() . '/assets/scripts';
 // Enregistrer menu
 register_nav_menu( 'main-nav', __('Menu principal, affiché dans le header.','b') );
 
+register_nav_menu( 'city-nav', __('Menu des villes, affiché sur la page contact.','b') );
+
 // Créer les objets du menu
 function b_get_menu_id( $location )
 {
