@@ -75,7 +75,8 @@ include 'meta.php';
 												</div>
                     </div>
                     <div class="details__wrap-right">
-                        <form class="form">
+											<?php echo do_shortcode(get_field('antennes_form'));?>
+                        <!--<form class="form">
                             <div class="form__top">
                                 <div class="form__name">
                                     <label class="form__name__label" for="name">Votre nom</label>
@@ -99,7 +100,7 @@ include 'meta.php';
                                 </div>
                             </div>
                             <input class="form__submit" type="submit" value="Envoyer le message">
-                        </form>
+                        </form>-->
                     </div>
                 </div>
             </section>
