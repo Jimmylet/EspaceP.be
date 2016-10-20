@@ -1382,6 +1382,11 @@ form input
         -ms-transform: translateY(9px);
             transform: translateY(9px);
 }
+.no-main .menu__logo:before
+{
+    background: url('../images/svg/logo_espacep2.svg') no-repeat;
+    background-size: 50px;
+}
 .with--menu .menu__icon__label span
 {
     background-color: transparent;
@@ -1561,15 +1566,21 @@ form input
     {
         position: absolute;
         top: -14px;
+        left: 25px;
 
         display: inline-block;
 
-        width: 61px;
-        height: 46px;
+        width: 60px;
+        height: 60px;
 
         content: '';
 
-        background: url('../images/logo_espacep.jpg') no-repeat;
+        background: url('../images/svg/logo_espacep.svg') no-repeat;
+        background-size: 50px;
+    }
+    .menu__logo:after
+    {
+        display: none;
     }
     .menu__search
     {

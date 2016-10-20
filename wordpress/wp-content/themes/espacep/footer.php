@@ -55,7 +55,7 @@
 <?php if (is_page(128)): ?> <!-- Si c'est la page client -->
 <script src="<?php echo $scripts . '/client.js'; ?>"></script>
 <?php endif; ?>
-<?php if (is_page(185) || is_page(128) || is_page(241) || is_page(287) ||is_page(209)): ?> <!-- Si c'est une des page profile -->
+<?php if (is_page(185) || is_page(128) || is_page(241) || is_page('128') || is_page(287) ||is_page(209)): ?> <!-- Si c'est une des page profile -->
 <script src="<?php echo $scripts . '/button-scroll-profile.js'; ?>"></script>
 <?php endif; ?>
 <script>

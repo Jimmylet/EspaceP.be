@@ -96,6 +96,11 @@
       transform: translateY(9px);
 
 
+.no-main
+  .menu__logo:before
+    background url("../images/svg/logo_espacep2.svg") no-repeat;
+    background-size 50px
+
 .with--menu
   .menu__icon__label span
     background-color transparent
@@ -187,11 +192,15 @@
       &:before
         content ""
         display inline-block
-        height 46px
-        width 61px
-        background url("../images/logo_espacep.jpg") no-repeat;
+        height 60px
+        width 60px
+        background url("../images/svg/logo_espacep.svg") no-repeat;
+        background-size 50px
         position: absolute
         top -14px
+        left 25px
+    &__logo:after
+      display none
     &__search
       top 22px
 
