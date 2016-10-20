@@ -36,6 +36,10 @@ Template Name: Page d’accueil
 						<a href="<?php echo $navItem->url; ?>"
 							 class="menu__link <?php echo $thePostID == $navItem->id ? "active" : ""; ?>  "><?php echo $navItem->label; ?></a>
 					<?php endforeach; ?>
+					<a href="#" class="menu__link menu__link-res">Je suis un TDS</a>
+					<a href="#" class="menu__link menu__link-res">Je suis un étudiant</a>
+					<a href="#" class="menu__link menu__link-res">Je suis un sympathisant</a>
+					<a href="#" class="menu__link menu__link-res">Je suis un client</a>
 				</li>
 			</ul>
 		</div>

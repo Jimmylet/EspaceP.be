@@ -1225,13 +1225,13 @@ form input
 }
 .menu__link
 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 100;
 
     display: block;
     visibility: hidden;
 
-    padding: 20px;
+    padding: 10px;
 
     -webkit-transform: scale(.8);
         -ms-transform: scale(.8);
@@ -1585,6 +1585,10 @@ form input
     .menu__search
     {
         top: 22px;
+    }
+    .menu__link-res
+    {
+        display: none;
     }
     .menu-home .menu__link
     {
