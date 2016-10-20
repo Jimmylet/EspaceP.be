@@ -12,15 +12,15 @@
 					étudiant</a><a class="footer__informations__link" href="#" title="Aller vers la page…">Je suis un
 					sympathisant</a><a class="footer__informations__link" href="<?php the_permalink(128); ?>"
 								title="Aller vers la page…">Je suis un potentiel client</a></div>
-			<div class="footer__contacts"><span class="footer__contacts__title">Contacts</span>
-				<div class="footer__contacts__wrap"><a class="footer__contacts__link" href="contactliege.html"
-									title="Aller sur la page">Liège</a><a
-									class="footer__contacts__link" href="contactbruxelles.html"
-									title="Aller sur la page">Bruxelles</a><a class="footer__contacts__link"
-									href="contactliege.html" title="Aller sur la page">Namur</a><a
-									class="footer__contacts__link" href="contactliege.html" title="Aller sur la page">Mons</a><a
-									class="footer__contacts__link" href="contactliege.html" title="Aller sur la page">Arlon</a><a
-									class="footer__contacts__link" href="contactliege.html" title="Aller sur la page">Charleroi</a>
+			<div class="footer__contacts">
+				<span class="footer__contacts__title">Contacts</span>
+				<div class="footer__contacts__wrap">
+					<?php foreach (b_get_menu_items('city-nav') as $navItem): ?>
+						<a href="<?php echo $navItem->url;?>" class="footer__contacts__link" title="Aller sur la page contact de <?php echo $navItem->label;?>">
+							<?php $cityOnly = str_replace('Espace P… - ', '', $navItem->label); ?>
+							<?php echo $cityOnly ;?>
+						</a>
+					<?php endforeach; ?>
 				</div>
 			</div>
 			<div class="footer__navigation"><span class="footer__navigation__title">Navigation</span><a
