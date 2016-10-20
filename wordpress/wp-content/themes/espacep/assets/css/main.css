@@ -4091,6 +4091,7 @@ form input
 {
     max-width: 114em;
     margin: 0 auto;
+    padding: 0 1em;
 }
 .client
 {
@@ -4207,6 +4208,7 @@ form input
 
     max-width: 114em;
     margin: 10em auto 0 auto;
+    padding: 0 10px;
 }
 .guideclient__wrap:after
 {
@@ -4220,7 +4222,7 @@ form input
     position: absolute;
     z-index: 2;
     top: 0;
-    left: 0;
+    left: 10px;
 
     width: 292px;
 }
@@ -4298,7 +4300,7 @@ form input
 }
 .guideclient__section
 {
-    position: fixed;
+    position: static;
     z-index: 1;
     top: 0;
     right: 0;
@@ -4313,21 +4315,8 @@ form input
             transition: -webkit-transform .3s;
             transition:         transform .3s;
             transition:         transform .3s, -webkit-transform .3s;
-    -webkit-transform: translateZ(0) translateX(100%);
-            transform: translateZ(0) translateX(100%);
-
-    background: #fff;
-
-    -webkit-overflow-scrolling: touch;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
 }
-.guideclient__section.slide-in
-{
-    -webkit-transform: translateZ(0) translateX(0%);
-            transform: translateZ(0) translateX(0%);
-}
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 100px)
 {
     .guideclient__section
     {
@@ -4346,7 +4335,7 @@ form input
         background: transparent;
     }
 }
-@media only screen and (min-width: 1024px)
+@media only screen and (min-width: 900px)
 {
     .guideclient__section
     {
@@ -4411,10 +4400,6 @@ form input
 {
     right: 2%;
 }
-.guideclient__section__group
-{
-    display: none;
-}
 .cd-faq-group.selected
 {
     display: block;
@@ -4440,7 +4425,7 @@ form input
 
     color: #6c6c6c;
 }
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 100px)
 {
     .guideclient__section__group
     {
@@ -4481,7 +4466,7 @@ form input
 
     margin: 16px 0 4px;
 }
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 100px)
 {
     .guideclient__section__trigger
     {
@@ -4554,7 +4539,7 @@ form input
 
     color: #4f4f4f;
 }
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 100px)
 {
     .guideclient__section__content
     {
@@ -4573,6 +4558,66 @@ form input
 .client-page .footer
 {
     margin-top: 15em;
+}
+@media screen and (max-width: 895px)
+{
+    .guideclient__categories
+    {
+        position: static;
+
+        display: block;
+
+        width: 100%;
+        margin-bottom: 5.5em;
+    }
+    .guideclient__categories__link
+    {
+        font-size: 1.6em;
+    }
+    .guideclient__section
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 10px)
+{
+    .guideclient__section
+    {
+        padding: 0 10px;
+    }
+    .guideclient__section__group .guideclient__section__title h3
+    {
+        font-size: 1.6em;
+
+        margin-top: 45px;
+    }
+    .guideclient__section__trigger
+    {
+        font-size: 2em;
+        line-height: 1.4;
+
+        color: #d85e72;
+    }
+}
+@media screen and (max-width: 537px)
+{
+    .guideclient__title
+    {
+        min-height: 28em;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    .client__paragraph strong:before,
+    .client p strong:before
+    {
+        display: none;
+    }
+    .client__paragraph,
+    .client p
+    {
+        margin-left: 0;
+    }
 }
 .myarticle .client-top-wrap
 {
@@ -4926,6 +4971,38 @@ form input
     letter-spacing: .21px;
 
     color: #fff;
+}
+@media screen and (max-width: 629px)
+{
+    .headintro
+    {
+        height: 35em;
+        padding: 9em 3em 2em 2em;
+    }
+    .headintro__title
+    {
+        font-size: 3em;
+    }
+    .headintro p
+    {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 399px)
+{
+    .headintro
+    {
+        height: 35em;
+        padding: 9em 3em 2em 2em;
+    }
+    .headintro__title
+    {
+        font-size: 2em;
+    }
+    .headintro p
+    {
+        font-size: 1.6em;
+    }
 }
 .curieux-page .headintro
 {

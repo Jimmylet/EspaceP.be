@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
-    var MqM = 768,
-        MqL = 1024;
+    var MqL = 900;
 
     var faqsSections = $('.guideclient__section__group'),
         faqTrigger = $('.guideclient__section__trigger'),
@@ -14,13 +13,7 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         var selectedHref = $(this).attr('href'),
             target= $(selectedHref);
-        if( $(window).width() < MqM) {
-            faqsContainer.scrollTop(0).addClass('slide-in').children('ul').removeClass('selected').end().children(selectedHref).addClass('selected');
-            closeFaqsContainer.addClass('move-left');
-            $('body').addClass('cd-overlay');
-        } else {
             $('body,html').animate({ 'scrollTop': target.offset().top - 19}, 200);
-        }
     });
 
     //close faq lateral panel - mobile only
@@ -103,7 +96,7 @@ jQuery(document).ready(function($) {
             });
         } else {
             faqsCategoriesContainer.removeClass('is-fixed').css({
-                'left': 0,
+                'left': 10,
                 'top': 0,
             });
         }
