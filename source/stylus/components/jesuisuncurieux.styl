@@ -1,10 +1,12 @@
 .curieux-page
   .headintro
     background-image url("../images/header_curieux.jpg")
+
   .client-top-wrap
     max-width 104em
+    padding 0 1em
   .curieux-legislation
-    background url("../images/svg/legi.svg") no-repeat right 50px
+    background url("../images/svg/legi.svg") no-repeat right top
     background-size 110px
     padding-top 5em
     padding-bottom 8em
@@ -25,6 +27,7 @@
       font-weight: bold
       font-size 3em
       letter-spacing 0.5px
+      line-height: 1.4em
       &:after
         display: block
         content ''
@@ -53,3 +56,12 @@
       font-weight 600
       font-size: 2.6em
       letter-spacing 0.43px
+  .curieux-legislation
+  .curieux-manifeste
+    padding 0 1em
+
+@media screen and ( max-width: 853px )
+  .curieux-page
+    .curieux-legislation
+    .curieux-manifeste
+      background none

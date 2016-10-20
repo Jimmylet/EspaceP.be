@@ -4938,8 +4938,8 @@ form input
 }
 .headintro
 {
-    height: 48em;
-    padding: 13em 3em 3em 3em;
+    min-height: 48em;
+    padding: 9em 3em 3em 3em;
 
     background: #d85e72 no-repeat center center;
     background-size: cover;
@@ -4976,7 +4976,7 @@ form input
 {
     .headintro
     {
-        height: 35em;
+        min-height: 35em;
         padding: 9em 3em 2em 2em;
     }
     .headintro__title
@@ -4992,7 +4992,7 @@ form input
 {
     .headintro
     {
-        height: 35em;
+        min-height: 35em;
         padding: 9em 3em 2em 2em;
     }
     .headintro__title
@@ -5011,13 +5011,14 @@ form input
 .curieux-page .client-top-wrap
 {
     max-width: 104em;
+    padding: 0 1em;
 }
 .curieux-page .curieux-legislation
 {
     padding-top: 5em;
     padding-bottom: 8em;
 
-    background: url('../images/svg/legi.svg') no-repeat right 50px;
+    background: url('../images/svg/legi.svg') no-repeat right top;
     background-size: 110px;
 }
 .curieux-page .curieux-manifeste
@@ -5046,6 +5047,7 @@ form input
     font-family: montserrat, Helvetica, Arial, sans-serif;
     font-size: 3em;
     font-weight: bold;
+    line-height: 1.4em;
 
     display: block;
 
@@ -5103,6 +5105,19 @@ form input
     content: counters(section, '.') '. ';
     counter-increment: section;
     letter-spacing: .43px;
+}
+.curieux-page .curieux-legislation,
+.curieux-page .curieux-manifeste
+{
+    padding: 0 1em;
+}
+@media screen and (max-width: 853px)
+{
+    .curieux-page .curieux-legislation,
+    .curieux-page .curieux-manifeste
+    {
+        background: none;
+    }
 }
 .button-scroll
 {

@@ -18,7 +18,7 @@ include 'meta.php';?>
 		
 		<div class="headintro">
 			<span class="headintro__title">
-				Vous êtes un sympathisant/curieux
+				Vous êtes un sympathisant ou curieux
 			</span>
 			<?php the_field('meta-description'); ?>
 		</div>
