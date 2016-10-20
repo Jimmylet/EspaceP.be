@@ -55,7 +55,7 @@ include 'meta.php';
                     </div>
                 </div>
             </section>
-        </div><a class="maps" href="https://www.google.be/maps/place/Espace+p...+Asbl/@50.6434524,5.5734331,17z/data=!4m13!1m7!3m6!1s0x47c0fa0eea904019:0xbf91a142d6e5adad!2sRue+Souverain+Pont+50,+4000+Li%C3%A8ge,+Belgique!3b1!8m2!3d50.6434524!4d5.5756218!3m4!1s0x47c0fa0eeaf2600d:0x57b2f2f122d7eb3c!8m2!3d50.6434448!4d5.5755642" title="Vers Google Maps" rel="external" target="_blank">
+        </div><a class="maps" href="<?php the_field('antennes_map-link'); ?>" title="Vers Google Maps" rel="external" target="_blank">
 				<?php $image = get_field('antennes_map'); ?>
 				<?php $imageResponsive = get_field('antennes_map-res'); ?>
             <div class="maps__img"><span class="maps__button">Aller vers Google Maps</span></div></a>
