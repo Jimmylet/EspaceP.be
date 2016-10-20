@@ -3444,7 +3444,7 @@ form input
 }
 .contact-list
 {
-    margin: 10em 0 10em;
+    margin: 10em 0 6em;
 }
 .contact-list__title
 {
@@ -3464,12 +3464,13 @@ form input
     display: -ms-flexbox;
     display:         flex;
 
-    margin-bottom: 4em;
-
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 }
 .contact-list__item
 {
@@ -3483,6 +3484,7 @@ form input
 
     width: 292px;
     height: 78px;
+    margin-bottom: 40px;
     padding: 1em;
 
     -webkit-transition: border .3s ease;
@@ -3639,7 +3641,9 @@ form input
     height: 32em;
     margin-bottom: 10em;
 
-    background: url('../images/mapliege@2x.jpg') no-repeat center center;
+    background-image: url('../images/mapliege@2x.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
 }
 .maps__button
@@ -3947,6 +3951,137 @@ form input
             transition: background .3s ease;
 
     background-color: #dc6e80;
+}
+@media screen and (max-width: 1152px)
+{
+    .contact .team__person
+    {
+        max-width: 47%;
+    }
+    .contact .team__person__figure
+    {
+        max-width: 100%;
+    }
+    .contact .team__person:nth-child(2n+2)
+    {
+        margin-right: 0;
+    }
+    .contact .team__person:nth-child(2n+1)
+    {
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 1050px)
+{
+    .contact .details__wrap-global
+    {
+                flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+    }
+    .contact .details__paragraph
+    {
+        display: inline-block;
+
+        margin-right: 10%;
+
+        vertical-align: top;
+    }
+    .contact .details__wrap
+    {
+        display: inline-block;
+    }
+    .contact .form
+    {
+        width: 100%;
+        max-width: none;
+    }
+    .contact .form__name
+    {
+        width: 47%;
+    }
+    .contact .form__email
+    {
+        width: 47%;
+    }
+    .contact .details__wrap-right
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 951px)
+{
+    .contact .contact-list__item
+    {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 826px)
+{
+    .contact .form__top
+    {
+        display: block;
+    }
+    .contact .form__name,
+    .contact .form__email
+    {
+        width: 100%;
+    }
+    .contact .form__submit
+    {
+        float: left;
+    }
+}
+@media screen and (max-width: 730px)
+{
+    .contact .team__person
+    {
+        max-width: 100%;
+    }
+    .contact .team__person,
+    .contact .team__person:nth-child(2n+1)
+    {
+        margin-right: 0;
+    }
+    .contact .contact-top-wrap,
+    .contact .contact-bottom-wrap
+    {
+        padding: 0 1em;
+    }
+    .contact .team__title,
+    .contact .details__title
+    {
+        font-size: 3em;
+    }
+    .contact .team__title:after,
+    .contact .details__title:after
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 640px)
+{
+    .contact .contact-list
+    {
+        margin: 6em 0 6em;
+    }
+    .contact .contact-list__wrap
+    {
+                flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+    }
+    .contact .contact-list__item
+    {
+        width: 100%;
+        margin-bottom: 1em;
+    }
 }
 .client-page .headintro
 {

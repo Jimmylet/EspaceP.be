@@ -7,18 +7,19 @@
   padding: 0 3em
 
 .contact-list
-  margin 10em 0 10em
+  margin 10em 0 6em
   &__title
     {visuallyhidden}
   &__wrap
     display: flex
     justify-content space-between
-    margin-bottom 4em
+    flex-wrap wrap
   &__item
     position: relative
     display: inline-block
     width 292px
     height 78px
+    margin-bottom 40px
     font-family: montserratfont
     text-transform: uppercase
     letter-spacing .12px
@@ -126,7 +127,9 @@
 .maps__img
   height 32em
   margin-bottom 10em
-  background url("../images/mapliege@2x.jpg") no-repeat center center
+  background-repeat no-repeat
+  background-position center center
+  background-image url("../images/mapliege@2x.jpg")
   background-size cover
   overflow hidden
 
@@ -271,3 +274,80 @@
   &:hover
   &:focus
     {button-style-hover}
+
+/************************************\
+  RESPONSIVE
+\************************************/
+@media screen and ( max-width: 1152px )
+  .contact
+    .team
+      &__person
+        max-width 47%
+        &__figure
+          max-width 100%
+      &__person:nth-child(2n+2)
+        margin-right 0
+      &__person:nth-child(2n+1)
+        margin-right 5%
+
+@media screen and ( max-width: 1050px )
+  .contact
+    .details__wrap-global
+      flex-direction column
+    .details__paragraph
+      display: inline-block
+      vertical-align top
+      margin-right 10%
+    .details__wrap
+      display inline-block
+    .form
+      width 100%
+      max-width none
+      &__name
+        width 47%
+      &__email
+        width 47%
+    .details__wrap-right
+      width 100%
+
+@media screen and ( max-width: 951px )
+  .contact
+    .contact-list
+      &__item
+        width 48%
+
+@media screen and ( max-width: 826px )
+  .contact
+    .form__top
+      display block
+    .form__name
+    .form__email
+      width 100%
+    .form__submit
+      float left
+@media screen and ( max-width: 730px )
+  .contact
+    .team
+      &__person
+        max-width 100%
+      &__person
+      &__person:nth-child(2n+1)
+        margin-right 0
+    .contact-top-wrap
+    .contact-bottom-wrap
+      padding 0 1em
+    .team__title
+    .details__title
+      font-size: 3em
+      &:after
+        display none
+
+@media screen and ( max-width: 640px )
+  .contact
+    .contact-list
+      margin 6em 0 6em
+      &__wrap
+        flex-direction column
+      &__item
+        width 100%
+        margin-bottom 1em // 20px

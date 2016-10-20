@@ -21,8 +21,26 @@ include 'meta.php';
 					
             <nav class="contact-list">
                 <h2 class="contact-list__title">Choisissez votre ville</h2>
-                <div class="contact-list__wrap"><a class="contact-list__item contact-list__item--active" href="contactliege.html" title="Vers la page d’Espace P… Liège"><span>Espace P… Liège</span></a><a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles"><span>Espace P… Bruxelles</span></a><a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles"><span>Espace P… Namur</span></a></div>
-                <div class="contact-list__wrap"><a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles"><span>Espace P… Charleroi</span></a><a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles"><span>Espace P… Mons</span></a><a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles"><span>Espace P… Arlon</span></a></div>
+                <div class="contact-list__wrap">
+									<a class="contact-list__item contact-list__item--active" href="contactliege.html" title="Vers la page d’Espace P… Liège">
+											<span>Espace P… Liège</span>
+									</a>
+									<a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles">
+										<span>Espace P… Bruxelles</span>
+									</a>
+									<a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles">
+										<span>Espace P… Namur</span>
+									</a>
+									<a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles">
+										<span>Espace P… Charleroi</span>
+									</a>
+									<a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles">
+										<span>Espace P… Mons</span>
+									</a>
+									<a class="contact-list__item" href="contactbruxelles.html" title="Vers la page d’Espace P… Bruxelles">
+										<span>Espace P… Arlon</span>
+									</a>
+								</div>
             </nav>
             <section class="team">
                 <h2 class="team__title">L’équipe de Liège</h2>
@@ -51,17 +69,29 @@ include 'meta.php';
                 </div>
             </section>
         </div><a class="maps" href="https://www.google.be/maps/place/Espace+p...+Asbl/@50.6434524,5.5734331,17z/data=!4m13!1m7!3m6!1s0x47c0fa0eea904019:0xbf91a142d6e5adad!2sRue+Souverain+Pont+50,+4000+Li%C3%A8ge,+Belgique!3b1!8m2!3d50.6434524!4d5.5756218!3m4!1s0x47c0fa0eeaf2600d:0x57b2f2f122d7eb3c!8m2!3d50.6434448!4d5.5755642" title="Vers Google Maps" rel="external" target="_blank">
+				<?php $image = get_field('antennes_map'); ?>
+				<?php $imageResponsive = get_field('antennes_map-res'); ?>
+				<style>
+					.contact .maps__img{
+						background-image: url("<?php echo $image['url']; ?>");
+					}
+					@media screen and ( max-width: 482px ){
+						.contact .maps__img{
+							background-image: url("<?php echo $imageResponsive['url']; ?>");
+						}
+					}
+				</style>
             <div class="maps__img"><span class="maps__button">Aller vers Google Maps</span></div></a>
         <div class="contact-bottom-wrap">
             <section class="details">
                 <h2 class="details__title">Contactez Espace P… <?php the_field('antennes_ville');?></h2>
                 <div class="details__wrap-global">
                     <div class="details__wrap-left">
-                        <p class="details__paragraph">N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.</p><span class="details__subtitle">Adresse</span><span class="details__subtext">50, Rue Souverain-Pont, 4000 - Liège</span><span class="details__subtitle">Téléphone</span>
+                        <p class="details__paragraph">N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.</p><div class="details__wrap"> <span class="details__subtitle">Adresse</span><span class="details__subtext">50, Rue Souverain-Pont, 4000 - Liège</span><span class="details__subtitle">Téléphone</span>
                         <span class="details__subtext">04 221 05 09</span>
                         <?php if( get_field('antennes_fax') ): ?>
                         <span class="details__subtitle">Fax</span>
-                        <span class="details__subtext"><?php the_field('antennes_fax'); ?></span>
+                        <span class="details__subtext"><?php the_field('antennes_fax'); ?></span></div>
                         <?php endif;?>
                     </div>
                     <div class="details__wrap-right">
