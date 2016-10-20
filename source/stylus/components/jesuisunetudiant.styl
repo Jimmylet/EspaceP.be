@@ -9,6 +9,7 @@
   .etudiant-section
     max-width 104em
     margin: 12em auto 0 auto
+    padding 0 1em
     & ol
       display: block
       counter-reset: section;
@@ -73,7 +74,7 @@
         margin-bottom: .7em
         font-size: 2em
         &:before
-          content "– "
+          content "- "
           font-size: 1em
 
     & li:before
@@ -84,3 +85,9 @@
     display none
   p
     display none
+
+
+@media screen and ( max-width: 853px )
+  .etudiant-page
+    .etudiant-section
+      background none

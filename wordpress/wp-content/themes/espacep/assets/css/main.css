@@ -4939,7 +4939,7 @@ form input
 .headintro
 {
     min-height: 48em;
-    padding: 9em 3em 3em 3em;
+    padding: 11em 3em 3em 3em;
 
     background: #d85e72 no-repeat center center;
     background-size: cover;
@@ -5263,6 +5263,7 @@ form input
 {
     max-width: 104em;
     margin: 12em auto 0 auto;
+    padding: 0 1em;
 }
 .etudiant-page .etudiant-section ol
 {
@@ -5380,7 +5381,7 @@ form input
 {
     font-size: 1em;
 
-    content: '– ';
+    content: '- ';
 }
 .etudiant-page .etudiant-stages li:before
 {
@@ -5393,6 +5394,13 @@ form input
 .form p
 {
     display: none;
+}
+@media screen and (max-width: 853px)
+{
+    .etudiant-page .etudiant-section
+    {
+        background: none;
+    }
 }
 .tds-page .headintro
 {
