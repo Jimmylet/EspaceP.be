@@ -66,7 +66,7 @@ include 'meta.php';?>
 		
 		<section class="tds-section tds-vaccins">
 			<h2 aria-level="2" class="tds-section__title">
-				Infos vaccination/dépistage
+				Infos vaccination et dépistage
 			</h2>
 			<div>
 				<?php if( have_rows('tds-vaccins') ):

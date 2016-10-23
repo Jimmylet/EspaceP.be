@@ -76,7 +76,7 @@ Template Name: I'm sex worker
 		
 		<section class="tds-section tds-vaccins">
 			<h2 aria-level="2" class="tds-section__title">
-				Information vaccination/screening
+				Information vaccination & screening
 			</h2>
 			<div>
 				<?php if( have_rows('tds-vaccins') ):
