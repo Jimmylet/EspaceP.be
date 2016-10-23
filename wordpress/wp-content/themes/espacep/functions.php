@@ -37,7 +37,7 @@ function b_get_menu_items( $location )
         $item = new stdClass();
         $item->url = $obj->url;
         $item->label = $obj->title;
-        $item->icon = $obj->classes[0];
+        $item->class = $obj->classes[0];
         $item->id = $obj->object_id;
         array_push($navItems, $item);
     }
@@ -131,3 +131,11 @@ function is_post_type($type){
 	if($type == get_post_type($wp_query->post->ID)) return true;
 	return false;
 }
+
+
+// upload svg
+function cc_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
