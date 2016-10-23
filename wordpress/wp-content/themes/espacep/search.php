@@ -20,11 +20,13 @@ include 'meta.php';?>
 			<?php echo the_breadcrumb(); ?>
 		</div>
 		<section class="search">
-			<h2 class="search__title">Résultat de la recherche pour : </h2>
-			<p class="search__subtitle"><?php the_search_query(); ?></p>
+			<h2 class="search__title">Résultat de la recherche pour :
+				<span class="search__query"><?php the_search_query(); ?></span>
+			</h2>
+			
 			<ul>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<li class="search__element">
+					<li class="search__li">
 						<a class="search__link" href="<?php echo the_permalink();?>"><?php echo the_title();?></a>
 					</li>
 				<?php endwhile; endif;?>
