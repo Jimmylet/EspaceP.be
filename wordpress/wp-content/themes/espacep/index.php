@@ -34,23 +34,24 @@ Template Name: Page d’accueil
 					<a class="menu__link menu__logo menu__item0" href="<?php echo get_home_url(); ?>">Accueil</a>
 					<?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
 						<a href="<?php echo $navItem->url; ?>"
-							 class="menu__link <?php echo $thePostID == $navItem->id ? "active" : ""; ?>  "><?php echo $navItem->label; ?></a>
+							 class="menu__link <?php echo $thePostID == $navItem->id ? "active" : ""; ?>   <?php echo $navItem->class;?>"><?php echo $navItem->label; ?></a>
 					<?php endforeach; ?>
-					<a href="#" class="menu__link menu__link-res">Je suis un TDS</a>
-					<a href="#" class="menu__link menu__link-res">Je suis un étudiant</a>
-					<a href="#" class="menu__link menu__link-res">Je suis un sympathisant</a>
-					<a href="#" class="menu__link menu__link-res">Je suis un client</a>
+					<a href="<?php the_permalink(241); ?>" class="menu__link menu__link-res menu__item5">Je suis un TDS</a>
+					<a href="<?php the_permalink(209); ?>" class="menu__link menu__link-res menu__item6">Je suis un étudiant</a>
+					<a href="<?php the_permalink(185); ?>" class="menu__link menu__link-res menu__item7">Je suis un sympathisant</a>
+					<a href="<?php the_permalink(128); ?>" class="menu__link menu__link-res menu__item8">Je suis un client</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
-	<form class="menu__search" action="index.php" method="get">
+<!--	<form class="menu__search" action="<?php /*echo home_url(); */?>" method="get">
 		<label class="menu__search__label" for="search"></label>
 		<input class="menu__search__input" type="search" id="search" required placeholder="Rechercher">
-		<input class="menu__search__submit" type="image" name="image" src="<?php echo $images . '/svg/search.svg'; ?>"
+		<input class="menu__search__submit" type="image" name="image" src="<?php /*echo $images . '/svg/search.svg'; */?>"
 					 width="37"
 					 height="37" alt="Bouton de recherche">
-	</form>
+	</form>-->
+	<?php get_search_form(); ?>
 	<nav class="submenu">
 		<h2 class="submenu__title">Choisissez votre profile</h2><a class="submenu__link submenu__link--sexworker" href="<?php echo the_permalink(241); ?>" title="Aller vers la page Je suis un travailleur du sex"><div class="submenu__content"><img class="submenu__img" src="<?php echo $images . '/button_sexworker.png'; ?>" alt="Photo des jambes d’une travailleuse du sexe" srcset="<?php echo $images . '/button_sexworker@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text submenu__text--sexworker">Je suis travailleur du sexe</span></div></a><a class="submenu__sublink" href="<?php the_permalink(287); ?>" title="Go to I'm Sex Worker page" lang="en" hreflang="en" rel="alternate">I'm sex worker and I speak English</a><a class="submenu__link" href="<?php the_permalink(209); ?>" title="Aller vers #"><div class="submenu__content"><img class="submenu__img" src="<?php echo $images . '/button_student.png'; ?>" alt="Photo d’une étudiante souriante" srcset="<?php echo $images . '/button_student@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text">Je suis un étudiant</span></div></a><a class="submenu__link" href="<?php the_permalink(185); ?>" title="Aller vers la page Je suis un curieux"><div class="submenu__content"><img class="submenu__img" src="<?php echo $images . '/button_curieux.png'; ?>" alt="Photo d’une personne sympathisante" srcset="<?php echo $images . '/button_curieux@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text">Je suis un sympathisant</span></div></a><a class="submenu__link" href="<?php the_permalink(128); ?>" title="Aller vers la page Je suis un client"><div class="submenu__content"><img class="submenu__img" src="<?php echo $images . '/button_client.png'; ?>" alt="Photo d’une personne vue de derrière portant une capuche" srcset="<?php echo $images . '/button_client@2x.png'; ?> 2x" width="82" height="82"><span class="submenu__text">Je suis un futur client</span></div></a>
 	</nav>

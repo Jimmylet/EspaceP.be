@@ -1076,7 +1076,7 @@ form input
     }
     .main .submenu
     {
-        bottom: -455px;
+        bottom: -445px;
     }
     .main .submenu__link
     {
@@ -1176,8 +1176,14 @@ form input
 
         margin-bottom: 1em;
     }
+    .main .home-manifeste__button,
+    .main .home-mag__button,
+    .main .last-facebook__button
+    {
+        font-size: 1.8em;
+    }
 }
-@media screen and (max-width: 400px)
+@media screen and (max-width: 399px)
 {
     .main .last-facebook__comment__img
     {
@@ -1186,10 +1192,19 @@ form input
 
         margin: 0 auto 1em auto;
     }
+    .main .submenu__text
+    {
+        max-width: 166px;
+        margin: .9em 0 0 1em;
+    }
+    .main .submenu__sublink
+    {
+        top: 75px;
+        left: 103px;
+    }
 }
 .menu
 {
-    z-index: 999;
     top: 0;
 
     display: block;
@@ -1202,8 +1217,6 @@ form input
             transition: background 500ms ease;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-
-    -webkit-backdrop-filter: blur(10px);
 }
 .menu__item
 {
@@ -1247,6 +1260,10 @@ form input
     top: 24px;
     right: 30px;
 }
+.menu__search__label
+{
+    display: none;
+}
 .menu__search__input
 {
     font-family: opensans, Helvetica, Arial, sans-serif;
@@ -1255,7 +1272,7 @@ form input
     font-weight: 100;
 
     position: relative;
-    left: 3.2px;
+    left: 1px;
 
     width: auto;
     padding: 7px 10px;
@@ -1298,9 +1315,14 @@ form input
 .menu__search__submit
 {
     position: relative;
-    position: static;
-    top: 3px;
-    left: -37px;
+    position: relative;
+
+    float: right;
+
+    padding: 0;
+
+    border: 0;
+    background: transparent;
 }
 .menu__wrap
 {
@@ -1411,6 +1433,7 @@ form input
 .with--menu .menu
 {
     position: fixed;
+    z-index: 999;
 
     background: rgba(0,0,0,.89);
 }
@@ -1435,14 +1458,23 @@ form input
 }
 .with--menu .menu__item0
 {
-    -webkit-transition: all 500ms ease-in-out;
-            transition: all 500ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+            transition: all 400ms ease-in-out;
     -webkit-transition-property: opacity, -webkit-transform;
             transition-property: opacity, -webkit-transform;
             transition-property: opacity, transform;
             transition-property: opacity, transform, -webkit-transform;
 }
 .with--menu .menu__item1
+{
+    -webkit-transition: all 600ms ease-in-out;
+            transition: all 600ms ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: opacity, transform;
+            transition-property: opacity, transform, -webkit-transform;
+}
+.with--menu .menu__item2
 {
     -webkit-transition: all 800ms ease-in-out;
             transition: all 800ms ease-in-out;
@@ -1451,16 +1483,25 @@ form input
             transition-property: opacity, transform;
             transition-property: opacity, transform, -webkit-transform;
 }
-.with--menu .menu__item2
+.with--menu .menu__item3
 {
-    -webkit-transition: all 1100ms ease-in-out;
-            transition: all 1100ms ease-in-out;
+    -webkit-transition: all 1000ms ease-in-out;
+            transition: all 1000ms ease-in-out;
     -webkit-transition-property: opacity, -webkit-transform;
             transition-property: opacity, -webkit-transform;
             transition-property: opacity, transform;
             transition-property: opacity, transform, -webkit-transform;
 }
-.with--menu .menu__item3
+.with--menu .menu__item4
+{
+    -webkit-transition: all 1200ms ease-in-out;
+            transition: all 1200ms ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: opacity, transform;
+            transition-property: opacity, transform, -webkit-transform;
+}
+.with--menu .menu__item5
 {
     -webkit-transition: all 1400ms ease-in-out;
             transition: all 1400ms ease-in-out;
@@ -1469,10 +1510,28 @@ form input
             transition-property: opacity, transform;
             transition-property: opacity, transform, -webkit-transform;
 }
-.with--menu .menu__item4
+.with--menu .menu__item6
 {
-    -webkit-transition: all 1700ms ease-in-out;
-            transition: all 1700ms ease-in-out;
+    -webkit-transition: all 1600ms ease-in-out;
+            transition: all 1600ms ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: opacity, transform;
+            transition-property: opacity, transform, -webkit-transform;
+}
+.with--menu .menu__item7
+{
+    -webkit-transition: all 1800ms ease-in-out;
+            transition: all 1800ms ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: opacity, transform;
+            transition-property: opacity, transform, -webkit-transform;
+}
+.with--menu .menu__item8
+{
+    -webkit-transition: all 2000ms ease-in-out;
+            transition: all 2000ms ease-in-out;
     -webkit-transition-property: opacity, -webkit-transform;
             transition-property: opacity, -webkit-transform;
             transition-property: opacity, transform;
@@ -1611,6 +1670,22 @@ form input
     width: 100%;
 
     background-color: #f5f5f5;
+}
+@media screen and (max-width: 399px)
+{
+    .menu__search__input
+    {
+        font-size: 14px;
+
+        left: 4px;
+
+        min-width: 100px;
+        padding: 8.5px 10px;
+    }
+    .menu__item0
+    {
+        padding-top: 2em;
+    }
 }
 .footer
 {
@@ -1945,7 +2020,25 @@ form input
 }
 .no-main .menu__search__input
 {
-    background-color: #6b6b6b;
+    padding: 6px 8px;
+
+    border: 1px solid rgba(121,121,121,.5);
+}
+.no-main .menu__search__input::-webkit-input-placeholder
+{
+    color: #797979;
+}
+.no-main .menu__search__input::-moz-placeholder
+{
+    color: #797979;
+}
+.no-main .menu__search__input:-ms-input-placeholder
+{
+    color: #797979;
+}
+.no-main .menu__search__input::placeholder
+{
+    color: #797979;
 }
 .no-main .menu__link:after
 {
@@ -1963,6 +2056,22 @@ form input
 .with--menu .menu__icon__label span:after
 {
     background-color: #fff;
+}
+.with--menu .menu__search__input::-webkit-input-placeholder
+{
+    color: #fff;
+}
+.with--menu .menu__search__input::-moz-placeholder
+{
+    color: #fff;
+}
+.with--menu .menu__search__input:-ms-input-placeholder
+{
+    color: #fff;
+}
+.with--menu .menu__search__input::placeholder
+{
+    color: #fff;
 }
 @media screen and (min-width: 1048px)
 {
@@ -3406,6 +3515,7 @@ form input
     .manifeste .comment-mail-wrap
     {
         min-width: auto;
+        min-width: 0;
     }
 }
 @media screen and (max-width: 720px)
@@ -3966,6 +4076,16 @@ form input
             transition: background .3s ease;
 
     background-color: #dc6e80;
+}
+.contact .form .form__name
+{
+    margin-right: 2em;
+}
+.contact .form .form__name,
+.contact .form .form__email,
+.contact .form .form__subject
+{
+    min-width: 26.2em;
 }
 @media screen and (max-width: 1152px)
 {
@@ -4589,9 +4709,17 @@ form input
     {
         font-size: 1.6em;
     }
+    .guideclient__section__trigger
+    {
+        font-size: 18px;
+    }
     .guideclient__section
     {
         width: 100%;
+    }
+    .guideclient__title span
+    {
+        font-size: 2.6em;
     }
 }
 @media screen and (max-width: 10px)
@@ -4641,6 +4769,10 @@ form input
 .myarticle .footer
 {
     margin-top: 15em;
+}
+.myarticle main
+{
+    padding: 0 1em;
 }
 .myarticle strong,
 .myarticle b
@@ -5087,6 +5219,7 @@ form input
 {
     font-size: 2.6em;
     font-weight: 600;
+    line-height: 1.4em;
 
     letter-spacing: .43px;
 }
@@ -5293,6 +5426,7 @@ form input
     font-family: montserrat, Helvetica, Arial, sans-serif;
     font-size: 3em;
     font-weight: bold;
+    line-height: 1.4em;
 
     display: block;
 
@@ -5315,6 +5449,7 @@ form input
 {
     font-size: 2.6em;
     font-weight: 600;
+    line-height: 1.4em;
 
     letter-spacing: .43px;
 }
@@ -5534,6 +5669,7 @@ form input
 {
     font-size: 2.6em;
     font-weight: 600;
+    line-height: 1.4em;
 
     letter-spacing: .43px;
 }
@@ -5830,7 +5966,7 @@ form input
     .tds-page .tds-vaccins .form__name,
     .tds-page .tds-vaccins .form__email
     {
-        min-width: 45.2em;
+        min-width: 0;
     }
     .tds-page .tds-vaccins .form__top
     {
@@ -5850,4 +5986,47 @@ form input
 {
     position: relative;
     top: -20px;
+}
+.search-page .search
+{
+    padding: 0 1em;
+}
+.search-page .search__title
+{
+    font-family: Montserrat;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.4em;
+
+    margin-bottom: 1em;
+
+    letter-spacing: .7px;
+}
+.search-page .search__query
+{
+    color: #d85e72;
+}
+.search-page .search__link
+{
+    font-size: 2em;
+
+    display: block;
+
+    margin-bottom: 1em;
+    padding: 1em;
+
+    -webkit-transition: border .3s ease;
+            transition: border .3s ease;
+    letter-spacing: .25px;
+
+    border: 1px solid #fff;
+    background: #fff;
+}
+.search-page .search__link:hover,
+.search-page .search__link:focus
+{
+    -webkit-transition: border .3s ease;
+            transition: border .3s ease;
+
+    border: 1px solid #d85e72;
 }
