@@ -35,7 +35,7 @@ Template Name: I'm sex worker
 			<span class="headintro__title">
 				You are a sex worker
 			</span>
-			<p><?php the_field('meta-description'); ?></p>
+			<?php the_field('meta-description'); ?>
 		</div>
 		
 		<div class="client-top-wrap">
@@ -138,7 +138,7 @@ Template Name: I'm sex worker
 					while ( have_rows('tds-files') ) : the_row(); ?>
 						<div class="tds-files__wrap">
 							<?php $file = get_sub_field('tds-file'); ?>
-							<a href="<?php echo $file['url']; ?>"  alt="<?php echo $file['description']; ?>" class="tds-files__link">
+							<a href="<?php echo $file['url']; ?>"  title="<?php echo $file['description']; ?>" class="tds-files__link">
 								<span class="tds-files__name"><?php the_sub_field('tds-name'); ?></span>
 								<img src="<?php echo $images; ?>/svg/pdf.svg" alt="Icone d’un fichier SVG" width="60" height="60">
 								<span class="tds-files__download">Télécharger</span>

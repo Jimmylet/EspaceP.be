@@ -17,10 +17,10 @@ include 'meta.php';?>
 	<main>
 		
 		<div class="headintro">
-			<span aria-level="2" class="headintro__title">
+			<span class="headintro__title">
 				Vous êtes un client
 			</span>
-			<p><?php the_field('meta-description'); ?></p>
+			<?php the_field('meta-description'); ?>
 		</div>
 		
 		<div class="client-top-wrap">
@@ -55,9 +55,9 @@ include 'meta.php';?>
 						<li class="guideclient__section__item"><a class="guideclient__section__trigger" href="#0">
 								<?php the_sub_field('client_titre-sujet'); ?></a>
 							<div class="guideclient__section__content">
-								<p class="guideclient__section__paragraph">
+								
 									<?php the_sub_field('client_description-sujet'); ?>
-								</p>
+								
 							</div>
 						</li>
 							<?php endwhile; ?> <!-- client-section-content -->

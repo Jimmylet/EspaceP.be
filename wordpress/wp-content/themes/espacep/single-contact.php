@@ -67,7 +67,11 @@ include 'meta.php';
                     <div class="details__wrap-left">
 											<p class="details__paragraph">N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.</p>
                         <div class="details__wrap">
-													<span class="details__subtitle">Adresse</span><span class="details__subtext adr" itemprop="address"><?php the_field('antennes_adresse');?></span><span class="details__subtitle">Téléphone</span>
+													<span class="details__subtitle">Adresse</span>
+													<span class="details__subtext adr" itemprop="address">
+														<span class="street-address"><?php the_field('antennes_adresse');?></span>
+													</span>
+													<span class="details__subtitle">Téléphone</span>
                         <span class="details__subtext tel" itemprop="telephone"><?php the_field('antennes_telephone'); ?></span>
                         <?php if( get_field('antennes_fax') ): ?>
                         <span class="details__subtitle" itemprop="faxNumber">Fax</span>

@@ -50,4 +50,4 @@ include 'meta.php';?>
 		</section>
 	</main>
 <?php include 'footer.php'; ?>
-</div>
+

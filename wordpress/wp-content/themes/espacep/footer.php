@@ -46,7 +46,9 @@
 		</div>
 	</div>
 </footer>
+<?php if (!is_page(19)): ?> <!-- uniquement sur home -->
 </div> <!-- end site-content -->
+<?php endif; ?>
 <?php wp_footer(); ?>
 <script src="<?php echo $scripts . '/main.js'; ?>"></script>
 <?php if (is_page(29)): ?>
