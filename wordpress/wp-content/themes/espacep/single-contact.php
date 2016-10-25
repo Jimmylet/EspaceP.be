@@ -60,14 +60,15 @@ include 'meta.php';
 				<?php $imageResponsive = get_field('antennes_map-res'); ?>
             <div class="maps__img"><span class="maps__button">Aller vers Google Maps</span></div></a>
         <div class="contact-bottom-wrap">
-            <section class="details" itemscope itemtype="http://schema.org/Organization">
-                <h2 class="details__title">Contactez <span itemprop="legalName">Espace P… <?php the_field('antennes_ville');?></span></h2>
-                <div class="details__wrap-global">
+            <section class="details vcard" itemscope itemtype="http://schema.org/Organization">
+							
+                <h2 class="details__title">Contactez <span class="fn" itemprop="legalName">Espace P… <?php the_field('antennes_ville');?></span></h2>
+                <div class="details__wrap-global postal-contact">
                     <div class="details__wrap-left">
 											<p class="details__paragraph">N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.</p>
                         <div class="details__wrap">
-													<span class="details__subtitle">Adresse</span><span class="details__subtext" itemprop="address"><?php the_field('antennes_adresse');?></span><span class="details__subtitle">Téléphone</span>
-                        <span class="details__subtext" itemprop="telephone"><?php the_field('antennes_telephone'); ?></span>
+													<span class="details__subtitle">Adresse</span><span class="details__subtext adr" itemprop="address"><?php the_field('antennes_adresse');?></span><span class="details__subtitle">Téléphone</span>
+                        <span class="details__subtext tel" itemprop="telephone"><?php the_field('antennes_telephone'); ?></span>
                         <?php if( get_field('antennes_fax') ): ?>
                         <span class="details__subtitle" itemprop="faxNumber">Fax</span>
                         <span class="details__subtext"><?php the_field('antennes_fax'); ?></span>
