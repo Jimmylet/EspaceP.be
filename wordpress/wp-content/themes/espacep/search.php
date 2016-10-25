@@ -17,7 +17,10 @@ include 'meta.php';?>
 <div class="site-content">
 	<main>
 		<div class="client-top-wrap">
-			<?php echo the_breadcrumb(); ?>
+			<ol class="breadcrumb" itemscop itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text breadcrumb__link__text--home" itemprop="link" href="<?php echo home_url(); ?>" title="Aller vers l’accueil"><span class="breadcrumb__link__text--hidden">Accueil</span></a></li>
+				<li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text" itemprop="link" href="#">Page de recherche</a></li>
+			</ol>
 		</div>
 		<section class="search">
 			<h2 class="search__title">Résultat de la recherche pour :

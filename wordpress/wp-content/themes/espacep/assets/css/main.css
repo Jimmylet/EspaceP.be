@@ -5989,6 +5989,8 @@ form input
 }
 .search-page .search
 {
+    max-width: 114em;
+    margin: 0 auto;
     padding: 0 1em;
 }
 .search-page .search__title
