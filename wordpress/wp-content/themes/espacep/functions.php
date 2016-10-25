@@ -108,15 +108,17 @@ add_filter( 'comment_form_defaults', 'textarea_placeholder' );
 // Breadcrumb page
 function the_breadcrumb()
 {
-    echo '<ol class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
+    echo '<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">';
     if (!is_home()) {
-        echo '<li class="breadcrumb__link"  itemprop="title"><a class="breadcrumb__link__text breadcrumb__link__text--home" itemprop="link" href="';
+        echo '<li class="breadcrumb__link"  itemprop="
+itemListElement"><a class="breadcrumb__link__text breadcrumb__link__text--home" href="';
         echo get_home_url();
         echo '"><span class=';
         echo 'breadcrumb__link__text--hidden>';
         echo _e('Accueil', 'b');
         echo "</span></a></li>";
-        echo '<li class="breadcrumb__link" itemprop="title"><a class="breadcrumb__link__text" itemprop="link" href="';
+        echo '<li class="breadcrumb__link" itemprop="
+itemListElement"><a class="breadcrumb__link__text" href="';
         echo the_permalink();
         echo '">';
         the_title();
