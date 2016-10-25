@@ -60,47 +60,22 @@ include 'meta.php';
 				<?php $imageResponsive = get_field('antennes_map-res'); ?>
             <div class="maps__img"><span class="maps__button">Aller vers Google Maps</span></div></a>
         <div class="contact-bottom-wrap">
-            <section class="details">
-                <h2 class="details__title">Contactez Espace P… <?php the_field('antennes_ville');?></h2>
+            <section class="details" itemscope itemtype="http://schema.org/Organization">
+                <h2 class="details__title">Contactez <span itemprop="legalName">Espace P… <?php the_field('antennes_ville');?></span></h2>
                 <div class="details__wrap-global">
                     <div class="details__wrap-left">
 											<p class="details__paragraph">N’hésitez pas à prendre contact avec nous pour toute requêtes ou informations. Nous sommes à votre disposition pour vous venir en aide.</p>
                         <div class="details__wrap">
-													<span class="details__subtitle">Adresse</span><span class="details__subtext"><?php the_field('antennes_adresse');?></span><span class="details__subtitle">Téléphone</span>
-                        <span class="details__subtext"><?php the_field('antennes_telephone'); ?></span>
+													<span class="details__subtitle">Adresse</span><span class="details__subtext" itemprop="address"><?php the_field('antennes_adresse');?></span><span class="details__subtitle">Téléphone</span>
+                        <span class="details__subtext" itemprop="telephone"><?php the_field('antennes_telephone'); ?></span>
                         <?php if( get_field('antennes_fax') ): ?>
-                        <span class="details__subtitle">Fax</span>
+                        <span class="details__subtitle" itemprop="faxNumber">Fax</span>
                         <span class="details__subtext"><?php the_field('antennes_fax'); ?></span>
                         <?php endif;?>
 												</div>
                     </div>
                     <div class="details__wrap-right">
 											<?php echo do_shortcode(get_field('antennes_form'));?>
-                        <!--<form class="form">
-                            <div class="form__top">
-                                <div class="form__name">
-                                    <label class="form__name__label" for="name">Votre nom</label>
-                                    <input class="form__name__input" type="text" id="name" name="name" placeholder="Votre nom" required>
-                                </div>
-                                <div class="form__email">
-                                    <label class="form__email__label" for="email">Votre email</label>
-                                    <input class="form__email__input" type="email" id="email" name="email" placeholder="Votre email" required>
-                                </div>
-                            </div>
-                            <div class="form__middle">
-                                <div class="form__subject">
-                                    <label class="form__subject__label" for="subject">Votre sujet</label>
-                                    <input class="form__subject__input" type="text" id="subject" name="subject" placeholder="Le sujet de votre message" required>
-                                </div>
-                            </div>
-                            <div class="form__bottom">
-                                <div class="form__message">
-                                    <label class="form__message__label" for="message">Votre message</label>
-                                    <textarea class="form__message__input" id="message" name="message" placeholder="Votre message" required></textarea>
-                                </div>
-                            </div>
-                            <input class="form__submit" type="submit" value="Envoyer le message">
-                        </form>-->
                     </div>
                 </div>
             </section>
