@@ -7,9 +7,9 @@
 					et accompagner les travailleurs du sexe, que ce soit dans la vie ou dans leur métier.</p>
 			</div>
 			<div class="footer__informations"><span class="footer__informations__title">Informations</span><a
-								class="footer__informations__link" href="#" title="Aller vers la page…">Je suis un travailleur du
-					sexe</a><a class="footer__informations__link" href="#" title="Aller vers la page…">Je suis un
-					étudiant</a><a class="footer__informations__link" href="#" title="Aller vers la page…">Je suis un
+								class="footer__informations__link" href="<?php echo the_permalink('241'); ?>" title="Aller vers la page…">Je suis un travailleur du
+					sexe</a><a class="footer__informations__link" href="<?php echo the_permalink('209'); ?>" title="Aller vers la page…">Je suis un
+					étudiant</a><a class="footer__informations__link" href="<?php echo the_permalink('185'); ?>" title="Aller vers la page…">Je suis un
 					sympathisant</a><a class="footer__informations__link" href="<?php the_permalink(128); ?>"
 								title="Aller vers la page…">Je suis un potentiel client</a></div>
 			<div class="footer__contacts">
