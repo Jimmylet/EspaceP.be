@@ -335,3 +335,33 @@
   .client__paragraph
   .client p
     margin-left: 0
+
+.client-page
+  .download-pdf
+    &__link
+      display: flex
+      align-items center
+      margin-top 20px
+      font-size: 12px
+      font-weight: bold
+      background-color color-white
+      overflow hidden
+      padding 10px 12px
+      transition trans .3s ease
+      transition .3s all ease
+      transition-property background-color, color
+      &:hover
+      &:focus
+        background-color color-pink
+        color color-white
+        transition .3s all ease
+        transition-property background-color, color
+
+      & span
+        display block
+        float: left
+        height 30px
+        width 30px
+        background-image url("../images/svg/pdf.svg");
+        margin-right 20px
+

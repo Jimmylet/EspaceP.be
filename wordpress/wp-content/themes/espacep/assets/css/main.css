@@ -4762,6 +4762,56 @@ form input
         margin-left: 0;
     }
 }
+.client-page .download-pdf__link
+{
+    font-size: 12px;
+    font-weight: bold;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    overflow: hidden;
+
+    margin-top: 20px;
+    padding: 10px 12px;
+
+    -webkit-transition: trans .3s ease;
+    -webkit-transition: .3s all ease;
+            transition: trans .3s ease;
+            transition: .3s all ease;
+    -webkit-transition-property: background-color, color;
+            transition-property: background-color, color;
+
+    background-color: #fff;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.client-page .download-pdf__link:hover,
+.client-page .download-pdf__link:focus
+{
+    -webkit-transition: .3s all ease;
+            transition: .3s all ease;
+    -webkit-transition-property: background-color, color;
+            transition-property: background-color, color;
+
+    color: #fff;
+    background-color: #d85e72;
+}
+.client-page .download-pdf__link span
+{
+    display: block;
+    float: left;
+
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+
+    background-image: url('../images/svg/pdf.svg');
+}
 .myarticle .client-top-wrap
 {
     margin-bottom: 10em;

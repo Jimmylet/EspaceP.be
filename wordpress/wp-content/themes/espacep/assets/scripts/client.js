@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
         faqTrigger = $('.guideclient__section__trigger'),
         faqsContainer = $('.guideclient__section'),
         faqsCategoriesContainer = $('.guideclient__categories'),
-        faqsCategories = faqsCategoriesContainer.find('a'),
+        faqsCategories = faqsCategoriesContainer.find('.guideclient__categories__link'),
         closeFaqsContainer = $('.cd-close-panel');
 
     // Selectionner une section
@@ -106,8 +106,8 @@ jQuery(document).ready(function($) {
         faqsSections.each(function(){
             var actual = $(this),
                 margin = parseInt($('.guideclient__section__title').eq(1).css('marginTop').replace('px', '')),
-                activeCategory = $('.guideclient__categories a[href="#'+actual.attr('id')+'"]'),
-                topSection = (activeCategory.parent('li').is(':first-child')) ? 0 : Math.round(actual.offset().top);
+                activeCategory = $('.guideclient__categories .guideclient__categories__link[href="#'+actual.attr('id')+'"]'),
+                topSection = (activeCategory.parent('.guideclient__categories__item').is(':first-child')) ? 0 : Math.round(actual.offset().top);
 
             if ( ( topSection - 20 <= $(window).scrollTop() ) && ( Math.round(actual.offset().top) + actual.height() + margin - 20 > $(window).scrollTop() ) ) {
                 activeCategory.addClass('selected');

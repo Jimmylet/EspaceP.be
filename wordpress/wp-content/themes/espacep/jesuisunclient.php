@@ -36,10 +36,19 @@ include 'meta.php';?>
 				<ul class="guideclient__categories">
 					<?php $i = 1; ?>
 					<?php foreach (get_field('client_guide') as $guide ): ?>
-					<li class="guideclient__categories__item"><a class="guideclient__categories__link" href="#section<?php echo $i; $i++;?>"> <!-- TODO: Class selected and section number -->
+					<li class="guideclient__categories__item"><a class="guideclient__categories__link" href="#section<?php echo $i; $i++;?>">
 							<?php echo $guide['client_section'] ;?>
 						</a></li>
 					<?php endforeach; ?>
+					<?php $file = get_field('client_pdf'); ?>
+					<?php if( $file ): ?>
+					<li class="download-pdf">
+						<a class="download-pdf__link" href="<?php echo $file['url']; ?>">
+							<span></span>
+							Télécharger la version PDF
+						</a>
+					</li>
+					<?php endif; ?>
 				</ul>
 				<?php $e = 1; ?>
 				<?php if( have_rows('client_guide') ): ?>
