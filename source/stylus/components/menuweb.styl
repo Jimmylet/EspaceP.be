@@ -127,6 +127,7 @@
       transform scale(1)
       transition background .5s ease
       &:hover
+      &:focus
         background-color rgba(0,0,0,0.93) + 10%
         transition background .5s ease
     &__item0
@@ -197,6 +198,7 @@
       font-weight: normal
       color color-black
       &:after
+        outline none
         content ""
         display block
         height 2px
@@ -204,6 +206,8 @@
         margin 6px auto 0 auto
         background-color pink
       &:hover:after
+      &:focus:after
+        outline none
         width 40px
         transition width .3s ease
     &__logo

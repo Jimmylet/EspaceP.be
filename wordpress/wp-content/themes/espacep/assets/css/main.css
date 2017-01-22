@@ -1449,7 +1449,8 @@ form input
 
     opacity: 1;
 }
-.with--menu .menu__link:hover
+.with--menu .menu__link:hover,
+.with--menu .menu__link:focus
 {
     -webkit-transition: background .5s ease;
             transition: background .5s ease;
@@ -1608,14 +1609,18 @@ form input
 
         content: '';
 
+        outline: none;
         background-color: #ffc0cb;
     }
-    .menu__link:hover:after
+    .menu__link:hover:after,
+    .menu__link:focus:after
     {
         width: 40px;
 
         -webkit-transition: width .3s ease;
                 transition: width .3s ease;
+
+        outline: none;
     }
     .menu__logo
     {
@@ -2101,7 +2106,8 @@ form input
     {
         color: #383838;
     }
-    .no-main .menu__link:hover .menu__link::after
+    .no-main .menu__link:hover .menu__link::after,
+    .no-main .menu__link:focus .menu__link::after
     {
         background-color: #d85e72;
     }
