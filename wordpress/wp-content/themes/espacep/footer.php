@@ -65,22 +65,5 @@
 		$(this).css('color','#383838')
 	})
 </script>
-<script>
-	$(".wpcf7-form").validate({
-		rules: {
-			yourname: "required",
-			youremail: {
-				required: true,
-				email: true
-			},
-		},
-		messages: {
-			yourname: "Please include your name.",
-			youremail: "Please include a valid email address.",
-			yourmessage: "Please tell me how I can help you.",
-			
-		},
-	});
-</script>
 </body>
 </html>

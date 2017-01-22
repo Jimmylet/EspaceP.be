@@ -36,9 +36,3 @@
         $('body').removeClass('payementsoutien--clicked');
     });
 })(jQuery);
-(function () {
-    "use strict";
-
-    console.log("Hello, number 4");
-
-})();
