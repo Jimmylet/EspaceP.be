@@ -5012,6 +5012,8 @@ form input
     display: inline-block;
 
     margin: 10px 0;
+
+    color: #c83049;
 }
 .statut .index .index__ol-increment
 {
@@ -5021,13 +5023,12 @@ form input
 {
     -webkit-transition: color .2s ease;
             transition: color .2s ease;
+
+    color: #c83049;
 }
 .statut .index a:hover
 {
-    -webkit-transition: color .2s ease;
-            transition: color .2s ease;
-
-    color: #d85e72;
+    text-decoration: underline;
 }
 .statut .content
 {
