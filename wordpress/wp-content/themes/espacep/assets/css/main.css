@@ -4257,7 +4257,6 @@ form input
 .client p
 {
     font-size: 2em;
-    font-weight: 100;
     line-height: 1.65em;
 
     margin-bottom: 15px;
@@ -4342,6 +4341,10 @@ form input
     text-transform: uppercase;
 
     color: #fff;
+}
+.no-js .guideclient__section__content
+{
+    display: block;
 }
 .guideclient__wrap
 {
