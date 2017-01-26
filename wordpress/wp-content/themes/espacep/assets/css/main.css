@@ -1260,6 +1260,10 @@ form input
     top: 24px;
     right: 30px;
 }
+.menu__search img
+{
+    display: block;
+}
 .menu__search__label
 {
     display: none;
@@ -1459,6 +1463,24 @@ form input
 }
 .with--menu .menu__item0
 {
+    -webkit-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: opacity, transform;
+            transition-property: opacity, transform, -webkit-transform;
+}
+.with--menu .menu__item1
+{
+    -webkit-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: opacity, transform;
+            transition-property: opacity, transform, -webkit-transform;
+}
+.with--menu .menu__item2
+{
     -webkit-transition: all 400ms ease-in-out;
             transition: all 400ms ease-in-out;
     -webkit-transition-property: opacity, -webkit-transform;
@@ -1466,7 +1488,16 @@ form input
             transition-property: opacity, transform;
             transition-property: opacity, transform, -webkit-transform;
 }
-.with--menu .menu__item1
+.with--menu .menu__item3
+{
+    -webkit-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: opacity, transform;
+            transition-property: opacity, transform, -webkit-transform;
+}
+.with--menu .menu__item4
 {
     -webkit-transition: all 600ms ease-in-out;
             transition: all 600ms ease-in-out;
@@ -1475,7 +1506,16 @@ form input
             transition-property: opacity, transform;
             transition-property: opacity, transform, -webkit-transform;
 }
-.with--menu .menu__item2
+.with--menu .menu__item5
+{
+    -webkit-transition: all 700ms ease-in-out;
+            transition: all 700ms ease-in-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: opacity, transform;
+            transition-property: opacity, transform, -webkit-transform;
+}
+.with--menu .menu__item6
 {
     -webkit-transition: all 800ms ease-in-out;
             transition: all 800ms ease-in-out;
@@ -1484,46 +1524,10 @@ form input
             transition-property: opacity, transform;
             transition-property: opacity, transform, -webkit-transform;
 }
-.with--menu .menu__item3
-{
-    -webkit-transition: all 1000ms ease-in-out;
-            transition: all 1000ms ease-in-out;
-    -webkit-transition-property: opacity, -webkit-transform;
-            transition-property: opacity, -webkit-transform;
-            transition-property: opacity, transform;
-            transition-property: opacity, transform, -webkit-transform;
-}
-.with--menu .menu__item4
-{
-    -webkit-transition: all 1200ms ease-in-out;
-            transition: all 1200ms ease-in-out;
-    -webkit-transition-property: opacity, -webkit-transform;
-            transition-property: opacity, -webkit-transform;
-            transition-property: opacity, transform;
-            transition-property: opacity, transform, -webkit-transform;
-}
-.with--menu .menu__item5
-{
-    -webkit-transition: all 1400ms ease-in-out;
-            transition: all 1400ms ease-in-out;
-    -webkit-transition-property: opacity, -webkit-transform;
-            transition-property: opacity, -webkit-transform;
-            transition-property: opacity, transform;
-            transition-property: opacity, transform, -webkit-transform;
-}
-.with--menu .menu__item6
-{
-    -webkit-transition: all 1600ms ease-in-out;
-            transition: all 1600ms ease-in-out;
-    -webkit-transition-property: opacity, -webkit-transform;
-            transition-property: opacity, -webkit-transform;
-            transition-property: opacity, transform;
-            transition-property: opacity, transform, -webkit-transform;
-}
 .with--menu .menu__item7
 {
-    -webkit-transition: all 1800ms ease-in-out;
-            transition: all 1800ms ease-in-out;
+    -webkit-transition: all 900ms ease-in-out;
+            transition: all 900ms ease-in-out;
     -webkit-transition-property: opacity, -webkit-transform;
             transition-property: opacity, -webkit-transform;
             transition-property: opacity, transform;
@@ -1531,8 +1535,8 @@ form input
 }
 .with--menu .menu__item8
 {
-    -webkit-transition: all 2000ms ease-in-out;
-            transition: all 2000ms ease-in-out;
+    -webkit-transition: all 1000ms ease-in-out;
+            transition: all 1000ms ease-in-out;
     -webkit-transition-property: opacity, -webkit-transform;
             transition-property: opacity, -webkit-transform;
             transition-property: opacity, transform;
