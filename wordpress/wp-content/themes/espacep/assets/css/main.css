@@ -2816,21 +2816,6 @@ form input
     margin: 0 auto;
     padding: 0 1em;
 }
-.tds:before
-{
-    position: relative;
-    top: -80px;
-
-    display: block;
-
-    width: 1px;
-    height: 320px;
-    margin: 0 auto;
-
-    content: '';
-
-    background-color: #6c6c6c;
-}
 .tds__title
 {
     font-family: montserrat, Helvetica, Arial, sans-serif;
@@ -3180,6 +3165,18 @@ form input
 
     color: #333;
 }
+.signez__comwrap__title:before
+{
+    display: block;
+
+    width: 80%;
+    height: 1px;
+    margin: 2.5em auto 2.5em auto;
+
+    content: '';
+
+    background: #a9a9a9;
+}
 .signez__comwrap__namedate
 {
     font-size: 1.4em;
@@ -3357,18 +3354,6 @@ form input
     letter-spacing: .5px;
 
     color: #333;
-}
-.signez__send__title:before
-{
-    display: block;
-
-    width: 80%;
-    height: 1px;
-    margin: 0 auto 1.6em auto;
-
-    content: '';
-
-    background: #a9a9a9;
 }
 .signez__send__notes
 {
