@@ -65,5 +65,10 @@
 		$(this).css('color','#383838')
 	})
 </script>
+<script>
+	$(".close-alert-lang").click(function () {
+			$(".lang-alert").remove();
+  })
+</script>
 </body>
 </html>

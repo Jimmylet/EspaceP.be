@@ -13,6 +13,17 @@ Template Name: Page d’accueil
 	<?php wp_head(); ?>
 </head>
 <body class="no-js main">
+<div class="lang-alert">
+	<a href="#" class="close-alert-lang" title="Fermer le bandeau Do you speak english?">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"  xml:space="preserve" >
+			<path class="logo-cancel-bandeau" stroke="none" fill="#fff" d="M 1.77,-0 L 3.54,-1.77 C 3.78,-2.02 3.78,-2.41 3.54,-2.65 L 2.65,-3.54 C 2.41,-3.78 2.02,-3.78 1.77,-3.54 L 0,-1.77 -1.76,-3.54 C -2.01,-3.78 -2.41,-3.78 -2.65,-3.54 L -3.53,-2.65 C -3.78,-2.41 -3.78,-2.01 -3.53,-1.77 L -1.76,-0 -3.53,1.76 C -3.77,2 -3.77,2.4 -3.53,2.64 L -2.65,3.53 C -2.4,3.77 -2.01,3.77 -1.76,3.53 L 0,1.77 1.78,3.54 C 2.02,3.79 2.42,3.79 2.66,3.54 L 3.55,2.66 C 3.79,2.41 3.79,2.02 3.55,1.77 L 1.77,-0 Z M 0,-10 C -5.52,-10 -10,-5.52 -10,0 -10,5.53 -5.52,10 0,10 5.52,10 10,5.53 10,0 10,-5.52 5.52,-10 0,-10 Z M 0,8.13 C -4.49,8.13 -8.12,4.49 -8.12,0 -8.12,-4.48 -4.49,-8.12 0,-8.12 4.49,-8.12 8.12,-4.48 8.12,0 8.12,4.49 4.49,8.13 0,8.13 Z M 0,8.13" transform="translate(10, 10)"  />
+		</svg>
+		<span>Fermer le bandeau Do you speak english?</span>
+	</a>
+	<a lang="en" hreflang="en" title="Go to I'm Sex Worker page" href="<?php the_permalink(287); ?>">
+		<strong lang="en">Do you speak English&nbsp;? Visit this page.</strong>
+	</a>
+</div>
 <header class="header">
 	<div class="header__wrap-title">
 		<h1 class="header__title" aria-level="1">

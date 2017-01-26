@@ -6088,3 +6088,71 @@ form input
 
     border: 1px solid #d85e72;
 }
+.lang-alert
+{
+    font-size: 1.8em;
+
+    height: 2em;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #c44462;
+}
+.lang-alert:before
+{
+    display: inline-block;
+
+    height: 100%;
+    margin-right: -.25em;
+
+    content: '';
+    vertical-align: middle;
+}
+.lang-alert strong
+{
+    display: inline-block;
+
+    vertical-align: middle;
+    letter-spacing: .3px;
+}
+.lang-alert strong:hover,
+.lang-alert strong:focus
+{
+    text-decoration: underline;
+}
+.close-alert-lang
+{
+    display: inline-block;
+
+    width: 40px;
+    height: 30px;
+}
+.close-alert-lang svg
+{
+    position: relative;
+    top: 6px;
+    right: -4px;
+
+    -webkit-transition: .2s ease;
+            transition: .2s ease;
+}
+.close-alert-lang svg:hover
+{
+    -webkit-transition: .2s ease;
+            transition: .2s ease;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+.close-alert-lang span
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    height: 0;
+    margin: -1px;
+
+    border: 0;
+}

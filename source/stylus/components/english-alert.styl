@@ -1,0 +1,34 @@
+.lang-alert
+  font-size 1.8em
+  height 2em
+  text-align: center
+  background-color #C44462
+  color #fff
+  &:before
+    content ""
+    display inline-block
+    height 100%
+    vertical-align middle
+    margin-right -0.25em
+  & strong
+    display inline-block
+    vertical-align middle
+    letter-spacing 0.3px
+    &:hover
+    &:focus
+      text-decoration: underline
+
+.close-alert-lang
+  display inline-block
+  width 40px
+  height 30px
+  & svg
+    position: relative
+    top 6px
+    right -4px
+    transition .2s ease
+    &:hover
+      transform rotate(90deg);
+      transition .2s ease
+  & span
+    {visuallyhidden}
