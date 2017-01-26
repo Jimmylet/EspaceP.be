@@ -20,7 +20,7 @@ include 'meta.php';
 					<?php the_breadcrumb(); ?>
 					
             <nav class="contact-list">
-                <h2 class="contact-list__title">Choisissez votre ville</h2>
+                <h2 class="contact-list__title">Choisissez votre antenne</h2>
                 <div class="contact-list__wrap">
 									<?php global $post; $thePostID = $post->ID; ?>
 									<?php foreach (b_get_menu_items('city-nav') as $navItem): ?>

@@ -3579,14 +3579,46 @@ form input
 }
 .contact-list__title
 {
-    position: absolute;
+    font-family: montserrat, Helvetica, Arial, sans-serif;
+    font-size: 3.6em;
+    font-weight: bold;
 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
     overflow: hidden;
 
-    height: 0;
-    margin: -1px;
+    margin-bottom: 6.5rem;
 
-    border: 0;
+    letter-spacing: 1px;
+
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+            justify-content: left;
+}
+.contact-list__title:after
+{
+    position: relative;
+    top: 19px;
+
+    display: inline-block;
+
+    width: 20%;
+    height: 1px;
+    margin-left: .418em;
+    padding-right: .418em;
+
+    content: '\a0';
+
+    background-color: #979797;
+
+    -webkit-flex-grow: 1;
+        -ms-flex-grow: 1;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 .contact-list__wrap
 {
@@ -4193,12 +4225,14 @@ form input
         padding: 0 1em;
     }
     .contact .team__title,
-    .contact .details__title
+    .contact .details__title,
+    .contact .contact-list__title
     {
         font-size: 3em;
     }
     .contact .team__title:after,
-    .contact .details__title:after
+    .contact .details__title:after,
+    .contact .contact-list__title:after
     {
         display: none;
     }
