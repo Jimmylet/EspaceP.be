@@ -231,7 +231,7 @@
   overflow hidden
   margin-top: 1.2em
   & textarea
-    appearance: none;
+    font-family: "Open Sans"
     font-size: 1.6em
     resize none
     width 100%
@@ -239,6 +239,7 @@
     outline none
     padding 11px 20px
     margin-bottom: 2rem
+    border 1px solid #767677
     &::placeholder
       color #6C6C6C
       letter-spacing .1px
@@ -265,20 +266,21 @@
       letter-spacing .1px
       padding 11px 20px 11px 50px
       border 1px solid #767677
+      font-family "Open Sans"
       &::placeholder
         color #6C6C6C
         letter-spacing .1px
   &__name__label:before
     {formname}
-    top 11px
+    top 15px
     z-index 1
   &__email__label:before
     {formemail}
-    top 14px
+    top 16px
     z-index 1
   &__subject__label:before
     {formsujet}
-    top 12px
+    top 14px
     z-index 1
 
 .form__message__label
@@ -290,9 +292,10 @@
 
 .form__submit
   float right
-  font-size: 1.6em
+  font-size 2em
   {button-style}
   cursor pointer
+  font-weight normal
   &:hover
   &:focus
     {button-style-hover}
@@ -305,6 +308,12 @@
     .form__email
     .form__subject
       min-width 26.2em
+
+// error
+.contact
+  .form
+    .wpcf7-not-valid
+      border 1px solid #FF162F
 
 /************************************\
   RESPONSIVE
@@ -378,8 +387,14 @@
   .contact
     .contact-list
       margin 6em 0 6em
+      &__title
+        margin-bottom: 1.2em
       &__wrap
         flex-direction column
       &__item
+        height 50px
+        padding 5px
         width 100%
         margin-bottom 1em // 20px
+        padding-left 1em
+        text-align left
