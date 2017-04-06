@@ -24,10 +24,10 @@
 				</div>
 			</div>
 			<div class="footer__navigation"><span class="footer__navigation__title">Navigation</span><a
-								class="footer__navigation__link" href="souteneznotreaction.html" title="Aller vers la page…">Achetez
-					notre magazine</a><a class="footer__navigation__link" href="partenaires.htm"
+								class="footer__navigation__link" href="<?php the_permalink(25); ?>" title="Aller vers la page…">Achetez
+					notre magazine</a><a class="footer__navigation__link" href="<?php the_permalink(27); ?>"
 								title="Aller vers la page…">Nos partenaires</a><a
-								class="footer__navigation__link" href="manifeste.html" title="Aller vers la page…">Notre
+								class="footer__navigation__link" href="<?php the_permalink(29); ?>" title="Aller vers la page…">Notre
 					manifeste</a></div>
 		</div>
 	</div>
@@ -39,7 +39,7 @@
 			<div class="subfooter__espaceplegal"><a class="subfooter__espaceplegal__rapport" href="rapport.html"
 								title="Vers notre rapport d’activité">Notre rapport d’activité</a><a
 								class="subfooter__espaceplegal__statut" href="<?php the_permalink('118'); ?>" title="Vers notre statut légal">Notre
-					statut</a><a class="subfooter__espaceplegal__facebook" href="#"
+					statut</a><a class="subfooter__espaceplegal__facebook" href="https://www.facebook.com/Espace-P-1166947833360506"
 								title="Vers notre page facebook"><span class="subfooter__espaceplegal__facebook__text">Notre
 						facebook</span></a>
 			</div>
