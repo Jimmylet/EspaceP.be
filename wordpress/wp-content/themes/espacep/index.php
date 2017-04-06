@@ -103,7 +103,7 @@ Template Name: Page d’accueil
 				<section class="last-facebook__follow">
 					<h3 class="last-facebook__follow__title">Suivez-nous</h3>
 					<p class="last-facebook__text">Facebook est la manière la plus simple de rester informé sur notre
-						activité. Suivez-nous, ça nous aide !</p><a class="last-facebook__button" href="#"
+						activité. Suivez-nous, ça nous aide !</p><a class="last-facebook__button" href="https://www.facebook.com/Espace-P-1166947833360506"
 																												title="Suivre espace P… sur Facebook"
 																												rel="external">Suivre espacep</a>
 				</section>
@@ -119,7 +119,7 @@ Template Name: Page d’accueil
 							recherche de personnes en situation de handicap qui seraient prêtes à répondre à leurs questions sous
 							forme…</p>
 					</div>
-					<a class="last-facebook__comment__link" href="#" title="Aller sur Facebook" rel="external">Lire la
+					<a class="last-facebook__comment__link" href="https://www.facebook.com/Espace-P-1166947833360506" title="Aller sur Facebook" rel="external">Lire la
 						suite sur&nbsp;<span class="last-facebook__comment__facebook">Facebook</span></a>
 				</section>
 			</div>
