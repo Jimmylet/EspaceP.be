@@ -6069,8 +6069,10 @@ form input
         display: block;
     }
 }
-.wpcf7-not-valid-tip
+.wpcf7-form span.wpcf7-not-valid-tip
 {
+    font-size: 1.4em;
+
     margin-top: 8px;
 }
 .select .wpcf7-not-valid-tip
@@ -6082,6 +6084,20 @@ form input
 {
     position: relative;
     top: -20px;
+}
+.wpcf7-form div.wpcf7-validation-errors
+{
+    font-size: 1.4em;
+    line-height: 1.6em;
+
+    margin-top: 2.5em;
+
+    border: none;
+}
+.wpcf7-form div.wpcf7-response-output
+{
+    margin: 2.5em 0 0 0;
+    padding: 0;
 }
 .search-page .search
 {
