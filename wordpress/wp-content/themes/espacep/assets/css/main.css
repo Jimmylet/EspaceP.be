@@ -607,6 +607,71 @@ form input
         -ms-transform: scale(1.06);
             transform: scale(1.06);
 }
+.last-article-two
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+.last-article-two .last-article__link
+{
+    width: 50%;
+    margin-right: 65px;
+}
+.last-article-two .last-article__link:last-child
+{
+    margin-right: 0;
+}
+.last-article-two .article
+{
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
+}
+.last-article-two .article__title
+{
+    font-size: 25px;
+
+    max-width: none;
+}
+.last-article-two .article__wrap-text
+{
+    width: 100%;
+}
+.last-article__link--top .article
+{
+    margin-bottom: 65px;
+}
+.last-article .home-manifeste__button
+{
+    display: block;
+
+    width: 275px;
+    margin: 50px auto 100px auto;
+
+    text-align: center;
+}
+@media screen and (max-width: 895px)
+{
+    .last-article-two
+    {
+        display: block;
+    }
+    .last-article-two .last-article__link
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+    .last-article-two .article
+    {
+        margin-bottom: 25px;
+    }
+    .last-article__link--top .article
+    {
+        margin-bottom: 25px;
+    }
+}
 .last-facebook__title-container
 {
     position: relative;
@@ -3728,6 +3793,7 @@ form input
 {
     float: left;
 
+    width: 313px;
     margin-right: 5%;
     margin-bottom: 10em;
 }
@@ -4122,23 +4188,27 @@ form input
 {
     .contact .team__person
     {
-        max-width: 47%;
+        width: 47%;
     }
     .contact .team__person__figure
     {
         max-width: 100%;
     }
-    .contact .team__person:nth-child(2n+2)
-    {
-        margin-right: 0;
-    }
     .contact .team__person:nth-child(2n+1)
     {
         margin-right: 5%;
     }
+    .contact .team__person:nth-child(2n+2)
+    {
+        margin-right: 0;
+    }
 }
 @media screen and (max-width: 1050px)
 {
+    .contact .team__person:nth-child(2n+2)
+    {
+        margin-right: 0;
+    }
     .contact .details__wrap-global
     {
                 flex-direction: column;
@@ -4205,7 +4275,7 @@ form input
 {
     .contact .team__person
     {
-        max-width: 100%;
+        width: 100%;
     }
     .contact .team__person,
     .contact .team__person:nth-child(2n+1)

@@ -81,7 +81,7 @@ Template Name: Page d’accueil
 			<!-- Recup thumbnail et size -->
 			<?php $url = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID()), 'thumb-article-home' ); ?>
 			
-			<a class="last-article__link" href="<?php the_permalink();?>" title="Vers l’article <?php echo the_title(); ?>">
+			<a class="last-article__link last-article__link--top" href="<?php the_permalink();?>" title="Vers l’article <?php echo the_title(); ?>">
 				<article class="article">
 					<div class="article__wrap-text">
 						<span class="article__category">
@@ -96,6 +96,34 @@ Template Name: Page d’accueil
 			</a>
 			<?php wp_reset_postdata(); ?>
 			<?php endwhile; endif; ?>
+
+			<div class="last-article-two">
+			<?php $posts = new WP_Query( ['posts_per_page' => 2, 'offset' => 1, 'post_type' => 'post'] );
+						if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();
+			?>
+				<a class="last-article__link" href="<?php the_permalink();?>" title="Vers l’article <?php echo the_title(); ?>">
+					<article class="article">
+						<div class="article__wrap-text">
+							<span class="article__category">
+								<?php $categorie = get_the_category();?>
+								<?php echo ($categorie[0]->name);?>
+							</span>
+							<h3 class="article__title">
+								<?php if (strlen($post->post_title) > 80) {
+									echo substr(the_title($before = '', $after = '', FALSE), 0, 80) . '...'; } else {
+									the_title();
+								} ?>
+							</h3>
+							<span class="article__link">Lire l'article</span>
+						</div>
+					</article>
+				</a>
+				<?php wp_reset_postdata(); ?>
+        <?php endwhile; endif; ?>
+			</div>
+
+			<a href="#" class="home-manifeste__button">Voir tous les articles</a>
+
 		</section>
 		<section class="last-facebook">
 			<h2 class="last-facebook__title">Notre dernier message sur facebook</h2>

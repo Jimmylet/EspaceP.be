@@ -179,6 +179,47 @@
     transform scale(1.06);
     transition transform .3s ease
 
+.last-article-two
+  display: flex
+  & .last-article
+    &__link
+      margin-right: 65px
+      width: 50%
+      &:last-child
+        margin-right: 0
+  & .article
+    height: auto
+    min-height: 0
+    margin-bottom: 0
+    &__title
+      font-size: 25px
+      max-width: none
+    &__wrap-text
+      width: 100%
+
+.last-article__link--top .article
+  margin-bottom: 65px
+
+.last-article
+  .home-manifeste__button
+    margin: 50px auto 100px auto
+    display: block
+    width: 275px
+    text-align: center
+  
+
+@media screen and ( max-width: 895px )
+  .last-article-two
+    display: block
+    & .last-article
+      &__link
+        margin-right: 0
+        width: 100%
+    & .article
+      margin-bottom: 25px
+  .last-article__link--top .article
+    margin-bottom: 25px
+
 /************************************\
   FACEBOOK
 \************************************/

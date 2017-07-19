@@ -141,3 +141,24 @@ function cc_mime_types($mimes) {
 	return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+// Excerpt
+function custom_excerpt($new_length = 25, $new_more = '…') {
+      // use the variable passed from $new_length as the length of the excerpt
+      add_filter('excerpt_length', function () use ($new_length) {
+            return $new_length;
+      }, 999);
+      // determine what comes at the end of the excerpt (in this case ...)
+      add_filter('excerpt_more', function () use ($new_more) {
+            return $new_more;
+      });
+      // generate the current excerpt
+      $output = get_the_title();
+      // use wptexturize to basically sanitize the excerpt
+      $output = apply_filters('wptexturize', $output);
+      // convert_chars to remove metadata tags and convert others to unicode
+      $output = apply_filters('convert_chars', $output);
+      // the above line may not be needed depending on the status of wpautop
+      // echo that sucker
+      echo $output;
+}
