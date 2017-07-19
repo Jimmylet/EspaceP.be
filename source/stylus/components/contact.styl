@@ -106,6 +106,7 @@
     float left
     margin-right: 5%
     margin-bottom 10em
+    width: 313px
     &:nth-child(3n)
       margin-right: 0
     &__figure
@@ -322,16 +323,20 @@
   .contact
     .team
       &__person
-        max-width 47%
+        width: 47%
+        // max-width 47%
         &__figure
           max-width 100%
-      &__person:nth-child(2n+2)
-        margin-right 0
       &__person:nth-child(2n+1)
         margin-right 5%
+      &__person:nth-child(2n+2)
+        margin-right 0
 
 @media screen and ( max-width: 1050px )
   .contact
+    .team
+      &__person:nth-child(2n+2)
+        margin-right 0
     .details__wrap-global
       flex-direction column
     .details__paragraph
@@ -369,7 +374,7 @@
   .contact
     .team
       &__person
-        max-width 100%
+        width 100%
       &__person
       &__person:nth-child(2n+1)
         margin-right 0
