@@ -6282,3 +6282,8 @@ form input
 
     border: 0;
 }
+.archive
+{
+    max-width: 114em;
+    margin: 0 auto;
+}
