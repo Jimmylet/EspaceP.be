@@ -25,7 +25,7 @@ include 'meta.php';?>
 			<ol class="breadcrumb" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumb__link" itemprop="
 itemListElement">
 <a class="breadcrumb__link__text breadcrumb__link__text--home" href="http://espacep.app"><span class="breadcrumb__link__text--hidden">Accueil</span></a></li><li class="breadcrumb__link" itemprop="
-itemListElement"><a class="breadcrumb__link__text" href="http://espacep.app/nos-partenaires/">Archives</a></li></ol>
+itemListElement"><a class="breadcrumb__link__text" href="http://espacep.app/nos-partenaires/">Archive</a></li></ol>
 		</div>
 		<section class="archive">
 			<!-- Last article -->
