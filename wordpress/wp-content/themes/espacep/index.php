@@ -122,7 +122,7 @@ Template Name: Page d’accueil
         <?php endwhile; endif; ?>
 			</div>
 
-			<a href="#" class="home-manifeste__button">Voir tous les articles</a>
+			<a href="<?php the_permalink('329'); ?>" class="home-manifeste__button">Voir tous les articles</a>
 
 		</section>
 		<section class="last-facebook">

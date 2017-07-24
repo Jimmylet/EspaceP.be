@@ -619,7 +619,7 @@ form input
     width: 50%;
     margin-right: 65px;
 }
-.last-article-two .last-article__link:last-child
+.last-article-two .last-article__link:nth-child(2n + 2)
 {
     margin-right: 0;
 }
@@ -6286,4 +6286,58 @@ form input
 {
     max-width: 114em;
     margin: 0 auto;
+}
+.archive .last-article-two
+{
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.archive .last-article-two .last-article__link
+{
+    width: 47%;
+    margin-bottom: 6.5em;
+}
+@media screen and (max-width: 1090px)
+{
+    .archive .last-article-two .last-article__link
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .archive .last-article-two .last-article__link .article
+    {
+        min-height: auto;
+    }
+    .archive .last-article-two .last-article__link .article__wrap-text
+    {
+        max-width: none;
+    }
+}
+@media screen and (max-width: 905px)
+{
+    .archive .last-article__link--top .article
+    {
+        min-height: auto;
+    }
+    .archive .last-article__link--top .article__img
+    {
+        display: none;
+    }
+    .archive .last-article__link--top .article__wrap-text
+    {
+        width: 100%;
+        max-width: none;
+    }
+    .archive .last-article__link--top .article__title
+    {
+        font-size: 2.2em;
+
+        max-width: none;
+    }
+    .archive .last-article__link--top .article__category
+    {
+        font-size: 1.4em;
+    }
 }
