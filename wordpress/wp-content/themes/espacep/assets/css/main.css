@@ -804,8 +804,8 @@ form input
 }
 .last-facebook .last-facebook__comment__text
 {
-    font-size: 1.6em;
-    line-height: 1.7em;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
 
     margin-bottom: 28px;
 
@@ -818,6 +818,7 @@ form input
 
     position: absolute;
     right: 60px;
+    bottom: 30px;
 
     letter-spacing: .13px;
 }
@@ -851,6 +852,33 @@ form input
     display: inline-block;
 
     color: #3b5998;
+}
+.recent-facebook-posts .rfbp-link
+{
+    font-size: 1.6rem;
+    line-height: 1.2em;
+
+    display: block;
+
+    margin-bottom: 28px;
+    margin-bottom: 10px;
+
+    color: #383838;
+}
+.recent-facebook-posts .rfbp-text
+{
+    font-size: 1.6rem;
+    line-height: 1.2em;
+    line-height: 1.7em;
+
+    display: block;
+
+    color: #6c6c6c;
+}
+.recent-facebook-posts .rfbp-post-link-wrap,
+.recent-facebook-posts .rfbp-image
+{
+    display: none;
 }
 .quote-home
 {

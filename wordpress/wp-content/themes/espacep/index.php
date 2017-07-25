@@ -10,6 +10,24 @@ Template Name: Page d’accueil
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/main.css'; ?>" type="text/css">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<?php wp_head(); ?>
 </head>
 <body class="no-js main">
@@ -137,15 +155,12 @@ Template Name: Page d’accueil
 				</section>
 				<section class="last-facebook__comment">
 					<h3 class="last-facebook__comment__title">Dernier commentaire</h3>
-					<span class="last-facebook__comment__date">Le 29 septembre 2016</span>
+					
 					<div class="last-facebook__comment__text-container">
 						<img class="last-facebook__comment__img"
 								 src="<?php echo $images . '/logo_v2.jpg'; ?>"
 								 alt="Logo de espace p…" width="89" height="89">
-						<p class="last-facebook__comment__text">Le Centre De Ressources Crhs est actuellement entrain de réaliser
-							une étude sur l'accompagnement sexuel et la place qu'il prend au sein du paysage wallon. Ils sont à la
-							recherche de personnes en situation de handicap qui seraient prêtes à répondre à leurs questions sous
-							forme…</p>
+						<?php recent_facebook_posts(array('likes' => 0, 'comments' => 0, 'number' => 1, 'show_link_previews' => 0, 'excerpt_length => 140')); ?>
 					</div>
 					<a class="last-facebook__comment__link" href="https://www.facebook.com/Espace-P-1166947833360506" title="Aller sur Facebook" rel="external">Lire la
 						suite sur&nbsp;<span class="last-facebook__comment__facebook">Facebook</span></a>
